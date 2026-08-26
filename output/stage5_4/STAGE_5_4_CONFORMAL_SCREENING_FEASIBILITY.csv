@@ -1,0 +1,4 @@
+target_variable,target_name,best_model,best_features,nominal_coverage_target,empirical_coverage_achieved,q_hat_residual_quantile,mean_interval_width,median_interval_width,guideline_threshold,tier1_low_concern_count,tier1_uncertain_count,tier1_potential_exceedance_count,conformal_calibration_verdict
+Ni_num,Nickel,HuberRegressor,pH_proxy+TDS_calc,90.0%,92.3,2.132,3.7423,3.6601,20.0,39,0,0,CALIBRATED_90_PERCENT_INTERVAL
+Cd_num,Cd_num,Ridge,pH_proxy+TDS_calc+NO3-N_num+WELL_DEPTH,90.0%,92.3,0.0971,0.1634,0.1622,20.0,39,0,0,CALIBRATED_90_PERCENT_INTERVAL
+Fe_num,Fe_num,SVR_RBF,pH_proxy+TDS_calc+NO3-N_num,90.0%,92.3,3.8689,4.2815,4.2246,20.0,39,0,0,CALIBRATED_90_PERCENT_INTERVAL

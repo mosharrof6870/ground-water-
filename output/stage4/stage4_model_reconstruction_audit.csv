@@ -1,0 +1,11 @@
+target,model,transformation,feature_set,feature_count,feature_order_verified,hyperparameters_verified,preprocessing_verified,target_inverse_transform_verified,status
+As_num,SVR_RBF,LOG1P,M2_Core_Salinity,6,PASS,PASS,PASS,PASS,PASS
+Fe_num,SVR_RBF,LOG1P,M5_Core_DepthInteractions,7,PASS,PASS,PASS,PASS,PASS
+Mn_num,Lasso,LOG1P,M4_Core_IonExchange,6,PASS,PASS,PASS,PASS,PASS
+Pb_num,SVR_RBF,LOG1P,M2_Core_Salinity,6,PASS,PASS,PASS,PASS,PASS
+Ni_num,SVR_RBF,LOG1P,M3_Core_IonRatios,8,PASS,PASS,PASS,PASS,PASS
+Zn_num,Lasso,LOG1P,M1_Core,5,PASS,PASS,PASS,PASS,PASS
+HPI,Lasso,LOG1P,M4_Core_IonExchange,6,PASS,PASS,PASS,PASS,PASS
+HEI,Lasso,LOG1P,M1_Core,5,PASS,PASS,PASS,PASS,PASS
+WQI,Lasso,LOG1P,M4_Core_IonExchange,6,PASS,PASS,PASS,PASS,PASS
+Cd,SVR_RBF,RAW,M4_Core_IonExchange,6,PASS,PASS,PASS,PASS,PASS

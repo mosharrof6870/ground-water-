@@ -1,0 +1,2 @@
+target,conformal_method,nominal_coverage_target,empirical_coverage_rate,coverage_deviation,q_hat_quantile_value,mean_interval_width,median_interval_width,sd_interval_width,worst_fold_coverage_estimate,conformal_calibration_status
+Ni_num,Out-of-Fold Split Conformal Prediction,0.9,0.9,0.0,1.3779,2.7528,2.7558,0.0106,0.85,CALIBRATED_90_PERCENT_INTERVAL

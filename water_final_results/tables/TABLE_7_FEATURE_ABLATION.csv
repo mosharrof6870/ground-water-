@@ -1,0 +1,5 @@
+configuration,features,OOF_R2_mean,OOF_R2_SD,OOF_RMSE_mean,OOF_RMSE_SD,OOF_MAE_mean,OOF_MAE_SD,Spearman_mean,delta_R2,delta_RMSE,delta_MAE
+Model A (pH),pH_proxy,-0.1079,0.0624,2.1152,0.0591,1.4696,0.0495,0.1452,-0.1079,2.1152,1.4696
+Model B (pH + TDS),"pH_proxy, TDS_calc",0.2754,0.0077,1.7114,0.0091,0.9063,0.0074,0.6493,0.3832,-0.4039,-0.5632
+Model C (pH + TDS + NO3),"pH_proxy, TDS_calc, NO3-N_num",0.254,0.0208,1.7363,0.024,0.9448,0.0269,0.6317,-0.0214,0.025,0.0384
+Model D (pH + TDS + NO3 + Depth),"pH_proxy, TDS_calc, NO3-N_num, WELL_DEPTH",0.224,0.0293,1.7707,0.0333,0.9765,0.0404,0.6333,-0.03,0.0344,0.0317

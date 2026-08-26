@@ -1,0 +1,11 @@
+target,best_easy_input_set,best_easy_model,best_easy_mean_R2,smallest_comparable_input_set,smallest_comparable_mean_R2,delta_R2_depth_addition_E2_minus_E1,delta_R2_full_panel_E5_minus_E2,feasibility_assessment,field_screening_recommendation
+As_num,E5,SVR_RBF (RAW),-0.2752,E3,-0.2899,0.1363,0.0941,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+Fe_num,E4,SVR_RBF (RAW),-0.4377,E4,-0.4377,0.2275,-0.0402,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+Mn_num,E3,Lasso (LOG1P),-0.381,E1,-0.3939,0.0,-0.1229,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+Pb_num,E4,Ridge (LOG1P),-0.6657,E4,-0.6657,-0.1055,0.0953,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+Ni_num,E1,ElasticNet (LOG1P),0.0813,E1,0.0813,-0.0434,-0.0086,FEASIBLE_SCREENING_SIGNAL,Target exhibits useful predictive signal from easy field inputs. Recommended for screening.
+Zn_num,E1,SVR_RBF (RAW),-0.5835,E1,-0.5835,-0.0363,-0.0122,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+HPI,E1,Lasso (LOG1P),-0.1949,E1,-0.1949,-0.0007,-0.0516,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+HEI,E2,SVR_RBF (RAW),-0.3139,E1,-0.3314,0.0175,-0.0368,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+WQI,E4,SVR_RBF (RAW),-0.1622,E1,-0.1787,0.0029,0.0029,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.
+Cd,E2,SVR_RBF (RAW),-0.3139,E1,-0.3314,0.0175,-0.0368,UNFEASIBLE_FROM_EASY_INPUTS,Field parameters provide zero predictive signal. Mandatory lab sampling required.

@@ -1,0 +1,10 @@
+hydrochemical_variable,metal,effective_N,spearman_rho,raw_p_value,fdr_adjusted_p_value,is_statistically_significant_fdr,association_strength
+Nitrate (NO3-N_num),Arsenic (As),40,-0.3319,0.036417757775102665,0.0656,False,No Significant Association
+Nitrate (NO3-N_num),Iron (Fe),40,0.0464,0.7761994738047633,0.8418,False,No Significant Association
+Nitrate (NO3-N_num),Manganese (Mn),40,-0.5547,0.00020396155965207748,0.0006,True,Strong Negative
+Nitrate (NO3-N_num),Lead (Pb),40,0.5942,5.287357942717654e-05,0.0002,True,Strong Positive
+Nitrate (NO3-N_num),Nickel (Ni),40,-0.1275,0.4330234048133019,0.5567,False,No Significant Association
+Nitrate (NO3-N_num),Zinc (Zn),35,0.035,0.8417576539495155,0.8418,False,No Significant Association
+Nitrate (NO3-N_num),Cadmium (Cd),40,0.687,9.827227906583562e-07,0.0,True,Strong Positive
+Nitrate (NO3-N_num),Chromium (Cr),40,0.2154,0.1818857246899273,0.2728,False,No Significant Association
+Nitrate (NO3-N_num),Copper (Cu),40,0.3776,0.01628950469251245,0.0367,True,Moderate Positive

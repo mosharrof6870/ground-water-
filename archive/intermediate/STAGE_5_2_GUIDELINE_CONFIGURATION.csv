@@ -1,0 +1,7 @@
+target,unit,who_guideline,bd_guideline,selected_threshold,justification
+Ni_num,ug/L,70.0,20.0,20.0,Bangladesh Environment Conservation Rules standard (20 ug/L) applied for conservative health protection.
+Pb_num,ug/L,10.0,10.0,10.0,WHO and BD drinking water standard for Lead.
+As_num,ug/L,10.0,50.0,50.0,Bangladesh standard for Arsenic (50 ug/L).
+Fe_num,mg/L,0.3,1.0,1.0,Bangladesh standard for Iron (1.0 mg/L).
+Mn_num,mg/L,0.1,0.4,0.4,Bangladesh standard for Manganese (0.4 mg/L).
+Zn_num,mg/L,3.0,5.0,5.0,Bangladesh standard for Zinc (5.0 mg/L).

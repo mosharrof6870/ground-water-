@@ -1,0 +1,10 @@
+feature_name,formula,unit,hydrochemical_meaning,source_variables,scientific_justification
+TDS_log,ln(TDS_calc),ln(mg/L),Log-mineralization scale,TDS_calc,Normalizes skewed salinity distribution for linear/SVR modeling
+Ratio_Ca_Mg_meq,Ca_meq / Mg_meq,dimensionless,Carbonate dissolution control,"Ca, Mg",Differentiates calcite vs dolomite weathering regimes
+Ratio_Na_CaMg_meq,Na_meq / (Ca_meq + Mg_meq),dimensionless,Cation exchange ratio,"Na, Ca, Mg",Indicates freshening or reverse ion exchange processes
+Ratio_HCO3_CaMg_meq,HCO3_meq / (Ca_meq + Mg_meq),dimensionless,Alkalinity-hardness equivalence,"HCO3, Ca, Mg",Evaluates temporary hardness and mineral dissolution stoichiometry
+CAI_2,[Cl - (Na+K)] / [SO4+HCO3+NO3],dimensionless,Schoeller Chloro-Alkaline Index 2,"Cl, Na, K, SO4, HCO3, NO3",Quantifies direct vs reverse ion exchange intensity
+Depth_x_TDS,WELL_DEPTH * TDS_calc,m * mg/L,Aquifer depth-mineralization interaction,"WELL_DEPTH, TDS_calc",Captures depth-dependent salinity accumulation gradients
+Depth_x_pH,WELL_DEPTH * pH_proxy,m * pH_unit,Aquifer depth-acidity interaction,"WELL_DEPTH, pH_proxy",Captures vertical redox and pH gradients
+Ionic_Strength_proxy,0.5 * sum(zi^2 * ci),meq/L,Calculated ionic strength,Major cations and anions,Controls activity coefficients and heavy metal complexation equilibria
+Ratio_SO4_HCO3_meq,SO4_meq / HCO3_meq,dimensionless,Sulfate-bicarbonate ratio,"SO4, HCO3",Differentiates agricultural/pyrite oxidation from silicate/carbonate weathering

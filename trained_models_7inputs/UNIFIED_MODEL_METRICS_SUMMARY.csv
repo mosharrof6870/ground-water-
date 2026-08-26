@@ -1,0 +1,6 @@
+Target,Best Model,Transform,CV R² ± SD,OOF R²,MAE,RMSE,Spearman,90% Margin,N,Status
+Cadmium (Cd),"Log-ElasticNet(a=0.01,l1=0.5)",log1p,0.286 ± 0.547,0.6423,0.0498,0.0727,0.5659,0.1014,40,Potentially Useful
+Nickel (Ni),"Raw-Huber(eps=1.35,a=1.0)",Raw,0.030 ± 0.891,0.2423,0.9346,1.75,0.5555,1.4937,40,Potentially Useful
+Arsenic (As),"Raw-Huber(eps=1.1,a=10.0)",Raw,-0.841 ± 2.459,-0.0845,2.7589,6.815,0.1339,4.8916,40,Not Reliable
+Iron (Fe),"Log-Huber(eps=1.1,a=10.0)",log1p,-1.242 ± 5.440,-0.0922,1.3299,3.5923,0.2897,3.5904,40,Not Reliable
+Water Quality Index (WQI),Log-Ridge(alpha=100.0),log1p,-0.243 ± 0.325,-0.091,17.4571,28.6159,0.1417,24.8146,40,Not Reliable

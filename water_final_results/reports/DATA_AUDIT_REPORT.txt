@@ -1,0 +1,19 @@
+DATA AUDIT REPORT (V2 DYNAMIC)
+=============================
+Execution Date: 2026-08-23 17:02:28
+Total Groundwater Samples: N = 40
+Unique Sample IDs: 40 (100% Unique, Zero Duplicates)
+
+Target Variables Status:
+  - Ni_num: N = 40, Missing = 0
+  - Cd_num: N = 40, Missing = 0
+
+Primary Predictors Status:
+  - pH_proxy: Mean = 7.08, Range = [6.87, 7.32]
+  - TDS_calc: Mean = 226.88 mg/L, Range = [44.50, 593.40]
+  - NO3-N_num: Mean = 1.44 mg/L, Range = [0.10, 12.50]
+  - WELL_DEPTH: Mean = 22.62 m, Range = [9.00, 61.00]
+
+Preprocessing Integrity:
+  - Zero global imputation or global scaling before CV splits.
+  - Sklearn Pipelines with SimpleImputer(strategy='median') + StandardScaler() executed inside training folds.

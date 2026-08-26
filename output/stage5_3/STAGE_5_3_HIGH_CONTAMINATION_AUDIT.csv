@@ -1,0 +1,6 @@
+SAMPLE_ID,DISTRICT,Facies,WELL_DEPTH,TDS_calc,CBE_pct,exceedance_count,exceeded_metals,regime_occupancy_note
+S98_01794,Dinajpur,Mixed-Cation-HCO3,20.0,168.1,1.2531,2,Iron (Fe); Manganese (Mn),High burden sample occupying Mixed-Cation-HCO3 facies.
+S98_01801,Lalmonirhat,Mixed-Cation-HCO3,14.0,57.06,0.5276,2,Iron (Fe); Manganese (Mn),High burden sample occupying Mixed-Cation-HCO3 facies.
+S98_01823,Sirajganj,Mixed-Cation-HCO3,15.0,121.2,0.0515,2,Iron (Fe); Manganese (Mn),High burden sample occupying Mixed-Cation-HCO3 facies.
+S98_01828,Pabna,Ca-HCO3,20.0,441.6,7.9064,2,Iron (Fe); Manganese (Mn),High burden sample occupying Ca-HCO3 facies.
+S98_01834,Bogra,Mixed-Cation-HCO3,36.0,263.20000000000005,0.1674,2,Iron (Fe); Manganese (Mn),High burden sample occupying Mixed-Cation-HCO3 facies.

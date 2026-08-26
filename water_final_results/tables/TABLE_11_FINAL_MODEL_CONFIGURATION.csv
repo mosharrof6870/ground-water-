@@ -1,0 +1,3 @@
+target,selected_model,input_variables,N
+Ni_num,HuberRegressor,"pH, TDS",40
+Cd_num,LinearRegression,"pH, TDS, NO3, Depth",40

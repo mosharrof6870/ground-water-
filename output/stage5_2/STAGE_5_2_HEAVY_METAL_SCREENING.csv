@@ -1,0 +1,7 @@
+target,screening_status,evidence,recommendation
+Ni_num,PRIMARY_SCREENING_CANDIDATE,Demonstrated positive signal (R2=+0.0813) from field inputs (E1) with calibrated 90% conformal intervals.,Deploy for Tier-1 field screening.
+Pb_num,LABORATORY_CONFIRMATION_REQUIRED,Field inputs exhibit weak signal (R2=-0.6657). High uncertainty requires lab AAS/ICP-MS.,Mandatory laboratory testing.
+As_num,LABORATORY_CONFIRMATION_REQUIRED,Field inputs exhibit zero predictive signal (R2=-0.2752). Hydride generation AAS required.,Mandatory laboratory testing.
+Fe_num,LABORATORY_CONFIRMATION_REQUIRED,Field inputs exhibit zero predictive signal (R2=-0.4377). Wet chemical lab test required.,Mandatory laboratory testing.
+Mn_num,LABORATORY_CONFIRMATION_REQUIRED,Field inputs exhibit zero predictive signal (R2=-0.3810). Wet chemical lab test required.,Mandatory laboratory testing.
+Zn_num,LABORATORY_CONFIRMATION_REQUIRED,"Field inputs exhibit zero predictive signal (R2=-0.5835, N=35). Lab AAS required.",Mandatory laboratory testing.

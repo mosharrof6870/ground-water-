@@ -1,0 +1,283 @@
+{
+  "As_num": {
+    "target": "As_num",
+    "model": "SVR_RBF",
+    "transformation": "LOG1P",
+    "feature_set": "M2_Core_Salinity",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "TDS_log"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.3635,
+      "median_R2": -0.1821,
+      "sd_R2": 0.9602,
+      "MAE": 2.6881,
+      "Spearman_rho": 0.197,
+      "positive_fold_count": 4
+    },
+    "stability": "HIGH VARIANCE",
+    "scientific_status": "NO_DEMONSTRATED_SIGNAL"
+  },
+  "Fe_num": {
+    "target": "Fe_num",
+    "model": "SVR_RBF",
+    "transformation": "LOG1P",
+    "feature_set": "M5_Core_DepthInteractions",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "Depth_x_TDS",
+      "Depth_x_pH"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.5169,
+      "median_R2": -0.1786,
+      "sd_R2": 1.3447,
+      "MAE": 1.377,
+      "Spearman_rho": 0.2209,
+      "positive_fold_count": 7
+    },
+    "stability": "UNRELIABLE",
+    "scientific_status": "WEAK_SIGNAL"
+  },
+  "Mn_num": {
+    "target": "Mn_num",
+    "model": "Lasso",
+    "transformation": "LOG1P",
+    "feature_set": "M4_Core_IonExchange",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "CAI_2"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.2894,
+      "median_R2": -0.0845,
+      "sd_R2": 0.4605,
+      "MAE": 0.6147,
+      "Spearman_rho": 0.4496,
+      "positive_fold_count": 6
+    },
+    "stability": "MODERATE",
+    "scientific_status": "NEGATIVE_MEAN_R2_WITH_SIGNAL"
+  },
+  "Pb_num": {
+    "target": "Pb_num",
+    "model": "SVR_RBF",
+    "transformation": "LOG1P",
+    "feature_set": "M2_Core_Salinity",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "TDS_log"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.36,
+      "median_R2": 0.1028,
+      "sd_R2": 1.474,
+      "MAE": 0.5444,
+      "Spearman_rho": 0.3457,
+      "positive_fold_count": 15
+    },
+    "stability": "MODERATE",
+    "scientific_status": "NEGATIVE_MEAN_R2_WITH_SIGNAL"
+  },
+  "Ni_num": {
+    "target": "Ni_num",
+    "model": "SVR_RBF",
+    "transformation": "LOG1P",
+    "feature_set": "M3_Core_IonRatios",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "Ratio_Ca_Mg_meq",
+      "Ratio_Na_CaMg_meq",
+      "Ratio_HCO3_CaMg_meq"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": 0.1281,
+      "median_R2": 0.1825,
+      "sd_R2": 0.6778,
+      "MAE": 1.0153,
+      "Spearman_rho": 0.5248,
+      "positive_fold_count": 19
+    },
+    "stability": "STABLE",
+    "scientific_status": "POSITIVE_MEAN_R2"
+  },
+  "Zn_num": {
+    "target": "Zn_num",
+    "model": "Lasso",
+    "transformation": "LOG1P",
+    "feature_set": "M1_Core",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.6877,
+      "median_R2": -0.1325,
+      "sd_R2": 1.6442,
+      "MAE": 14.1925,
+      "Spearman_rho": -0.1162,
+      "positive_fold_count": 0
+    },
+    "stability": "HIGH VARIANCE",
+    "scientific_status": "UNRELIABLE"
+  },
+  "HPI": {
+    "target": "HPI",
+    "model": "Lasso",
+    "transformation": "LOG1P",
+    "feature_set": "M4_Core_IonExchange",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "CAI_2"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.1039,
+      "median_R2": -0.0531,
+      "sd_R2": 0.215,
+      "MAE": 40.1888,
+      "Spearman_rho": 0.4295,
+      "positive_fold_count": 7
+    },
+    "stability": "MODERATE",
+    "scientific_status": "NEGATIVE_MEAN_R2_WITH_SIGNAL"
+  },
+  "HEI": {
+    "target": "HEI",
+    "model": "Lasso",
+    "transformation": "LOG1P",
+    "feature_set": "M1_Core",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.2678,
+      "median_R2": -0.0981,
+      "sd_R2": 0.7037,
+      "MAE": 9.5135,
+      "Spearman_rho": 0.459,
+      "positive_fold_count": 8
+    },
+    "stability": "MODERATE",
+    "scientific_status": "NEGATIVE_MEAN_R2_WITH_SIGNAL"
+  },
+  "WQI": {
+    "target": "WQI",
+    "model": "Lasso",
+    "transformation": "LOG1P",
+    "feature_set": "M4_Core_IonExchange",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "CAI_2"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.1587,
+      "median_R2": -0.0913,
+      "sd_R2": 0.3188,
+      "MAE": 17.3296,
+      "Spearman_rho": 0.2686,
+      "positive_fold_count": 8
+    },
+    "stability": "UNRELIABLE",
+    "scientific_status": "WEAK_SIGNAL"
+  },
+  "Cd": {
+    "target": "Cd",
+    "model": "SVR_RBF",
+    "transformation": "RAW",
+    "feature_set": "M4_Core_IonExchange",
+    "feature_names": [
+      "TDS_calc",
+      "WELL_DEPTH",
+      "CAI_1",
+      "NO3-N_num",
+      "pH_proxy",
+      "CAI_2"
+    ],
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "selection_rule": "PRIMARY: Highest Mean Outer-Test R2",
+    "expected_metrics": {
+      "mean_R2": -0.255,
+      "median_R2": -0.1309,
+      "sd_R2": 0.4352,
+      "MAE": 9.561,
+      "Spearman_rho": 0.2762,
+      "positive_fold_count": 5
+    },
+    "stability": "UNRELIABLE",
+    "scientific_status": "WEAK_SIGNAL"
+  }
+}

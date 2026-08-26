@@ -1,0 +1,41 @@
+SAMPLE_ID,DISTRICT,Facies,WELL_DEPTH,TDS_calc,CBE_pct,total_exceedances,exceeded_metal_list,contamination_burden_category
+S98_01785,Panchagarh,Na-Mixed-Anion,9.0,114.67,1.0455,0,None,0 Exceedances (Compliant)
+S98_01786,Panchagarh,Mixed-Cation-HCO3,15.0,72.69,4.0523,1,Iron (Fe),1 Metal Exceedance
+S98_01788,Thakurgaon,Mixed-Cation-HCO3,18.0,86.61999999999999,0.6651,0,None,0 Exceedances (Compliant)
+S98_01789,Thakurgaon,Mixed-Cation-Mixed-Anion,37.0,54.06,1.486,1,Iron (Fe),1 Metal Exceedance
+S98_01791,Dinajpur,Mixed-Cation-HCO3,30.0,81.36999999999999,1.1359,0,None,0 Exceedances (Compliant)
+S98_01792,Thakurgaon,Mixed-Cation-Mixed-Anion,30.0,99.99,1.512,0,None,0 Exceedances (Compliant)
+S98_01793,Dinajpur,Na-HCO3,18.0,76.11999999999999,0.0418,0,None,0 Exceedances (Compliant)
+S98_01794,Dinajpur,Mixed-Cation-HCO3,20.0,168.1,1.2531,2,Iron (Fe); Manganese (Mn),2 Metal Exceedances
+S98_01795,Dinajpur,Mixed-Cation-HCO3,21.0,129.91,1.5953,1,Manganese (Mn),1 Metal Exceedance
+S98_01796,Nilphamari,Mixed-Cation-HCO3,24.0,95.23999999999998,7.3131,1,Manganese (Mn),1 Metal Exceedance
+S98_01797,Nilphamari,Na-Cl,18.0,106.51,10.9778,1,Manganese (Mn),1 Metal Exceedance
+S98_01798,Lalmonirhat,Mixed-Cation-Mixed-Anion,,113.77,6.7715,0,None,0 Exceedances (Compliant)
+S98_01799,Nilphamari,Mixed-Cation-HCO3,27.0,44.5,1.8672,0,None,0 Exceedances (Compliant)
+S98_01800,Rangpur,Mixed-Cation-SO4,18.0,82.54,1.7121,0,None,0 Exceedances (Compliant)
+S98_01801,Lalmonirhat,Mixed-Cation-HCO3,14.0,57.06,0.5276,2,Iron (Fe); Manganese (Mn),2 Metal Exceedances
+S98_01802,Kurigram,Mixed-Cation-HCO3,18.0,260.7,1.2138,1,Manganese (Mn),1 Metal Exceedance
+S98_01803,Kurigram,Mixed-Cation-HCO3,18.0,119.21,0.3044,1,Iron (Fe),1 Metal Exceedance
+S98_01804,Gaibandha,Na-Mixed-Anion,18.0,310.50000000000006,0.3712,0,None,0 Exceedances (Compliant)
+S98_01805,Gaibandha,Mixed-Cation-HCO3,18.0,186.3,1.0427,1,Manganese (Mn),1 Metal Exceedance
+S98_01806,Gaibandha,Mixed-Cation-HCO3,12.0,198.32,0.4308,0,None,0 Exceedances (Compliant)
+S98_01807,Jaipurhat,Mixed-Cation-HCO3,15.0,131.79999999999998,1.0445,1,Manganese (Mn),1 Metal Exceedance
+S98_01808,Bogra,Mixed-Cation-HCO3,18.0,431.0,0.2572,1,Manganese (Mn),1 Metal Exceedance
+S98_01809,Bogra,Mixed-Cation-HCO3,18.0,91.58,2.4826,1,Manganese (Mn),1 Metal Exceedance
+S98_01810,Naogaon,Mixed-Cation-HCO3,15.0,61.17000000000001,0.3388,0,None,0 Exceedances (Compliant)
+S98_01811,Naogaon,Mixed-Cation-HCO3,30.0,85.39999999999999,0.8147,0,None,0 Exceedances (Compliant)
+S98_01813,Nawabganj,Mixed-Cation-HCO3,30.0,298.90000000000003,0.3876,1,Iron (Fe),1 Metal Exceedance
+S98_01815,Nawabganj,Ca-HCO3,61.0,556.9,15.4651,1,Manganese (Mn),1 Metal Exceedance
+S98_01817,Rajshahi,Mixed-Cation-HCO3,30.0,214.71,1.4943,0,None,0 Exceedances (Compliant)
+S98_01818,Rajshahi,Ca-HCO3,37.0,517.6,14.966,1,Manganese (Mn),1 Metal Exceedance
+S98_01819,Rajshahi,Ca-HCO3,18.0,401.6000000000001,22.846,1,Manganese (Mn),1 Metal Exceedance
+S98_01820,Natore,Ca-HCO3,27.0,589.5,16.7009,1,Manganese (Mn),1 Metal Exceedance
+S98_01821,Natore,Ca-HCO3,18.0,593.4,15.0495,1,Manganese (Mn),1 Metal Exceedance
+S98_01822,Natore,Ca-HCO3,27.0,393.1,9.4822,1,Manganese (Mn),1 Metal Exceedance
+S98_01823,Sirajganj,Mixed-Cation-HCO3,15.0,121.2,0.0515,2,Iron (Fe); Manganese (Mn),2 Metal Exceedances
+S98_01824,Sirajganj,Mixed-Cation-HCO3,18.0,111.7,0.1668,1,Manganese (Mn),1 Metal Exceedance
+S98_01825,Pabna,Ca-HCO3,18.0,513.7,1.1676,1,Manganese (Mn),1 Metal Exceedance
+S98_01826,Pabna,Ca-HCO3,30.0,385.7000000000001,17.4085,1,Manganese (Mn),1 Metal Exceedance
+S98_01827,Pabna,Mixed-Cation-HCO3,18.0,413.1,6.9152,1,Manganese (Mn),1 Metal Exceedance
+S98_01828,Pabna,Ca-HCO3,20.0,441.6,7.9064,2,Iron (Fe); Manganese (Mn),2 Metal Exceedances
+S98_01834,Bogra,Mixed-Cation-HCO3,36.0,263.20000000000005,0.1674,2,Iron (Fe); Manganese (Mn),2 Metal Exceedances

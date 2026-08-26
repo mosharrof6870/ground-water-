@@ -1,0 +1,19 @@
+variable,raw_unit,meq_conversion_factor,engineered_unit,status
+WELL_DEPTH,meters (m),N/A,m,Verified
+pH_proxy,pH units,N/A,pH units,Sensitivity Proxy
+TDS_calc,mg/L,N/A,mg/L,Verified
+Ca_num,mg/L,1 meq/L = 20.04 mg/L,meq/L,Verified
+Mg_num,mg/L,1 meq/L = 12.15 mg/L,meq/L,Verified
+Na_num,mg/L,1 meq/L = 22.99 mg/L,meq/L,Verified
+K_num,mg/L,1 meq/L = 39.10 mg/L,meq/L,Verified
+Cl_num,mg/L,1 meq/L = 35.45 mg/L,meq/L,Verified
+HCO3_num,mg/L,1 meq/L = 61.02 mg/L,meq/L,Verified
+SO4_num,mg/L,1 meq/L = 48.03 mg/L,meq/L,Verified
+NO3-N_num,mg/L,1 meq/L = 62.00 mg/L,meq/L,Verified
+As_num,ug/L (or mg/L),N/A,Target,Verified
+Fe_num,mg/L,N/A,Target,Verified
+Mn_num,mg/L,N/A,Target,Verified
+Pb_num,ug/L,N/A,Target,Verified
+Ni_num,ug/L,N/A,Target,Verified
+Zn_num,ug/L,N/A,Target,Verified
+Fe_Mn_ratio,mg/L / mg/L,N/A,Dimensionless,Secondary Mobilization Ratio (No pseudo-Eh)

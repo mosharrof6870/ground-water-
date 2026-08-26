@@ -1,0 +1,10 @@
+hydrochemical_variable,metal,effective_N,spearman_rho,raw_p_value,fdr_adjusted_p_value,is_statistically_significant_fdr,association_strength
+Well Depth (WELL_DEPTH),Arsenic (As),39,0.0515,0.7557290399645498,0.8569,False,No Significant Association
+Well Depth (WELL_DEPTH),Iron (Fe),39,-0.0502,0.7616948832913448,0.8569,False,No Significant Association
+Well Depth (WELL_DEPTH),Manganese (Mn),39,0.094,0.5690286570600199,0.8535,False,No Significant Association
+Well Depth (WELL_DEPTH),Lead (Pb),39,-0.2044,0.21190479668419057,0.3814,False,No Significant Association
+Well Depth (WELL_DEPTH),Nickel (Ni),39,0.255,0.1172515791011088,0.3518,False,No Significant Association
+Well Depth (WELL_DEPTH),Zinc (Zn),34,-0.0053,0.9763369071432119,0.9763,False,No Significant Association
+Well Depth (WELL_DEPTH),Cadmium (Cd),39,-0.2795,0.08489214137343004,0.3518,False,No Significant Association
+Well Depth (WELL_DEPTH),Chromium (Cr),39,-0.2312,0.15665429358171354,0.3525,False,No Significant Association
+Well Depth (WELL_DEPTH),Copper (Cu),39,-0.3012,0.06238121446242628,0.3518,False,No Significant Association

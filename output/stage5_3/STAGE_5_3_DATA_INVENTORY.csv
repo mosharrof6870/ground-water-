@@ -1,0 +1,21 @@
+variable,category,unit,total_N,effective_N,missing,censoring_status
+pH_proxy,Physical Parameter,pH units,40,40,0,Uncensored Direct Meter Reading
+TDS_calc,Salinity Proxy,mg/L,40,40,0,Calculated Sum of Major Ions
+WELL_DEPTH,Hydrogeological,m,40,39,1,Uncensored Well Construction Depth
+Ca_num,Major Cation,mg/L,40,40,0,Lab Spectroscopic Analysis
+Mg_num,Major Cation,mg/L,40,40,0,Lab Spectroscopic Analysis
+Na_num,Major Cation,mg/L,40,40,0,Lab Spectroscopic Analysis
+K_num,Major Cation,mg/L,40,40,0,Lab Spectroscopic Analysis
+Cl_num,Major Anion,mg/L,40,40,0,Lab Titrimetric / IC
+HCO3_num,Major Anion,mg/L,40,40,0,Lab Titrimetric Analysis
+SO4_num,Major Anion,mg/L,40,40,0,Lab Spectrophotometric
+NO3-N_num,Nutrient Anion,mg/L,40,40,0,Lab Spectrophotometric
+As_num,Heavy Metal,ug/L,40,40,0,AAS Hydride Generation (BDL Imputed)
+Fe_num,Heavy Metal,mg/L,40,40,0,AAS Direct Flame (BDL Imputed)
+Mn_num,Heavy Metal,mg/L,40,40,0,AAS Direct Flame (BDL Imputed)
+Pb_num,Heavy Metal,ug/L,40,40,0,AAS Furnace (BDL Imputed)
+Ni_num,Heavy Metal,ug/L,40,40,0,AAS Furnace (BDL Imputed)
+Zn_num,Heavy Metal,ug/L,40,35,5,AAS Direct Flame (Effective N=35)
+Cd_num,Heavy Metal,ug/L,40,40,0,AAS Furnace (BDL Imputed)
+Cr_num,Heavy Metal,ug/L,40,40,0,AAS Furnace (BDL Imputed)
+Cu_num,Heavy Metal,ug/L,40,40,0,AAS Furnace (BDL Imputed)

@@ -1,0 +1,6 @@
+qc_item,status,evidence
+Zero Synthetic Data Governance,PASS,"Strictly N=40 real groundwater samples. Zero GAN, CTGAN, SMOTE, or pseudo-samples."
+Strict 5x5 Repeated Nested CV,PASS,25 independent outer fold evaluations per target/model/input set combination.
+Zero Outer Fold Data Leakage,PASS,StandardScaler and LOG1P transformations fit strictly inside inner train folds.
+FDR Multiple Testing Correction,PASS,Benjamini-Hochberg FDR correction applied across all bivariate relationship tests.
+Honest Negative Result Governance,PASS,"Pb, Cd, Mn, Fe, As, Zn explicitly classified as unfeasible for field point prediction."

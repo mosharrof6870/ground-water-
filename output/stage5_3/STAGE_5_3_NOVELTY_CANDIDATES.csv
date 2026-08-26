@@ -1,0 +1,4 @@
+finding_id,classification,title,evidence,limitation
+NOV-01,A. STRONG NOVEL FINDING,Empirical Tiered Screening Feasibility for Nickel,Demonstrated that low-cost field pH + TDS can predict Nickel screening thresholds with calibrated 90% conformal intervals.,Applies to Tier-1 screening only; certified lab confirmation required for regulatory approval.
+NOV-02,B. MODERATE NOVEL FINDING,Redox Disconnect in Field Parameter Screening,Quantified why bulk field meters fail for Fe and As due to local redox decoupling from major-ion salinity.,Requires inline ORP or speciation data for formal mechanistic proof.
+NOV-03,C. SUPPORTING FINDING,Co-occurrence Structure among Trace Heavy Metals,"Identified significant non-parametric correlations between Fe, Mn, and Zn in North Bengal shallow aquifers.",N=40 observational dataset prohibits causal attribution of co-occurrence mechanisms.

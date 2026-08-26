@@ -1,0 +1,6 @@
+indicator,status,input_source,utility
+Salinity Hazard (EC / TDS),FEASIBLE,Field TDS Meter,High (Direct field classification)
+Sodium Adsorption Ratio (SAR),UNFEASIBLE_FROM_FIELD,"Requires Lab Na, Ca, Mg",Requires Tier-2 Laboratory Data
+Sodium Percentage (Na%),UNFEASIBLE_FROM_FIELD,"Requires Lab Na, K, Ca, Mg",Requires Tier-2 Laboratory Data
+Residual Sodium Carbonate (RSC),UNFEASIBLE_FROM_FIELD,"Requires Lab HCO3, CO3, Ca, Mg",Requires Tier-2 Laboratory Data
+Permeability Index (PI),UNFEASIBLE_FROM_FIELD,"Requires Lab Na, HCO3, Ca, Mg",Requires Tier-2 Laboratory Data

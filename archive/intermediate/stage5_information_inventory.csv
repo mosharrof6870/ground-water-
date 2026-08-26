@@ -1,0 +1,100 @@
+variable,source_file,available,sample_count,missing_count,unit,scientific_relevance,already_used,eligible_for_stage5,reason
+WELL_TYPE,data/processed/phase2_risk_indices_results.csv,True,38,2,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+WELL_DEPTH,data/processed/phase2_risk_indices_results.csv,True,39,1,N/A,Core baseline predictor or engineered feature from Stage 3.3,True,True,Already included in Stage 3.3 feature sets
+DISTRICT,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+THANA,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+UNION,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+MOUZA,data/processed/phase2_risk_indices_results.csv,True,39,1,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+GEOCODE,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+SAMPLE_ID,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata & sample identifiers,True,False,High cardinality categorical identifier or metadata
+Ca,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Mg,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Na,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+K,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+P,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L or ug/L,Additional measured chemical variables in raw dataset,False,True,Eligible candidate predictor for Stage 5.2 feature enhancement
+Cl,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+HCO3,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+SO4,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+NH4-N,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L or ug/L,Additional measured chemical variables in raw dataset,False,True,Eligible candidate predictor for Stage 5.2 feature enhancement
+NO2-N,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L or ug/L,Additional measured chemical variables in raw dataset,False,True,Eligible candidate predictor for Stage 5.2 feature enhancement
+NO3-N,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Pb,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Ni,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Zn,data/processed/phase2_risk_indices_results.csv,True,35,5,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+As,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Cd,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+Cr,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L or ug/L,Additional measured chemical variables in raw dataset,False,True,Eligible candidate predictor for Stage 5.2 feature enhancement
+Cu,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L or ug/L,Additional measured chemical variables in raw dataset,False,True,Eligible candidate predictor for Stage 5.2 feature enhancement
+Fe,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Mn,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Ca_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+Mg_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+Na_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+K_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+Cl_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+HCO3_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+SO4_num,data/processed/phase2_risk_indices_results.csv,True,40,0,mg/L,Major ions used in Stage 3.3 feature engineering,True,True,Available for advanced ion interaction features in Stage 5.2
+NO3-N_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor or engineered feature from Stage 3.3,True,True,Already included in Stage 3.3 feature sets
+Fe_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+Mn_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+As_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+Pb_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+Ni_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+Zn_num,data/processed/phase2_risk_indices_results.csv,True,35,5,N/A,Target variable,True,False,Target variable for prediction
+Cd_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Cr_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Cu_num,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+TDS_calc,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor or engineered feature from Stage 3.3,True,True,Already included in Stage 3.3 feature sets
+Ca_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Mg_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Na_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+K_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Cl_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+HCO3_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+SO4_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+NO3_meq,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Cat_sum,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+An_sum,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+CBE_pct,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+pct_Ca,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+pct_Mg,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+pct_Na_K,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+pct_HCO3,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+pct_Cl,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+pct_SO4_NO3,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Facies,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Hydrochemical facies & geochemical mechanism classifications,False,True,Eligible for hydrochemical categorical/dummy encoding in Stage 5.2
+Gibbs_Cation,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Hydrochemical facies & geochemical mechanism classifications,False,True,Eligible for hydrochemical categorical/dummy encoding in Stage 5.2
+Gibbs_Anion,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Hydrochemical facies & geochemical mechanism classifications,False,True,Eligible for hydrochemical categorical/dummy encoding in Stage 5.2
+Gibbs_Mechanism,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Hydrochemical facies & geochemical mechanism classifications,False,True,Eligible for hydrochemical categorical/dummy encoding in Stage 5.2
+Ratio_Na_Cl,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Ratio_Ca_Mg,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Ratio_CaMg_HCO3SO4,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+CAI_1,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor or engineered feature from Stage 3.3,True,True,Already included in Stage 3.3 feature sets
+CAI_2,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor or engineered feature from Stage 3.3,True,True,Already included in Stage 3.3 feature sets
+Ion_Exchange_Process,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Hydrochemical facies & geochemical mechanism classifications,False,True,Eligible for hydrochemical categorical/dummy encoding in Stage 5.2
+Fe_mgL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Mn_mgL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Fe_ugL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Mn_ugL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+As_ugL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Pb_ugL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Ni_ugL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Zn_ugL,data/processed/phase2_risk_indices_results.csv,True,35,5,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Cd_ugL,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+WQI,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+WQI_Category,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+HPI,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+HEI,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,True,False,Target variable for prediction
+HPI_Polluted,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+HEI_Category,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Derived hydrochemical index or ratio,False,True,Potential feature candidate for Stage 5.2
+Latitude,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Thana administrative centroid coordinates,False,False,Thana centroid level resolution only; insufficient for sample-level spatial ML
+Longitude,data/processed/phase2_risk_indices_results.csv,True,40,0,N/A,Thana administrative centroid coordinates,False,False,Thana centroid level resolution only; insufficient for sample-level spatial ML
+DO,NOT_AVAILABLE,False,0,40,N/A,Dissolved Oxygen,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+ORP_Eh,NOT_AVAILABLE,False,0,40,N/A,Oxidation-Reduction Potential (Eh),False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+DOC_TOC,NOT_AVAILABLE,False,0,40,N/A,Dissolved/Total Organic Carbon,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+Temperature,NOT_AVAILABLE,False,0,40,N/A,Groundwater Temperature,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+Alkalinity_total,NOT_AVAILABLE,False,0,40,N/A,Total Titratable Alkalinity,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+Phosphate_PO4,NOT_AVAILABLE,False,0,40,N/A,Phosphate (PO4-3),False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+Aquifer_Lithology_Borelog,NOT_AVAILABLE,False,0,40,N/A,Subsurface Lithology Borelog Data,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+Distance_to_River,NOT_AVAILABLE,False,0,40,N/A,GIS Distance to Surface River Network,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol
+Distance_to_Agri,NOT_AVAILABLE,False,0,40,N/A,GIS Distance to Agricultural Land Use,False,False,Not measured in raw dataset; fabrication explicitly forbidden by project protocol

@@ -1,0 +1,2 @@
+check_item,observed_value,resolution_level,exact_well_coordinates_available,spatial_ml_eligible,moran_i_stat,p_value,kriging_justified,audit_decision,justification
+Sample Coordinate Resolution,"40 unique Thana administrative centroids (e.g., Tetulia 26.5851 N, 88.3540 E)",THANA_CENTROID_ONLY,NO,NO,NOT_CALCULATED,NOT_CALCULATED,NO,SPATIAL_ML_STOPPED_THANA_CENTROID_ONLY,Sample-level spatial resolution is insufficient for defensible spatial ML. Thana centroids cannot be used as exact well locations without introducing spatial distortion.

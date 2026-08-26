@@ -1,0 +1,91 @@
+variable_name,unit,raw_source_availability,measurement_type,whether_field_measurable,laboratory_requirement,measurement_complexity,scientific_justification,missingness_count,number_of_unique_values,can_be_used_as_predictor,classification
+WELL_TYPE,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,2,3,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+WELL_DEPTH,N/A,AVAILABLE,Field measurement / Well log record,YES,NO (Handheld field meter / sounder tape),LOW,Basic physical hydrogeochemical parameter directly measurable at borehole head.,1,13,True,A. EASY FIELD INPUT
+DISTRICT,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,16,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+THANA,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+UNION,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+MOUZA,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,1,39,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+GEOCODE,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+SAMPLE_ID,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Ca,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Mg,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Na,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,38,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+K,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,28,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+P,N/A,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,5,False,C. DIFFICULT LABORATORY VARIABLE
+Cl,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,39,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+HCO3,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,36,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+SO4,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,35,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+NH4-N,N/A,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,4,False,C. DIFFICULT LABORATORY VARIABLE
+NO2-N,N/A,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,13,False,C. DIFFICULT LABORATORY VARIABLE
+NO3-N,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,15,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Pb,ug/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,32,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Ni,ug/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,28,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Zn,ug/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,5,24,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+As,ug/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,17,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Cd,ug/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,40,False,E. TARGET / RISK INDEX
+Cr,N/A,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,4,False,C. DIFFICULT LABORATORY VARIABLE
+Cu,N/A,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,4,False,C. DIFFICULT LABORATORY VARIABLE
+Fe,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,39,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Mn,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Ca_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,40,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+Mg_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,40,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+Na_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,38,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+K_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,28,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+Cl_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,39,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+HCO3_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,36,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+SO4_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,35,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+NO3-N_num,mg/L,AVAILABLE,Standard wet chemistry / Titration / Spectrophotometry,NO,YES (Certified analytical chemistry lab),MEDIUM,Major dissolved ion composition; requires lab equipment.,0,15,False,B. MODERATELY ACCESSIBLE LABORATORY ION
+Fe_num,mg/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,39,False,E. TARGET / RISK INDEX
+Mn_num,mg/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,40,False,E. TARGET / RISK INDEX
+As_num,mg/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,17,False,E. TARGET / RISK INDEX
+Pb_num,mg/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,32,False,E. TARGET / RISK INDEX
+Ni_num,mg/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,28,False,E. TARGET / RISK INDEX
+Zn_num,mg/L,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,5,24,False,E. TARGET / RISK INDEX
+Cd_num,mg/L,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,19,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Cr_num,mg/L,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,4,False,C. DIFFICULT LABORATORY VARIABLE
+Cu_num,mg/L,AVAILABLE,Specialized lab spectroscopy / ICP-MS,NO,YES (Specialized instrument),HIGH,Trace nutrient / heavy metal; high cost analytical requirement.,0,4,False,C. DIFFICULT LABORATORY VARIABLE
+TDS_calc,N/A,AVAILABLE,Field measurement / Well log record,YES,NO (Handheld field meter / sounder tape),LOW,Basic physical hydrogeochemical parameter directly measurable at borehole head.,0,40,True,A. EASY FIELD INPUT
+Ca_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Mg_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Na_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,38,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+K_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,28,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Cl_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,39,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+HCO3_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,36,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+SO4_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,35,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+NO3_meq,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,15,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Cat_sum,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+An_sum,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+CBE_pct,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+pct_Ca,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+pct_Mg,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+pct_Na_K,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+pct_HCO3,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+pct_Cl,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+pct_SO4_NO3,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Facies,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,7,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Gibbs_Cation,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Gibbs_Anion,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Gibbs_Mechanism,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,2,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Ratio_Na_Cl,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+Ratio_Ca_Mg,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+Ratio_CaMg_HCO3SO4,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+CAI_1,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+CAI_2,N/A,AVAILABLE,Derived mathematical ratio / transformation,INDIRECT,DEPENDS ON CONSTITUENTS,LOW (Post-processing),Derived hydrochemical index or interaction term.,0,40,False,D. DERIVED VARIABLE
+Ion_Exchange_Process,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,2,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Fe_mgL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,39,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Mn_mgL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Fe_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,39,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Mn_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+As_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,17,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Pb_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,32,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Ni_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,28,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Zn_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,5,24,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Cd_ugL,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,19,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+WQI,N/A,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,40,False,E. TARGET / RISK INDEX
+WQI_Category,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,3,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+HPI,N/A,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,40,False,E. TARGET / RISK INDEX
+HEI,N/A,AVAILABLE,Heavy metal target / Calculated composite risk index,NO,YES (AAS / Hydride generation / ICP-MS),VERY HIGH,Primary water quality or heavy metal screening target.,0,40,False,E. TARGET / RISK INDEX
+HPI_Polluted,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,2,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+HEI_Category,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,3,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Latitude,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE
+Longitude,N/A,AVAILABLE,Administrative metadata / Centroid coordinate,N/A,NO,NONE,Metadata or centroid coordinate; spatial leakage risk.,0,40,False,F. UNSUITABLE / LEAKAGE-RISK VARIABLE

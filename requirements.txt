@@ -1,0 +1,11 @@
+# Groundwater AI Heavy-Metal Screening Application Dependencies
+# Reproducibility Frozen Environment
+streamlit>=1.25.0
+pandas>=1.5.0
+numpy>=1.22.0
+scikit-learn>=1.1.0
+joblib>=1.2.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+shap>=0.41.0
+openpyxl>=3.0.0

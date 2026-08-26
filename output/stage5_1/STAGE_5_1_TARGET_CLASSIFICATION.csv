@@ -1,0 +1,11 @@
+target_name,target_type,analytical_method,effective_sample_size,allowed_transformations,mathematical_formula_leakage_audit
+As_num,Primary Heavy Metal Target,AAS / Hydride Generation,40,RAW / LOG1P,NO LEAKAGE (Field inputs do not contain As)
+Fe_num,Primary Heavy Metal Target,Flame AAS / Spectrophotometry,40,RAW / LOG1P,NO LEAKAGE (Field inputs do not contain Fe)
+Mn_num,Primary Heavy Metal Target,Flame AAS / Spectrophotometry,40,RAW / LOG1P,NO LEAKAGE (Field inputs do not contain Mn)
+Pb_num,Primary Heavy Metal Target,Graphite Furnace AAS / ICP-MS,40,RAW / LOG1P,NO LEAKAGE (Field inputs do not contain Pb)
+Ni_num,Primary Heavy Metal Target,Graphite Furnace AAS / ICP-MS,40,RAW / LOG1P,NO LEAKAGE (Field inputs do not contain Ni)
+Zn_num,Primary Heavy Metal Target,Flame AAS,35,RAW / LOG1P,NO LEAKAGE (Field inputs do not contain Zn; 5 missing/BDL samples dropped)
+WQI,Secondary Composite Risk Index,Weighted Arithmetic Index Formula,40,RAW / LOG1P,"FORMULA AUDITED: Inputs (pH, TDS, Depth) do NOT include constituent heavy metals. Direct screening from field inputs is leakage-free."
+HPI,Secondary Composite Risk Index,Heavy Metal Pollution Index Formula,40,RAW / LOG1P,"FORMULA AUDITED: Inputs (pH, TDS, Depth) do NOT include constituent heavy metals. Direct screening from field inputs is leakage-free."
+HEI,Secondary Composite Risk Index,Heavy Metal Evaluation Index Formula,40,RAW / LOG1P,"FORMULA AUDITED: Inputs (pH, TDS, Depth) do NOT include constituent heavy metals. Direct screening from field inputs is leakage-free."
+Cd,Secondary Composite Risk Index,Degree of Contamination Formula,40,RAW ONLY,FORMULA AUDITED: Cd can be negative. Evaluated strictly in RAW scale without log1p.

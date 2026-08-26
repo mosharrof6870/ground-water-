@@ -1,0 +1,8 @@
+indicator,formula,inputs,available,utility
+Salinity Hazard (TDS),Sum of major ions,TDS_calc,YES,Feasible for direct field salinity hazard ranking.
+Sodium Adsorption Ratio (SAR),Na / sqrt((Ca+Mg)/2) [meq/L],"Na, Ca, Mg",YES (Lab),Feasible from lab major cations.
+Sodium Percentage (Na%),(Na+K)/(Ca+Mg+Na+K)*100 [meq/L],"Na, K, Ca, Mg",YES (Lab),Feasible from lab major cations.
+Residual Sodium Carbonate (RSC),(HCO3+CO3) - (Ca+Mg) [meq/L],"HCO3, Ca, Mg",YES (Lab),Feasible from lab major ions.
+Permeability Index (PI),(Na+sqrt(HCO3))/(Ca+Mg+Na)*100 [meq/L],"Na, HCO3, Ca, Mg",YES (Lab),Feasible from lab major ions.
+Kelly's Ratio (KR),Na / (Ca + Mg) [meq/L],"Na, Ca, Mg",YES (Lab),Feasible from lab major cations.
+Magnesium Adsorption Ratio (MAR),(Mg / (Ca + Mg)) * 100 [meq/L],"Mg, Ca",YES (Lab),Feasible from lab major cations.

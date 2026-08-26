@@ -1,0 +1,10 @@
+metal,test_type,n_groups,total_N,test_statistic,raw_p_value,fdr_adjusted_p_value,is_statistically_significant_fdr,interpretation
+Arsenic (As),Kruskal-Wallis H-test,3,35,3.255,0.19642441886142503,0.2525,False,No significant variation across facies after FDR correction
+Iron (Fe),Kruskal-Wallis H-test,3,35,7.0762,0.029068281572367627,0.0523,False,No significant variation across facies after FDR correction
+Manganese (Mn),Kruskal-Wallis H-test,3,35,9.4218,0.008996847260526205,0.027,True,Significant regime variation
+Lead (Pb),Kruskal-Wallis H-test,3,35,9.4318,0.008951639351695155,0.027,True,Significant regime variation
+Nickel (Ni),Kruskal-Wallis H-test,3,35,14.8355,0.0006004851306747587,0.0054,True,Significant regime variation
+Zinc (Zn),Kruskal-Wallis H-test,3,31,1.3386,0.5120765190521308,0.5761,False,No significant variation across facies after FDR correction
+Cadmium (Cd),Kruskal-Wallis H-test,3,35,8.7708,0.012457782460438565,0.028,True,Significant regime variation
+Chromium (Cr),Kruskal-Wallis H-test,3,35,5.0332,0.08073169410892944,0.1211,False,No significant variation across facies after FDR correction
+Copper (Cu),Kruskal-Wallis H-test,3,35,0.9058,0.6357826300418955,0.6358,False,No significant variation across facies after FDR correction

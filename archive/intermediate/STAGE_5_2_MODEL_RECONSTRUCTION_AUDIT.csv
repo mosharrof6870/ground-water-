@@ -1,0 +1,2 @@
+target,stage5_1_selected_input_set,selected_model,transformation,hyperparameters,effective_N,leakage_safeguards,reconstruction_status
+Ni_num,E1 (pH_proxy + TDS_calc),ElasticNet,LOG1P,"alpha=0.1, l1_ratio=0.5, max_iter=20000",40,Strict fit inside CV fold. Zero outer test influence.,SUCCESSFULLY_VERIFIED

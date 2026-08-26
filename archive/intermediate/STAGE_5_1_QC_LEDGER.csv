@@ -1,0 +1,9 @@
+check_item,status,evidence
+Raw Data Integrity Audit,PASS,All N=40 real groundwater samples verified. Zero synthetic data introduced.
+Leakage Control Audit,PASS,"Imputation, scaling, PLS component fitting, and model tuning executed strictly inside outer CV fold loop."
+Formula Reconstruction Audit,PASS,"WQI/HPI/HEI/Cd evaluated directly from pH, TDS, and Depth without constituent heavy metal inputs."
+Effective Sample Size Audit,PASS,Zn evaluated with effective N=35 (5 missing/BDL samples honestly handled). All other targets N=40.
+Nested CV Architecture,PASS,5 outer splits x 5 repeats = 25 independent outer test fold evaluations per configuration.
+Negative Target Transformation Rule,PASS,Cd evaluated strictly in RAW scale to prevent mathematical invalidity from negative values.
+Immutable Stage 3.3 Reference,PASS,Frozen Stage 3.3 results preserved untouched as gold standard comparison benchmark.
+Negative Result Scientific Governance,PASS,Targets with weak/negative R2 reported transparently without artificial optimization or sample dropping.

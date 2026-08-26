@@ -1,0 +1,62 @@
+target,feature,mean_abs_shap,mean_shap,median_abs_shap,rank,feature_group
+As_num,CAI_1,0.032514,0.0,0.02383,1,Ion Exchange Indices
+As_num,WELL_DEPTH,0.067142,-0.0,0.058339,2,Aquifer Hydrodynamics & Depth
+As_num,TDS_log,0.05534,0.0,0.039333,3,Salinity & Mineralization
+As_num,TDS_calc,0.056532,0.0,0.036867,4,Salinity & Mineralization
+As_num,pH_proxy,0.053588,0.0,0.042692,5,General Hydrochemistry
+As_num,NO3-N_num,0.069761,0.0,0.052478,6,General Hydrochemistry
+Cd,CAI_2,0.360544,-0.0,0.326411,1,Ion Exchange Indices
+Cd,NO3-N_num,0.527764,0.0,0.416154,2,General Hydrochemistry
+Cd,CAI_1,0.262623,0.0,0.228265,3,Ion Exchange Indices
+Cd,TDS_calc,0.126327,0.0,0.113226,4,Salinity & Mineralization
+Cd,pH_proxy,0.191601,-0.0,0.138308,5,General Hydrochemistry
+Cd,WELL_DEPTH,0.220534,-0.0,0.17067,6,Aquifer Hydrodynamics & Depth
+Fe_num,TDS_calc,0.092541,-0.0,0.088987,1,Salinity & Mineralization
+Fe_num,Depth_x_TDS,0.025216,0.0,0.022246,2,Aquifer Hydrodynamics & Depth
+Fe_num,NO3-N_num,0.068716,0.0,0.057422,3,General Hydrochemistry
+Fe_num,WELL_DEPTH,0.03034,-0.0,0.025521,4,Aquifer Hydrodynamics & Depth
+Fe_num,CAI_1,0.032189,0.0,0.020279,5,Ion Exchange Indices
+Fe_num,Depth_x_pH,0.031439,0.0,0.027142,6,Aquifer Hydrodynamics & Depth
+Fe_num,pH_proxy,0.055501,-0.0,0.032992,7,General Hydrochemistry
+HEI,pH_proxy,0.034829,0.0,0.029036,1,General Hydrochemistry
+HEI,NO3-N_num,0.255868,-0.0,0.189063,2,General Hydrochemistry
+HEI,WELL_DEPTH,0.0,0.0,0.0,3,Aquifer Hydrodynamics & Depth
+HEI,TDS_calc,0.0,0.0,0.0,4,Salinity & Mineralization
+HEI,CAI_1,0.087097,-0.0,0.072782,5,Ion Exchange Indices
+HPI,NO3-N_num,0.146367,-0.0,0.108152,1,General Hydrochemistry
+HPI,CAI_1,0.0,0.0,0.0,2,Ion Exchange Indices
+HPI,pH_proxy,0.0,0.0,0.0,3,General Hydrochemistry
+HPI,WELL_DEPTH,0.0,0.0,0.0,4,Aquifer Hydrodynamics & Depth
+HPI,CAI_2,0.201435,-0.0,0.165768,5,Ion Exchange Indices
+HPI,TDS_calc,0.0,0.0,0.0,6,Salinity & Mineralization
+Mn_num,CAI_1,0.0,0.0,0.0,1,Ion Exchange Indices
+Mn_num,NO3-N_num,0.040003,-0.0,0.029559,2,General Hydrochemistry
+Mn_num,pH_proxy,0.0,0.0,0.0,3,General Hydrochemistry
+Mn_num,TDS_calc,0.00077,-0.0,0.000731,4,Salinity & Mineralization
+Mn_num,CAI_2,0.023657,-0.0,0.019468,5,Ion Exchange Indices
+Mn_num,WELL_DEPTH,0.0,0.0,0.0,6,Aquifer Hydrodynamics & Depth
+Ni_num,TDS_calc,0.169587,0.0,0.155576,1,Salinity & Mineralization
+Ni_num,Ratio_Na_CaMg_meq,0.035414,0.0,0.017865,2,Hydrochemical Ion Ratios
+Ni_num,WELL_DEPTH,0.026163,-0.0,0.016706,3,Aquifer Hydrodynamics & Depth
+Ni_num,Ratio_Ca_Mg_meq,0.02161,-0.0,0.015557,4,Hydrochemical Ion Ratios
+Ni_num,CAI_1,0.058388,-0.0,0.049014,5,Ion Exchange Indices
+Ni_num,Ratio_HCO3_CaMg_meq,0.037054,0.0,0.028729,6,Hydrochemical Ion Ratios
+Ni_num,pH_proxy,0.040694,0.0,0.041741,7,General Hydrochemistry
+Ni_num,NO3-N_num,0.029585,0.0,0.024125,8,General Hydrochemistry
+Pb_num,NO3-N_num,0.112337,0.0,0.095216,1,General Hydrochemistry
+Pb_num,CAI_1,0.046196,-0.0,0.036549,2,Ion Exchange Indices
+Pb_num,WELL_DEPTH,0.037682,-0.0,0.0282,3,Aquifer Hydrodynamics & Depth
+Pb_num,TDS_calc,0.028174,0.0,0.01595,4,Salinity & Mineralization
+Pb_num,TDS_log,0.027876,-0.0,0.026694,5,Salinity & Mineralization
+Pb_num,pH_proxy,0.020966,0.0,0.015247,6,General Hydrochemistry
+WQI,NO3-N_num,0.0,0.0,0.0,1,General Hydrochemistry
+WQI,CAI_1,0.022311,0.0,0.018644,2,Ion Exchange Indices
+WQI,WELL_DEPTH,0.0,0.0,0.0,3,Aquifer Hydrodynamics & Depth
+WQI,pH_proxy,0.0,0.0,0.0,4,General Hydrochemistry
+WQI,CAI_2,0.145943,-0.0,0.120102,5,Ion Exchange Indices
+WQI,TDS_calc,0.0,0.0,0.0,6,Salinity & Mineralization
+Zn_num,TDS_calc,0.0,0.0,0.0,1,Salinity & Mineralization
+Zn_num,WELL_DEPTH,0.0,0.0,0.0,2,Aquifer Hydrodynamics & Depth
+Zn_num,CAI_1,0.0,0.0,0.0,3,Ion Exchange Indices
+Zn_num,NO3-N_num,0.0,0.0,0.0,4,General Hydrochemistry
+Zn_num,pH_proxy,0.0,0.0,0.0,5,General Hydrochemistry

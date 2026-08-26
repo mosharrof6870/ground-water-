@@ -1,0 +1,11 @@
+target,log1p_empirically_justified,target_min,final_decision,decision_reasoning
+As_num,True,0.25,INSUFFICIENT EVIDENCE,Negligible difference; small-sample instability dominates.
+Cd,False,-5.55047619047619,KEEP RAW,LOG1P INVALID: Target takes negative values (min=-5.5505 < 0) when concentrations are below evaluation limits; log1p is mathematically undefined.
+Fe_num,True,0.014,KEEP LOG1P,Consistent out-of-sample improvement in both R2 and Spearman rank correlation.
+HEI,True,0.4495238095238095,KEEP LOG1P,Consistent out-of-sample improvement in both R2 and Spearman rank correlation.
+HPI,True,6.35425607050842,KEEP LOG1P,Consistent out-of-sample improvement in both R2 and Spearman rank correlation.
+Mn_num,True,0.008,INSUFFICIENT EVIDENCE,Negligible difference; small-sample instability dominates.
+Ni_num,True,0.5,INSUFFICIENT EVIDENCE,Negligible difference; small-sample instability dominates.
+Pb_num,True,0.16,INSUFFICIENT EVIDENCE,Negligible difference; small-sample instability dominates.
+WQI,True,5.005176928445762,KEEP LOG1P,Consistent out-of-sample improvement in both R2 and Spearman rank correlation.
+Zn_num,True,3.0,INSUFFICIENT EVIDENCE,Negligible difference; small-sample instability dominates.

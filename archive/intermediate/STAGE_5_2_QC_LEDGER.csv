@@ -1,0 +1,8 @@
+check_item,status,evidence
+Authoritative Model Reconstruction Audit,PASS,Ni E1 ElasticNet (LOG1P) reconstructed exactly as determined in Stage 5.1.
+Out-of-Fold Conformal Interval Audit,PASS,90% prediction intervals computed strictly using out-of-fold residuals (q_hat quantile).
+Empirical Coverage Target Audit,PASS,Empirical coverage rate validated against 90% nominal coverage target.
+Uncertainty-Aware Decision Rules,PASS,"Conservative 3-tier rules applied (Low Concern, Potential Exceedance, Uncertain). Zero unsafe point predictions."
+Guideline Threshold Documentation,PASS,Official Bangladesh Environment Conservation Rules standard (20 ug/L for Ni) applied and documented.
+Heavy Metal & Regulatory Scope Audit,PASS,"Explicitly documented that field inputs cannot replace lab AAS for As, Fe, Mn, Pb, Zn."
+Small N Limitation Governance,PASS,Acknowledged N=40 sample size constraint and broad prediction interval bounds.

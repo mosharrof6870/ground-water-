@@ -1,0 +1,91 @@
+variable_name,classification,is_easy_field_input,scientific_rationale
+WELL_TYPE,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+WELL_DEPTH,A. EASY FIELD INPUT,YES,Basic physical hydrogeochemical parameter directly measurable at borehole head.
+DISTRICT,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+THANA,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+UNION,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+MOUZA,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+GEOCODE,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+SAMPLE_ID,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Ca,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Mg,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Na,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+K,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+P,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+Cl,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+HCO3,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+SO4,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+NH4-N,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+NO2-N,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+NO3-N,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Pb,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Ni,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Zn,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+As,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Cd,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+Cr,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+Cu,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+Fe,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Mn,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Ca_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+Mg_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+Na_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+K_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+Cl_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+HCO3_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+SO4_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+NO3-N_num,B. MODERATELY ACCESSIBLE LABORATORY ION,NO,Major dissolved ion composition; requires lab equipment.
+Fe_num,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+Mn_num,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+As_num,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+Pb_num,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+Ni_num,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+Zn_num,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+Cd_num,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Cr_num,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+Cu_num,C. DIFFICULT LABORATORY VARIABLE,NO,Trace nutrient / heavy metal; high cost analytical requirement.
+TDS_calc,A. EASY FIELD INPUT,YES,Basic physical hydrogeochemical parameter directly measurable at borehole head.
+Ca_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Mg_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Na_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+K_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Cl_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+HCO3_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+SO4_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+NO3_meq,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Cat_sum,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+An_sum,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+CBE_pct,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+pct_Ca,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+pct_Mg,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+pct_Na_K,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+pct_HCO3,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+pct_Cl,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+pct_SO4_NO3,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Facies,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Gibbs_Cation,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Gibbs_Anion,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Gibbs_Mechanism,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Ratio_Na_Cl,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+Ratio_Ca_Mg,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+Ratio_CaMg_HCO3SO4,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+CAI_1,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+CAI_2,D. DERIVED VARIABLE,NO,Derived hydrochemical index or interaction term.
+Ion_Exchange_Process,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Fe_mgL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Mn_mgL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Fe_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Mn_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+As_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Pb_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Ni_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Zn_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Cd_ugL,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+WQI,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+WQI_Category,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+HPI,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+HEI,E. TARGET / RISK INDEX,NO,Primary water quality or heavy metal screening target.
+HPI_Polluted,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+HEI_Category,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Latitude,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.
+Longitude,F. UNSUITABLE / LEAKAGE-RISK VARIABLE,NO,Metadata or centroid coordinate; spatial leakage risk.

@@ -1,0 +1,11 @@
+target,frozen_model,conformal_method,nominal_coverage_target,conformal_quantile_qhat,empirical_coverage_rate,mean_interval_width,coverage_deviation,decision_value
+As_num,SVR_RBF (M2_Core_Salinity),Out-of-Fold Split Conformal Prediction,0.9,12.0564,0.925,12.9087,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+Fe_num,SVR_RBF (M5_Core_DepthInteractions),Out-of-Fold Split Conformal Prediction,0.9,3.8282,0.925,4.258,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+Mn_num,Lasso (M4_Core_IonExchange),Out-of-Fold Split Conformal Prediction,0.9,1.6487,0.925,2.2484,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+Pb_num,SVR_RBF (M2_Core_Salinity),Out-of-Fold Split Conformal Prediction,0.9,1.9506,0.925,2.5319,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+Ni_num,SVR_RBF (M3_Core_IonRatios),Out-of-Fold Split Conformal Prediction,0.9,2.0163,0.925,3.7091,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+Zn_num,Lasso (M1_Core),Out-of-Fold Split Conformal Prediction,0.9,63.2883,0.9429,80.9632,0.0429,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+HPI,Lasso (M4_Core_IonExchange),Out-of-Fold Split Conformal Prediction,0.9,83.9565,0.925,120.7411,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+HEI,Lasso (M1_Core),Out-of-Fold Split Conformal Prediction,0.9,30.3556,0.925,38.1014,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+WQI,Lasso (M4_Core_IonExchange),Out-of-Fold Split Conformal Prediction,0.9,30.9159,0.925,56.1696,0.025,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.
+Cd,SVR_RBF (M4_Core_IonExchange),Out-of-Fold Split Conformal Prediction,0.9,31.6104,0.425,32.5627,0.475,Added calibrated prediction intervals for decision reliability without modifying predictive accuracy.

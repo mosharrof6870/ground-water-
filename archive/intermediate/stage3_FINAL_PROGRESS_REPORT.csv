@@ -1,0 +1,11 @@
+target,baseline_mean_R2,stage3_1_mean_R2,stage3_2_mean_R2,stage3_3_mean_R2,baseline_median_R2,stage3_1_median_R2,stage3_2_median_R2,stage3_3_median_R2,final_model,final_feature_set,final_status
+Ni_num,-2.45,0.085,0.131,0.1281,-0.56,0.12,0.257,0.1825,SVR_RBF,M3_Core_IonRatios,STABLE
+Pb_num,-1.82,0.042,0.121,-0.36,-0.45,0.095,0.185,0.1028,SVR_RBF,M2_Core_Salinity,MODERATE
+Mn_num,-3.11,-0.15,-0.05,-0.2894,-0.85,-0.09,-0.04,-0.0845,Lasso,M4_Core_IonExchange,MODERATE
+As_num,-11.178,-1.354,-0.566,-0.3635,-2.45,-0.35,-0.12,-0.1821,SVR_RBF,M2_Core_Salinity,WEAK_SIGNAL
+Fe_num,-4.85,-0.85,-0.42,-0.5169,-1.25,-0.22,-0.15,-0.1786,SVR_RBF,M5_Core_DepthInteractions,WEAK_SIGNAL
+Zn_num,-3.5,-0.75,-0.35,-0.6877,-0.95,-0.25,-0.18,-0.1325,Lasso,M1_Core,UNRELIABLE
+HPI,-1.95,-0.22,-0.08,-0.1039,-0.52,-0.08,-0.04,-0.0531,Lasso,M4_Core_IonExchange,MODERATE
+HEI,-1.25,-0.11,-0.04,-0.2678,-0.38,-0.05,-0.02,-0.0981,Lasso,M1_Core,MODERATE
+WQI,-0.85,-0.02,-0.003,-0.1587,-0.22,0.045,0.072,-0.0913,Lasso,M4_Core_IonExchange,WEAK_SIGNAL
+Cd,-2.1,-0.45,-0.18,-0.255,-0.55,-0.18,-0.15,-0.1309,SVR_RBF,M4_Core_IonExchange,WEAK_SIGNAL

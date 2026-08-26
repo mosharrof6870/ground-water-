@@ -1,0 +1,13 @@
+SAMPLE_ID,DISTRICT,CBE_pct,total_exceedances,exceeded_metals,cbe_qc_verdict
+S98_01796,Nilphamari,7.3131,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01797,Nilphamari,10.9778,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01798,Lalmonirhat,6.7715,0,None,High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01815,Nawabganj,15.4651,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01818,Rajshahi,14.966,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01819,Rajshahi,22.846,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01820,Natore,16.7009,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01821,Natore,15.0495,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01822,Natore,9.4822,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01826,Pabna,17.4085,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01827,Pabna,6.9152,1,Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.
+S98_01828,Pabna,7.9064,2,Iron (Fe); Manganese (Mn),High CBE indicates potential major ion analytical imbalance; metal measurements remain independently verified.

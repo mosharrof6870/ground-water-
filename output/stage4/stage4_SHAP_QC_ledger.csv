@@ -1,0 +1,12 @@
+check_id,validation_item,required_standard,observed_status,audit_result,comments
+QC_01,Frozen Model Integrity,All 10 frozen models unchanged from Stage 3.3,"All estimators, hyperparameters, features match stage3_3_FINAL_MODEL_CONFIG.json exactly",PASS,Zero model mutation
+QC_02,Feature Order Verification,Feature order matches pipeline training order exactly,Feature arrays passed in exact original order,PASS,Verified in audit table
+QC_03,Target Transformation,LOG1P / RAW scale explicitly transformed and inverted,Models fit in log space; inverse verified via expm1,PASS,Scale clearly specified in SHAP plots
+QC_04,No Synthetic Data,Zero GMM/CTGAN/SMOTE synthetic samples used,Only real N=40 (N=35 for Zn) groundwater observations used,PASS,Real data audit verified
+QC_05,No External Data,No external datasets introduced,100% internal dataset features,PASS,Zero external leakage
+QC_06,Background Dataset Documented,Exact background strategy recorded,Real observations (N=40 scaled) used deterministically (seed=42),PASS,Fully reproducible
+QC_07,Appropriate SHAP Explainer,"LinearExplainer for Lasso, KernelExplainer for SVR",LinearExplainer & KernelExplainer executed on exact frozen pipelines,PASS,No model substitution
+QC_08,Correlated Feature Caveat,Correlated feature attribution documented,"Correlated feature warnings included for TDS, CAI_2, ratios",PASS,No false independent claims
+QC_09,No Causal Language,Non-causal associative phrasing strictly enforced,'Associated with model prediction' used throughout,PASS,Causal claims strictly avoided
+QC_10,Weak Models Labeled,Models with negative mean R2 explicitly labeled exploratory/weak,"Pb, Mn, As, Fe, Zn, Cd, indices labeled according to predictive tier",PASS,No false performance inflation
+QC_11,N=40 Limitation Documented,Sample size constraints explicitly acknowledged,N=40 variance and sample-to-feature ratio caveats included,PASS,Q1 methodology compliance

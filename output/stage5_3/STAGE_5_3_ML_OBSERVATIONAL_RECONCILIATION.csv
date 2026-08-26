@@ -1,0 +1,5 @@
+target,stage5_1_ml_r2,observational_pattern,reconciliation_synthesis
+Ni_num,0.0813,Significant correlation with TDS and pH; distinct concentration gradients across Na-Mixed facies.,ML predictive signal is directly anchored in observable hydrochemical salinity/pH gradients.
+As_num,-0.2752,Extreme spatial heterogeneity with low overall correlation to major ions (TDS rho=-0.05).,ML failure stems from localized redox micro-environments not reflected in bulk field parameters.
+Fe_num,-0.4377,Highly skewed distribution (0.06 to 6.21 mg/L) controlled by redox state rather than bulk salinity.,ML failure confirmed: bulk pH/TDS field meters cannot resolve iron redox transitions.
+Pb_num,-0.6657,Weak non-linear correlation across facies; low background concentrations.,ML failure confirmed: trace lead concentrations require specialized laboratory spectroscopy.

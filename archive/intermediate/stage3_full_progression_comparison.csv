@@ -1,0 +1,11 @@
+target,baseline_best_R2,stage3_1_best_R2,stage3_2_best_R2,stage3_3_best_R2,delta_3_1,delta_3_2,delta_3_3,best_transformation,best_model,best_feature_set,feature_count,mean_R2,median_R2,SD_R2,RMSE,MAE,Spearman,stability_status
+Ni_num,-2.45,0.085,0.131,0.145,+2.535,+0.046,+0.014,LOG1P,HuberRegressor,Core + Salinity (TDS_log),6,0.145,0.268,0.42,1.25,0.88,0.658,STABLE
+Pb_num,-1.82,0.042,0.121,0.132,+1.862,+0.079,+0.011,LOG1P,Ridge / ExtraTrees,Core + Ion Exchange (CAI_2),6,0.132,0.225,0.51,1.42,0.95,0.678,STABLE
+Mn_num,-3.11,-0.15,-0.05,-0.02,+2.960,+0.100,+0.030,LOG1P,HuberRegressor,Core Baseline,5,-0.02,0.115,0.68,2.1,1.35,0.468,MODERATE
+WQI,-0.85,-0.02,-0.003,0.015,+0.830,+0.017,+0.018,LOG1P,RandomForest,Core + Salinity (TDS_log),6,0.015,0.082,0.35,18.5,12.2,0.435,STABLE
+HEI,-1.25,-0.11,-0.04,-0.01,+1.140,+0.070,+0.030,LOG1P,ElasticNet,Core Baseline,5,-0.01,0.095,0.52,12.1,7.4,0.452,MODERATE
+HPI,-1.95,-0.22,-0.08,-0.04,+1.730,+0.140,+0.040,LOG1P,HuberRegressor,Core Baseline,5,-0.04,0.055,0.61,52.4,31.0,0.345,MODERATE
+As_num,-11.178,-1.354,-0.566,-0.42,+9.824,+0.788,+0.146,LOG1P,ElasticNet / Huber,Core Baseline,5,-0.42,-0.05,1.25,5.12,2.85,0.352,HIGH VARIANCE
+Fe_num,-4.85,-0.85,-0.42,-0.31,+4.000,+0.430,+0.110,LOG1P,HuberRegressor,Core Baseline,5,-0.31,-0.02,0.98,4.15,2.1,0.315,HIGH VARIANCE
+Zn_num,-3.5,-0.75,-0.35,-0.28,+2.750,+0.400,+0.070,LOG1P,Ridge,Core Baseline,5,-0.28,-0.01,0.85,22.1,14.5,0.285,HIGH VARIANCE
+Cd,-2.1,-0.45,-0.18,-0.12,+1.650,+0.270,+0.060,RAW,ExtraTrees,Core Baseline,5,-0.12,0.015,0.72,14.8,8.9,0.312,MODERATE

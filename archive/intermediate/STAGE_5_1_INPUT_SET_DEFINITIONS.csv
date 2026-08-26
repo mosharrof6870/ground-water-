@@ -1,0 +1,6 @@
+set_id,set_name,num_features,features,measurement_requirement,scientific_rationale
+E1,E1_Min2_FieldOnly,2,"pH_proxy, TDS_calc",Handheld pH meter + Handheld EC/TDS meter,Ultra-low-cost 2-parameter field screening set. Measures bulk acidity/alkalinity and total ionic strength.
+E2,E2_Min3_Field_Plus_Depth,3,"pH_proxy, TDS_calc, WELL_DEPTH",Handheld pH meter + Handheld EC/TDS meter + Borehole depth record/tape,Core 3-parameter field screening set. Adds aquifer depth to account for vertical hydrochemical stratification.
+E3,E3_Min4_Field_Depth_LogSalinity,4,"pH_proxy, TDS_calc, WELL_DEPTH, TDS_log",E2 parameters + Logarithmic salinity calculation,Adds non-linear log salinity proxy to capture exponential ion activity & dissolution behavior without extra lab cost.
+E4,E4_Min5_Field_Depth_Interactions,5,"pH_proxy, TDS_calc, WELL_DEPTH, Depth_x_TDS, Depth_x_pH",E2 parameters + Computed depth-pH and depth-TDS interaction terms,Captures depth-dependent dissolution kinetics and redox-pH shifts along the vertical groundwater flow path.
+E5,E5_Full_Parsimonious_Easy_Panel,6,"pH_proxy, TDS_calc, WELL_DEPTH, TDS_log, Depth_x_TDS, Depth_x_pH",Full field panel (3 field measurements + 3 derived mathematical features),"Best scientifically justified easy-input panel combining physical field metrics, non-linear salinity, and vertical interactions."

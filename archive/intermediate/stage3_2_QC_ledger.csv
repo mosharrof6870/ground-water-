@@ -1,0 +1,11 @@
+check_id,target,check_name,result,details
+QC_TGT_01,As_num,Target Domain & Missingness Integrity,PASS,"N=40, Min=0.2500, Max=28.7000, Log1p Eligible=True"
+QC_TGT_02,Fe_num,Target Domain & Missingness Integrity,PASS,"N=40, Min=0.0140, Max=19.6000, Log1p Eligible=True"
+QC_TGT_03,Mn_num,Target Domain & Missingness Integrity,PASS,"N=40, Min=0.0080, Max=6.2000, Log1p Eligible=True"
+QC_TGT_04,Pb_num,Target Domain & Missingness Integrity,PASS,"N=40, Min=0.1600, Max=7.5800, Log1p Eligible=True"
+QC_TGT_05,Ni_num,Target Domain & Missingness Integrity,PASS,"N=40, Min=0.5000, Max=8.9000, Log1p Eligible=True"
+QC_TGT_06,Zn_num,Target Domain & Missingness Integrity,PASS,"N=35, Min=3.0000, Max=96.0000, Log1p Eligible=True"
+QC_TGT_07,HPI,Target Domain & Missingness Integrity,PASS,"N=40, Min=6.3543, Max=319.3336, Log1p Eligible=True"
+QC_TGT_08,HEI,Target Domain & Missingness Integrity,PASS,"N=40, Min=0.4495, Max=90.8971, Log1p Eligible=True"
+QC_TGT_09,WQI,Target Domain & Missingness Integrity,PASS,"N=40, Min=5.0052, Max=132.0116, Log1p Eligible=True"
+QC_TGT_10,Cd,Target Domain & Missingness Integrity,PASS,"N=40, Min=-5.5505, Max=84.8971, Log1p Eligible=False"

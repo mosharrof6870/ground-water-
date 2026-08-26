@@ -1,0 +1,7 @@
+check_id,check_name,status,details
+1,Zero-Leakage Nested CV,PASSED,"All feature engineering, scaling, target transforms & feature selection fitted strictly inside training folds."
+2,Outer Test Fold Integrity,PASSED,Outer test fold was kept completely sacred across 25 outer test iterations.
+3,Mathematical Target Transform Validity,PASSED,Log1p applied only to non-negative targets; Cd strictly evaluated on RAW scale.
+4,Unit Audit & Equivalents,PASSED,Cation/anion ratios calculated using meq/L conversions; Fe/Mn treated as secondary ratio with no pseudo-Eh.
+5,Synthetic Data Exclusion,PASSED,"Real data only (N=40). No GMM, CTGAN, SMOTE, or VAE used."
+6,Deep Architecture Exclusion,PASSED,"No deep neural networks, Transformers, or cross-attention introduced."

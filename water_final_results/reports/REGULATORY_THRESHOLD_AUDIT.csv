@@ -1,0 +1,4 @@
+parameter,standard_name,jurisdiction,year_version,threshold_value,unit,status,source_reference
+Ni_num,WHO Drinking Water Guidelines / Bangladesh ECR,Global / Bangladesh,2017 / 2023,20.0,ug/L,VERIFIED_IN_PROJECT_FILES,WHO (2017) Guidelines for Drinking-water Quality; ECR (2023) Schedule 3
+Cd_num,WHO Drinking Water Guidelines / Bangladesh ECR,Global / Bangladesh,2017 / 2023,3.0,ug/L,VERIFIED_IN_PROJECT_FILES,WHO (2017) Guidelines for Drinking-water Quality; ECR (2023) Schedule 3
+Pb_num,WHO Drinking Water Guidelines / Bangladesh ECR,Global / Bangladesh,2017 / 2023,10.0,ug/L,VERIFIED_IN_PROJECT_FILES,WHO (2017) Guidelines for Drinking-water Quality; ECR (2023) Schedule 3

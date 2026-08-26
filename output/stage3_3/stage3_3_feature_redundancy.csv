@@ -1,0 +1,16 @@
+feature_1,feature_2,pearson_r,spearman_rho,redundancy_status,action_taken
+TDS_log,Hardness_total_proxy_meq,0.9041,0.9653,HIGH REDUNDANCY (> 0.70),Retained TDS_log due to higher interpretability
+TDS_log,Ca_Mg_sum_mg,0.8983,0.9698,HIGH REDUNDANCY (> 0.70),Retained TDS_log due to higher interpretability
+TDS_log,Depth_x_TDS,0.7544,0.8937,MODERATE REDUNDANCY,Retained TDS_log due to higher interpretability
+Ratio_Ca_HCO3_meq,Ratio_Mg_HCO3_meq,0.7305,0.5447,MODERATE REDUNDANCY,Retained Ratio_Ca_HCO3_meq due to higher interpretability
+Ratio_Ca_HCO3_meq,Ratio_CaMg_HCO3SO4_meq,0.8996,0.8535,HIGH REDUNDANCY (> 0.70),Retained Ratio_Ca_HCO3_meq due to higher interpretability
+Ratio_Ca_HCO3_meq,Ratio_HCO3_CaMg_meq,-0.8372,-0.9435,MODERATE REDUNDANCY,Retained Ratio_Ca_HCO3_meq due to higher interpretability
+Ratio_Mg_HCO3_meq,Ratio_CaMg_HCO3SO4_meq,0.8556,0.7741,HIGH REDUNDANCY (> 0.70),Retained Ratio_Mg_HCO3_meq due to higher interpretability
+Ratio_Mg_HCO3_meq,Ratio_HCO3_CaMg_meq,-0.7367,-0.7589,MODERATE REDUNDANCY,Retained Ratio_Mg_HCO3_meq due to higher interpretability
+Ratio_Na_CaMg_meq,CAI_2,-0.713,-0.527,MODERATE REDUNDANCY,Retained Ratio_Na_CaMg_meq due to higher interpretability
+Ratio_CaMg_HCO3SO4_meq,Ratio_HCO3_CaMg_meq,-0.8303,-0.9225,MODERATE REDUNDANCY,Retained Ratio_CaMg_HCO3SO4_meq due to higher interpretability
+CAI_2,Depth_x_CAI1,0.3951,0.818,MODERATE REDUNDANCY,Retained Depth_x_CAI1 due to higher interpretability
+Hardness_total_proxy_meq,Ca_Mg_sum_mg,0.9996,0.9966,HIGH REDUNDANCY (> 0.70),Retained Hardness_total_proxy_meq due to higher interpretability
+Hardness_total_proxy_meq,Depth_x_TDS,0.8099,0.9154,MODERATE REDUNDANCY,Retained Hardness_total_proxy_meq due to higher interpretability
+Ca_Mg_sum_mg,Depth_x_TDS,0.8068,0.9204,MODERATE REDUNDANCY,Retained Depth_x_TDS due to higher interpretability
+Depth_x_TDS,Depth_x_pH,0.7243,0.5271,MODERATE REDUNDANCY,Retained Depth_x_pH due to higher interpretability

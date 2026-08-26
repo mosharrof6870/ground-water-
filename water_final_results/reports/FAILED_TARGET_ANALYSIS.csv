@@ -1,0 +1,8 @@
+target,best_candidate_model,best_OOF_R2_mean,best_OOF_RMSE_mean,best_OOF_MAE_mean,best_Spearman_mean,screening_evidence_status,scientific_rationale
+Pb_num,HuberRegressor,0.118,1.1748,0.5711,0.5117,PROMISING_BUT_UNCERTAIN,Weak signal; high variance or insufficient sample size.
+Fe_num,HistGradientBoosting,-0.0722,3.559,1.9179,-0.2472,NOT_SUPPORTED,Negative out-of-fold R²; predictive signal absent under basic field inputs.
+As_num,HistGradientBoosting,-0.0716,6.7734,3.9482,-0.1856,NOT_SUPPORTED,Negative out-of-fold R²; predictive signal absent under basic field inputs.
+Mn_num,HistGradientBoosting,-0.0457,1.1164,0.7098,-0.147,NOT_SUPPORTED,Negative out-of-fold R²; predictive signal absent under basic field inputs.
+Zn_num,HistGradientBoosting,-0.0933,23.9825,16.598,-0.2369,NOT_SUPPORTED,Negative out-of-fold R²; predictive signal absent under basic field inputs.
+Cr_num,Dummy_Median,-0.0443,0.3823,0.0788,0.0,NOT_SUPPORTED,Negative out-of-fold R²; predictive signal absent under basic field inputs.
+Cu_num,ExtraTrees,0.0351,0.5912,0.2803,0.5129,PROMISING_BUT_UNCERTAIN,Weak signal; high variance or insufficient sample size.

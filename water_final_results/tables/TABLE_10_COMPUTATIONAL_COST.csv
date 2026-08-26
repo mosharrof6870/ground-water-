@@ -1,0 +1,3 @@
+target,model,n_features,n_samples,total_cv_fits,mean_fit_time_sec,inference_time_per_sample_ms,cpu_architecture,python_version
+Ni_num,HuberRegressor,4,40,125,0.0822,0.4515,x86_64,3.12.3
+Cd_num,LinearRegression,4,40,125,0.002,0.3934,x86_64,3.12.3

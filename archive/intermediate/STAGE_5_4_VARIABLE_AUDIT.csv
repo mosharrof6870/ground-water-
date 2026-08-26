@@ -1,0 +1,41 @@
+input_variable,target_variable,effective_N,missingness,spearman_rho,raw_p_value,effect_size,fdr_adjusted_p_value,is_statistically_significant_fdr,interpretation
+TDS_calc,Ni_num,40,0,0.7067,3.4691355098352795e-07,Strong,0.0,True,Statistically Significant Association (FDR < 0.05)
+TDS_calc,Pb_num,40,0,-0.4532,0.003319134813533314,Moderate,0.021,True,Statistically Significant Association (FDR < 0.05)
+TDS_calc,Cd_num,40,0,-0.396,0.011416969670390445,Moderate,0.0507,False,No Statistically Significant Bivariate Association
+TDS_calc,Mn_num,40,0,0.4488,0.003677422370200666,Moderate,0.021,True,Statistically Significant Association (FDR < 0.05)
+TDS_calc,Fe_num,40,0,-0.3297,0.037774050849693944,Moderate,0.1259,False,No Statistically Significant Bivariate Association
+TDS_calc,As_num,40,0,0.2093,0.19485966791319698,Weak,0.3897,False,No Statistically Significant Bivariate Association
+TDS_calc,Zn_num,35,5,0.0073,0.966844928193604,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+TDS_calc,WQI,40,0,0.3058,0.0549744585716647,Moderate,0.1692,False,No Statistically Significant Bivariate Association
+TDS_calc,HPI,40,0,0.2974,0.06238896228601742,Weak,0.1783,False,No Statistically Significant Bivariate Association
+TDS_calc,HEI,40,0,0.2206,0.17127568495670512,Weak,0.3606,False,No Statistically Significant Bivariate Association
+pH_proxy,Ni_num,40,0,-0.2669,0.09595244137084429,Weak,0.2399,False,No Statistically Significant Bivariate Association
+pH_proxy,Pb_num,40,0,-0.1442,0.37455683376055937,Weak,0.681,False,No Statistically Significant Bivariate Association
+pH_proxy,Cd_num,40,0,-0.2587,0.10696768671171702,Weak,0.2517,False,No Statistically Significant Bivariate Association
+pH_proxy,Mn_num,40,0,-0.022,0.8930503648698279,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+pH_proxy,Fe_num,40,0,0.0725,0.6565484473451225,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+pH_proxy,As_num,40,0,-0.0541,0.7401061955936943,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+pH_proxy,Zn_num,35,5,-0.0077,0.9649332785946387,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+pH_proxy,WQI,40,0,-0.3623,0.02160051346410727,Moderate,0.0864,False,No Statistically Significant Bivariate Association
+pH_proxy,HPI,40,0,-0.067,0.681333916327345,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+pH_proxy,HEI,40,0,0.0377,0.8172955302360511,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+NO3-N_num,Ni_num,40,0,-0.1275,0.4330234048133019,Weak,0.7531,False,No Statistically Significant Bivariate Association
+NO3-N_num,Pb_num,40,0,0.5942,5.287357942717654e-05,Strong,0.0007,True,Statistically Significant Association (FDR < 0.05)
+NO3-N_num,Cd_num,40,0,0.687,9.827227906583562e-07,Strong,0.0,True,Statistically Significant Association (FDR < 0.05)
+NO3-N_num,Mn_num,40,0,-0.5547,0.00020396155965207748,Strong,0.002,True,Statistically Significant Association (FDR < 0.05)
+NO3-N_num,Fe_num,40,0,0.0464,0.7761994738047633,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+NO3-N_num,As_num,40,0,-0.3319,0.036417757775102665,Moderate,0.1259,False,No Statistically Significant Bivariate Association
+NO3-N_num,Zn_num,35,5,0.035,0.8417576539495155,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+NO3-N_num,WQI,40,0,-0.0158,0.9231467124581946,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+NO3-N_num,HPI,40,0,-0.4245,0.0063253709762656025,Moderate,0.0316,True,Statistically Significant Association (FDR < 0.05)
+NO3-N_num,HEI,40,0,-0.5199,0.0005849753516021829,Strong,0.0047,True,Statistically Significant Association (FDR < 0.05)
+WELL_DEPTH,Ni_num,39,1,0.255,0.1172515791011088,Weak,0.2606,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,Pb_num,39,1,-0.2044,0.21190479668419057,Weak,0.4036,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,Cd_num,39,1,-0.2795,0.08489214137343004,Weak,0.2264,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,Mn_num,39,1,0.094,0.5690286570600199,Negligible,0.9104,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,Fe_num,39,1,-0.0502,0.7616948832913448,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,As_num,39,1,0.0515,0.7557290399645498,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,Zn_num,34,6,-0.0053,0.9763369071432119,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,WQI,39,1,-0.1134,0.49193186239285497,Weak,0.8199,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,HPI,39,1,-0.0201,0.9035073550025285,Negligible,0.9763,False,No Statistically Significant Bivariate Association
+WELL_DEPTH,HEI,39,1,0.015,0.9275562262981182,Negligible,0.9763,False,No Statistically Significant Bivariate Association

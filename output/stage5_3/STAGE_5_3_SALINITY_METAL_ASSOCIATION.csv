@@ -1,0 +1,10 @@
+hydrochemical_variable,metal,effective_N,spearman_rho,raw_p_value,fdr_adjusted_p_value,is_statistically_significant_fdr,association_strength
+Salinity (TDS_calc),Arsenic (As),40,0.2093,0.19485966791319698,0.2505,False,No Significant Association
+Salinity (TDS_calc),Iron (Fe),40,-0.3297,0.037774050849693944,0.068,False,No Significant Association
+Salinity (TDS_calc),Manganese (Mn),40,0.4488,0.003677422370200666,0.011,True,Moderate Positive
+Salinity (TDS_calc),Lead (Pb),40,-0.4532,0.003319134813533314,0.011,True,Moderate Negative
+Salinity (TDS_calc),Nickel (Ni),40,0.7067,3.4691355098352795e-07,0.0,True,Strong Positive
+Salinity (TDS_calc),Zinc (Zn),35,0.0073,0.966844928193604,0.9668,False,No Significant Association
+Salinity (TDS_calc),Cadmium (Cd),40,-0.396,0.011416969670390445,0.0257,True,Moderate Negative
+Salinity (TDS_calc),Chromium (Cr),40,-0.2945,0.06507450499435592,0.0976,False,No Significant Association
+Salinity (TDS_calc),Copper (Cu),40,0.0953,0.5586111052747168,0.6284,False,No Significant Association

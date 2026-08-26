@@ -1,0 +1,3 @@
+novelty_claim,evidence,validity_status,manuscript_contribution
+Target-Dependent Groundwater Screening Feasibility,Demonstrated that hydrochemical association does NOT automatically imply predictive feasibility. Only Ni and WQI cross from association into positive predictive R2 under strict 5x5 nested CV.,FULLY_VALIDATED,Establishes a rigorous methodology to distinguish screenable from laboratory-mandatory contaminants.
+Decoupling of Trace Metal Association from Predictability,"Quantified why strong bivariate associations (e.g. Pb-NO3 rho=+0.59, Cd-NO3 rho=+0.69) fail to produce positive point predictions (R2 <= 0).",FULLY_VALIDATED,Prevents overconfident deployment of low-cost field kits for unscreenable heavy metals.

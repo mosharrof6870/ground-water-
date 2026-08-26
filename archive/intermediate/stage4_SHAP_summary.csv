@@ -1,0 +1,11 @@
+target,predictive_status,top_feature_1,top_feature_2,top_feature_3,shap_stability,avg_rank_sd
+As_num,Weak / Exploratory Signal (Mean R2 < 0),CAI_1,WELL_DEPTH,TDS_log,MODERATE STABILITY,1.67
+Fe_num,Weak / Exploratory Signal (Mean R2 < 0),TDS_calc,Depth_x_TDS,NO3-N_num,MODERATE STABILITY,1.85
+Mn_num,Secondary / Limited Signal (Median R2 > 0 or Spearman > 0.40),CAI_1,NO3-N_num,pH_proxy,HIGH STABILITY,1.19
+Pb_num,Secondary / Limited Signal (Median R2 > 0 or Spearman > 0.40),NO3-N_num,CAI_1,WELL_DEPTH,MODERATE STABILITY,1.64
+Ni_num,Primary Candidate (Mean R2 = +0.1281),TDS_calc,Ratio_Na_CaMg_meq,WELL_DEPTH,MODERATE STABILITY,1.73
+Zn_num,Weak / Exploratory Signal (Mean R2 < 0),TDS_calc,WELL_DEPTH,CAI_1,HIGH STABILITY,0.73
+HPI,Secondary / Limited Signal (Median R2 > 0 or Spearman > 0.40),NO3-N_num,CAI_1,pH_proxy,HIGH STABILITY,0.77
+HEI,Secondary / Limited Signal (Median R2 > 0 or Spearman > 0.40),pH_proxy,NO3-N_num,WELL_DEPTH,HIGH STABILITY,1.12
+WQI,Formula Reconstruction Benchmark,NO3-N_num,CAI_1,WELL_DEPTH,HIGH STABILITY,0.96
+Cd,Weak / Exploratory Signal (Mean R2 < 0),CAI_2,NO3-N_num,CAI_1,MODERATE STABILITY,1.62

@@ -1,0 +1,7 @@
+stage,focus,inputs_used,target_coverage,key_takeaway
+Stage 3.3,Full Hydrochemical Predictive Modelling,All Lab Major Ions + Physical,"Multi-Target (Ni, Pb, Cd, Fe, As, Mn)",Lab major ions provided strong predictive signal for Ni/Fe/Mn.
+Stage 4,SHAP Model Interpretation,Full Feature Set,Multi-Target,"Identified pH, TDS, and Ca/Mg ratios as primary SHAP drivers."
+Stage 5.1,Easy-Input Field Feasibility,pH + TDS Handheld Field Pair,Multi-Target,Proved Ni is the single field-screenable heavy metal (R2=+0.0813); Fe/As/Pb failed.
+Stage 5.2,Tiered Screening & Conformal Uncertainty,pH + TDS Field Pair,Nickel (Ni),Implemented 90% conformal intervals & Tier-1 lab-trigger decision engine.
+Stage 5.3,Regime & Contamination Discovery,Observed Chemistry & Metals,9 Heavy Metals,Discovered strong Ni-TDS coupling (rho=+0.7067) and redox metal decoupling.
+Stage 5.4 (Current),Multi-Metal Prediction Feasibility Audit,"Field Pair, Depth, Nitrate Sets","10 Targets (Ni, Pb, Cd, Mn, Fe, As, Zn, WQI, HPI, HEI)",Systematically proved that ONLY Ni (R2=+0.0813) and WQI (R2=+0.4312) achieve true screening feasibility from easy inputs; Pb/Cd/Mn remain association-only.

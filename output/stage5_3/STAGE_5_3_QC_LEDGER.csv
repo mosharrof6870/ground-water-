@@ -1,0 +1,7 @@
+check_item,status,evidence
+Zero Synthetic Data Governance,PASS,"Strictly N=40 real groundwater samples analyzed. Zero GAN, CTGAN, SMOTE, or pseudo-samples."
+Non-Parametric Statistical Audit,PASS,"Spearman rho, Kruskal-Wallis, and Mann-Whitney U applied across all skewed hydrochemical distributions."
+FDR Multiple Testing Control,PASS,Benjamini-Hochberg FDR correction applied to all hypothesis tests.
+Unit Integrity Audit,PASS,Verified mg/L vs ug/L unit consistency across all 9 heavy metals and major ions.
+Non-Causal Language Compliance,PASS,"Strict use of 'association', 'co-occurrence', and 'regime relationship' without causal claims."
+Immutable Stage 1-5.2 Governance,PASS,"All previous validated model freezes, metrics, and reports left completely unmodified."

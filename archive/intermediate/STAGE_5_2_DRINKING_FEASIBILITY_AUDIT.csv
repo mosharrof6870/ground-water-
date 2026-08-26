@@ -1,0 +1,7 @@
+parameter,status,source,compliance_role
+pH,AVAILABLE,Field Measurement,Screening & Compliance
+TDS,AVAILABLE,Field Measurement,Screening & Compliance
+Nickel (Ni),SCREENABLE_WITH_UNCERTAINTY,Tier-1 ML Model,Initial Field Screening Only
+Arsenic (As),MISSING_FIELD_SIGNAL,Laboratory AAS Required,Regulatory Compliance (Mandatory Lab)
+Lead (Pb),MISSING_FIELD_SIGNAL,Laboratory AAS Required,Regulatory Compliance (Mandatory Lab)
+Microbiological (Coliforms),NOT_MEASURED,Field Incubator / Lab Required,Regulatory Compliance (Mandatory Lab)

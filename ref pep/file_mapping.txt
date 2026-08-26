@@ -1,0 +1,16 @@
+New Name	Status	Title / Original Name
+------------------------------------------------------------------------------------
+1.pdf	DOWNLOADED (11.24 MB)	1-s2.0-Morocco_2022.pdf
+2.pdf	DOWNLOADED (4.88 MB)	1-s2.0-S2214581826001564-main.pdf
+3.pdf	DOWNLOADED (15.78 MB)	1-s2.0-S2352801X24001954-India_2024.pdf
+4.pdf	DOWNLOADED (2.01 MB)	Chowdhury_2025_Environ._Res._Lett._20_033003.pdf
+5.pdf	DOWNLOADED (3.22 MB)	es5c01025.pdf
+6.pdf	DOWNLOADED (5.22 MB)	ijerph-19-12180-v2.pdf
+7.pdf	DOWNLOADED (4.12 MB)	s10653-025-02955-2.pdf
+8.pdf	DOWNLOADED (2.30 MB)	s41598-026-54560-7_reference.pdf
+9.pdf	DOWNLOADED (4.66 MB)	s41598-026-62033-0_reference.pdf
+10.pdf	DOWNLOADED (4.47 MB)	Explainable machine learning framework for assessing groundwater quality and trace element contamination in Eastern Saudi Arabia
+12.pdf	DOWNLOADED (2.52 MB)	Reliable water quality prediction and parametric analysis using explainable AI models
+13.pdf	DOWNLOADED (3.90 MB)	Deep learning framework for mapping nitrate pollution in coastal aquifers under land use pressure
+15.pdf	DOWNLOADED (3.80 MB)	Development of artificial intelligence models for well groundwater quality simulation
+17.pdf	DOWNLOADED (2.30 MB)	Adversarial susceptibility analysis for water quality prediction models

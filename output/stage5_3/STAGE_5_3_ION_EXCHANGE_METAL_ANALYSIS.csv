@@ -1,0 +1,10 @@
+metal,ion_exchange_categories_audited,kruskal_statistic,raw_p_value,fdr_adjusted_p_value,is_significant_fdr
+Arsenic (As),2,2.1284,0.14458868991518703,0.3253,False
+Iron (Fe),2,0.8468,0.3574678881755289,0.6434,False
+Manganese (Mn),2,2.2282,0.13551573161870742,0.3253,False
+Lead (Pb),2,0.5126,0.47402420913133203,0.6453,False
+Nickel (Ni),2,5.8345,0.015715143370313465,0.1414,False
+Zinc (Zn),2,0.2227,0.6369978288769367,0.6666,False
+Cadmium (Cd),2,0.1856,0.6666113520432146,0.6666,False
+Chromium (Cr),2,0.4509,0.5018960258291413,0.6453,False
+Copper (Cu),2,2.3943,0.12177524189643607,0.3253,False

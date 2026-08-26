@@ -1,0 +1,5 @@
+component,issue_found,severity,fixed,verification
+Predictor Sets,Global pre-imputation leakage in V1,HIGH,True,Imputer and Scaler wrapped inside fold-level sklearn Pipelines.
+Model Selection,Hard-coded winner assignment in V1,CRITICAL,True,Model winner dynamically selected via multi-criterion OOF matrix.
+Conformal Uncertainty,Sample reuse bias in threshold quantile calculation,HIGH,True,CV+ Cross-Conformal prediction bounds implemented without data reuse.
+Failed Targets,Hard-coded unfeasible claims for unmodeled metals,HIGH,True,Empirical 5x5 nested CV executed for all 9 heavy metals.

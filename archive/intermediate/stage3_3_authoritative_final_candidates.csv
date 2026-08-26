@@ -1,0 +1,11 @@
+target,transformation,model,feature_set,hyperparameters,feature_count,mean_R2,median_R2,SD_R2,IQR_R2,min_R2,max_R2,positive_fold_count,negative_fold_count,RMSE,MAE,Spearman,stability,selection_basis
+As_num,LOG1P,SVR_RBF,M2_Core_Salinity,Default / Grid Tuned,6,-0.3635,-0.1821,0.9602,0.1648,-4.8325,0.4245,4,21,5.6775,2.6881,0.197,HIGH VARIANCE,Selected by Primary Rule (Highest Mean R2)
+Fe_num,LOG1P,SVR_RBF,M5_Core_DepthInteractions,Default / Grid Tuned,7,-0.5169,-0.1786,1.3447,0.3003,-6.6221,0.123,7,18,2.7086,1.377,0.2209,HIGH VARIANCE,Selected by Primary Rule (Highest Mean R2)
+Mn_num,LOG1P,Lasso,M4_Core_IonExchange,Default / Grid Tuned,6,-0.2894,-0.0845,0.4605,0.405,-1.5294,0.1307,6,19,0.9176,0.6147,0.4496,HIGH VARIANCE,Selected by Primary Rule (Highest Mean R2)
+Pb_num,LOG1P,SVR_RBF,M2_Core_Salinity,Default / Grid Tuned,6,-0.36,0.1028,1.474,0.5478,-6.8772,0.7854,15,10,0.8769,0.5444,0.3457,MODERATE,Selected by Primary Rule (Highest Mean R2)
+Ni_num,LOG1P,SVR_RBF,M3_Core_IonRatios,Default / Grid Tuned,8,0.1281,0.1825,0.6778,0.4683,-2.6604,0.8334,19,6,1.5345,1.0153,0.5248,STABLE,Selected by Primary Rule (Highest Mean R2)
+Zn_num,LOG1P,Lasso,M1_Core,Default / Grid Tuned,5,-0.6877,-0.1325,1.6442,0.4211,-7.2408,-0.0202,0,25,21.4577,14.1925,-0.1162,HIGH VARIANCE,Selected by Primary Rule (Highest Mean R2)
+HPI,LOG1P,Lasso,M4_Core_IonExchange,Default / Grid Tuned,6,-0.1039,-0.0531,0.215,0.2866,-0.5352,0.2676,7,18,61.7205,40.1888,0.4295,HIGH VARIANCE,Selected by Primary Rule (Highest Mean R2)
+HEI,LOG1P,Lasso,M1_Core,Default / Grid Tuned,5,-0.2678,-0.0981,0.7037,0.3238,-3.2889,0.2849,8,17,15.3043,9.5135,0.459,MODERATE,Selected by Primary Rule (Highest Mean R2)
+WQI,LOG1P,Lasso,M4_Core_IonExchange,Default / Grid Tuned,6,-0.1587,-0.0913,0.3188,0.3598,-1.0726,0.4126,8,17,24.5197,17.3296,0.2686,MODERATE,Selected by Primary Rule (Highest Mean R2)
+Cd,RAW,SVR_RBF,M4_Core_IonExchange,Default / Grid Tuned,6,-0.255,-0.1309,0.4352,0.3341,-1.528,0.2415,5,20,15.6983,9.561,0.2762,HIGH VARIANCE,Selected by Primary Rule (Highest Mean R2)

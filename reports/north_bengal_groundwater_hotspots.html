@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e8ac2e5af261150c6925fa5affa22132 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e8ac2e5af261150c6925fa5affa22132" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e8ac2e5af261150c6925fa5affa22132 = L.map(
+                "map_e8ac2e5af261150c6925fa5affa22132",
+                {
+                    center: [25.1743025, 88.99238249999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_872b48df2d0818f315b352884f3b5249 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_872b48df2d0818f315b352884f3b5249.addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+            var circle_marker_c2f2786991ee2c617d89e965780d7256 = L.circleMarker(
+                [26.5851, 88.354],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_f32a73df71eb64056e441df5e614b202 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_dd8c3b96e0cc269dc2bbf72749297153 = $(`<div id="html_dd8c3b96e0cc269dc2bbf72749297153" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01785<br>             <b>Location (Thana Centroid):</b> Tetulia, Panchagarh<br>             <b>Facies:</b> Na-Mixed-Anion<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 34.34 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 18.29 [Normal]<br>             <b>HEI:</b> 1.08<br>             <b>As Conc:</b> 1.0 &mu;g/L<br>             <b>Fe Conc:</b> 0.06 mg/L (60 &mu;g/L)         </div>         </div>`)[0];
+                popup_f32a73df71eb64056e441df5e614b202.setContent(html_dd8c3b96e0cc269dc2bbf72749297153);
+            
+        
+
+        circle_marker_c2f2786991ee2c617d89e965780d7256.bindPopup(popup_f32a73df71eb64056e441df5e614b202)
+        ;
+
+        
+    
+    
+            circle_marker_c2f2786991ee2c617d89e965780d7256.bindTooltip(
+                `<div>
+                     S98_01785 (Panchagarh) - WQI: 34.3, HPI: 18.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd8460ce213c8252a18a7d55405a5282 = L.circleMarker(
+                [26.2104, 88.5601],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_b1b7429438bcb597029ea4c355c261a3 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3a0ead698a89828daf8d07ed00b4be28 = $(`<div id="html_3a0ead698a89828daf8d07ed00b4be28" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01786<br>             <b>Location (Thana Centroid):</b> Boda, Panchagarh<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 25.86 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 56.37 [Normal]<br>             <b>HEI:</b> 24.22<br>             <b>As Conc:</b> 2.2 &mu;g/L<br>             <b>Fe Conc:</b> 6.21 mg/L (6210 &mu;g/L)         </div>         </div>`)[0];
+                popup_b1b7429438bcb597029ea4c355c261a3.setContent(html_3a0ead698a89828daf8d07ed00b4be28);
+            
+        
+
+        circle_marker_dd8460ce213c8252a18a7d55405a5282.bindPopup(popup_b1b7429438bcb597029ea4c355c261a3)
+        ;
+
+        
+    
+    
+            circle_marker_dd8460ce213c8252a18a7d55405a5282.bindTooltip(
+                `<div>
+                     S98_01786 (Panchagarh) - WQI: 25.9, HPI: 56.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c4ae53db1744d4a088a949d48c09c69 = L.circleMarker(
+                [26.0984, 88.2778],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_95c04ba49a761b6063541a58d33d060c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ec682b30381e1990435c068d0a879643 = $(`<div id="html_ec682b30381e1990435c068d0a879643" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01788<br>             <b>Location (Thana Centroid):</b> Baliadangi, Thakurgaon<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 17.17 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 19.99 [Normal]<br>             <b>HEI:</b> 1.55<br>             <b>As Conc:</b> 1.1 &mu;g/L<br>             <b>Fe Conc:</b> 0.24 mg/L (240 &mu;g/L)         </div>         </div>`)[0];
+                popup_95c04ba49a761b6063541a58d33d060c.setContent(html_ec682b30381e1990435c068d0a879643);
+            
+        
+
+        circle_marker_1c4ae53db1744d4a088a949d48c09c69.bindPopup(popup_95c04ba49a761b6063541a58d33d060c)
+        ;
+
+        
+    
+    
+            circle_marker_1c4ae53db1744d4a088a949d48c09c69.bindTooltip(
+                `<div>
+                     S98_01788 (Thakurgaon) - WQI: 17.2, HPI: 20.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d866240ec75e2bc6d627209efdc46fe2 = L.circleMarker(
+                [26.0337, 88.4617],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_ad10fc3a3021964aaa166b68161768ee = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_39196128cad2ad3154abc66a770d3267 = $(`<div id="html_39196128cad2ad3154abc66a770d3267" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01789<br>             <b>Location (Thana Centroid):</b> Thakurgaon Sadar, Thakurgaon<br>             <b>Facies:</b> Mixed-Cation-Mixed-Anion<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 18.25 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 15.05 [Normal]<br>             <b>HEI:</b> 5.57<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 1.38 mg/L (1380 &mu;g/L)         </div>         </div>`)[0];
+                popup_ad10fc3a3021964aaa166b68161768ee.setContent(html_39196128cad2ad3154abc66a770d3267);
+            
+        
+
+        circle_marker_d866240ec75e2bc6d627209efdc46fe2.bindPopup(popup_ad10fc3a3021964aaa166b68161768ee)
+        ;
+
+        
+    
+    
+            circle_marker_d866240ec75e2bc6d627209efdc46fe2.bindTooltip(
+                `<div>
+                     S98_01789 (Thakurgaon) - WQI: 18.2, HPI: 15.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9633165fd34ebb809973ec44301826e5 = L.circleMarker(
+                [25.8542, 88.6606],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_26e5e5d827a3fc2b9b80a962e13d4abc = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_270439eb695a8d27e087aea9c61f7f3d = $(`<div id="html_270439eb695a8d27e087aea9c61f7f3d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01791<br>             <b>Location (Thana Centroid):</b> Birganj, Dinajpur<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 13.08 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 11.10 [Normal]<br>             <b>HEI:</b> 2.10<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.17 mg/L (170 &mu;g/L)         </div>         </div>`)[0];
+                popup_26e5e5d827a3fc2b9b80a962e13d4abc.setContent(html_270439eb695a8d27e087aea9c61f7f3d);
+            
+        
+
+        circle_marker_9633165fd34ebb809973ec44301826e5.bindPopup(popup_26e5e5d827a3fc2b9b80a962e13d4abc)
+        ;
+
+        
+    
+    
+            circle_marker_9633165fd34ebb809973ec44301826e5.bindTooltip(
+                `<div>
+                     S98_01791 (Dinajpur) - WQI: 13.1, HPI: 11.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4d22dd7564783930344248160a01ee9 = L.circleMarker(
+                [25.8711, 88.2514],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_b6054bb5174a00fd3533ee69b2d2e0b5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2f6f3b58fea68d10ec5bfbd6fbda05a4 = $(`<div id="html_2f6f3b58fea68d10ec5bfbd6fbda05a4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01792<br>             <b>Location (Thana Centroid):</b> Ranisankail, Thakurgaon<br>             <b>Facies:</b> Mixed-Cation-Mixed-Anion<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 31.67 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 11.76 [Normal]<br>             <b>HEI:</b> 1.49<br>             <b>As Conc:</b> 0.8 &mu;g/L<br>             <b>Fe Conc:</b> 0.29 mg/L (293 &mu;g/L)         </div>         </div>`)[0];
+                popup_b6054bb5174a00fd3533ee69b2d2e0b5.setContent(html_2f6f3b58fea68d10ec5bfbd6fbda05a4);
+            
+        
+
+        circle_marker_e4d22dd7564783930344248160a01ee9.bindPopup(popup_b6054bb5174a00fd3533ee69b2d2e0b5)
+        ;
+
+        
+    
+    
+            circle_marker_e4d22dd7564783930344248160a01ee9.bindTooltip(
+                `<div>
+                     S98_01792 (Thakurgaon) - WQI: 31.7, HPI: 11.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a8f4448dcb8d252f2a2cf5bbe3894da = L.circleMarker(
+                [25.6279, 88.6332],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_ec6ad15e709113bb57950c88c3ab61a5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e069742c0cfd77f8b286cb1a88f77111 = $(`<div id="html_e069742c0cfd77f8b286cb1a88f77111" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01793<br>             <b>Location (Thana Centroid):</b> Dinajpur Sadar, Dinajpur<br>             <b>Facies:</b> Na-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 13.25 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 12.06 [Normal]<br>             <b>HEI:</b> 0.45<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.03 mg/L (27 &mu;g/L)         </div>         </div>`)[0];
+                popup_ec6ad15e709113bb57950c88c3ab61a5.setContent(html_e069742c0cfd77f8b286cb1a88f77111);
+            
+        
+
+        circle_marker_5a8f4448dcb8d252f2a2cf5bbe3894da.bindPopup(popup_ec6ad15e709113bb57950c88c3ab61a5)
+        ;
+
+        
+    
+    
+            circle_marker_5a8f4448dcb8d252f2a2cf5bbe3894da.bindTooltip(
+                `<div>
+                     S98_01793 (Dinajpur) - WQI: 13.2, HPI: 12.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bacbbf70979f9a0cae33d55439dd412 = L.circleMarker(
+                [25.6565, 88.9168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_54b264c55de74c66d54d5029a6a4af8b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1ef0dddfca250389eb35636eca9868d7 = $(`<div id="html_1ef0dddfca250389eb35636eca9868d7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01794<br>             <b>Location (Thana Centroid):</b> Parbatipur, Dinajpur<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 22.57 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 44.31 [Normal]<br>             <b>HEI:</b> 12.17<br>             <b>As Conc:</b> 0.8 &mu;g/L<br>             <b>Fe Conc:</b> 1.65 mg/L (1650 &mu;g/L)         </div>         </div>`)[0];
+                popup_54b264c55de74c66d54d5029a6a4af8b.setContent(html_1ef0dddfca250389eb35636eca9868d7);
+            
+        
+
+        circle_marker_6bacbbf70979f9a0cae33d55439dd412.bindPopup(popup_54b264c55de74c66d54d5029a6a4af8b)
+        ;
+
+        
+    
+    
+            circle_marker_6bacbbf70979f9a0cae33d55439dd412.bindTooltip(
+                `<div>
+                     S98_01794 (Dinajpur) - WQI: 22.6, HPI: 44.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_014ee092594a221b2aeb61dac8ab2567 = L.circleMarker(
+                [25.2818, 89.0271],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_6cf62cbef40ffe9f795e21ce82108d86 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_63339d88466d0bce9b35edb4c9e3090b = $(`<div id="html_63339d88466d0bce9b35edb4c9e3090b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01795<br>             <b>Location (Thana Centroid):</b> Hakimpur, Dinajpur<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 16.50 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 26.61 [Normal]<br>             <b>HEI:</b> 5.60<br>             <b>As Conc:</b> 0.9 &mu;g/L<br>             <b>Fe Conc:</b> 0.22 mg/L (224 &mu;g/L)         </div>         </div>`)[0];
+                popup_6cf62cbef40ffe9f795e21ce82108d86.setContent(html_63339d88466d0bce9b35edb4c9e3090b);
+            
+        
+
+        circle_marker_014ee092594a221b2aeb61dac8ab2567.bindPopup(popup_6cf62cbef40ffe9f795e21ce82108d86)
+        ;
+
+        
+    
+    
+            circle_marker_014ee092594a221b2aeb61dac8ab2567.bindTooltip(
+                `<div>
+                     S98_01795 (Dinajpur) - WQI: 16.5, HPI: 26.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d6a794832331ae74b7e5ed329f3d179 = L.circleMarker(
+                [26.1037, 88.8378],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_bf4b8410c622df05c0ec552d24abb2c8 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d8f5a495abb27020d545abfde488244d = $(`<div id="html_d8f5a495abb27020d545abfde488244d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01796<br>             <b>Location (Thana Centroid):</b> Domar, Nilphamari<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 112.93 (Poor Water (100 <= WQI < 200))<br>             <b>HPI:</b> 275.93 <span style="color:red;font-weight:bold;">[CRITICAL POLLUTED]</span><br>             <b>HEI:</b> 63.25<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.36 mg/L (356 &mu;g/L)         </div>         </div>`)[0];
+                popup_bf4b8410c622df05c0ec552d24abb2c8.setContent(html_d8f5a495abb27020d545abfde488244d);
+            
+        
+
+        circle_marker_6d6a794832331ae74b7e5ed329f3d179.bindPopup(popup_bf4b8410c622df05c0ec552d24abb2c8)
+        ;
+
+        
+    
+    
+            circle_marker_6d6a794832331ae74b7e5ed329f3d179.bindTooltip(
+                `<div>
+                     S98_01796 (Nilphamari) - WQI: 112.9, HPI: 275.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d934a2adc8b2d2ac4b974fc843f9133f = L.circleMarker(
+                [25.9406, 88.8475],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_855628375e072c6d07b895b7ff80c640 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aaea1b003ba7accd59a874f0604bedfe = $(`<div id="html_aaea1b003ba7accd59a874f0604bedfe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01797<br>             <b>Location (Thana Centroid):</b> Nilphamari Sadar, Nilphamari<br>             <b>Facies:</b> Na-Cl<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 35.46 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 78.86 [Normal]<br>             <b>HEI:</b> 17.83<br>             <b>As Conc:</b> 1.9 &mu;g/L<br>             <b>Fe Conc:</b> 0.84 mg/L (837 &mu;g/L)         </div>         </div>`)[0];
+                popup_855628375e072c6d07b895b7ff80c640.setContent(html_aaea1b003ba7accd59a874f0604bedfe);
+            
+        
+
+        circle_marker_d934a2adc8b2d2ac4b974fc843f9133f.bindPopup(popup_855628375e072c6d07b895b7ff80c640)
+        ;
+
+        
+    
+    
+            circle_marker_d934a2adc8b2d2ac4b974fc843f9133f.bindTooltip(
+                `<div>
+                     S98_01797 (Nilphamari) - WQI: 35.5, HPI: 78.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8eb347bb39d405987df23a50ad5c5b25 = L.circleMarker(
+                [26.1147, 89.1353],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_d8b54981617f9cf595acc93387cb8202 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f36e09cbda9ea231e62d89b3930261b2 = $(`<div id="html_f36e09cbda9ea231e62d89b3930261b2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01798<br>             <b>Location (Thana Centroid):</b> Hatibandha, Lalmonirhat<br>             <b>Facies:</b> Mixed-Cation-Mixed-Anion<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 49.27 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 45.08 [Normal]<br>             <b>HEI:</b> 3.83<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.27 mg/L (271 &mu;g/L)         </div>         </div>`)[0];
+                popup_d8b54981617f9cf595acc93387cb8202.setContent(html_f36e09cbda9ea231e62d89b3930261b2);
+            
+        
+
+        circle_marker_8eb347bb39d405987df23a50ad5c5b25.bindPopup(popup_d8b54981617f9cf595acc93387cb8202)
+        ;
+
+        
+    
+    
+            circle_marker_8eb347bb39d405987df23a50ad5c5b25.bindTooltip(
+                `<div>
+                     S98_01798 (Lalmonirhat) - WQI: 49.3, HPI: 45.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91a89e64df9ead1325122fb9615545f7 = L.circleMarker(
+                [26.0125, 88.9482],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_770f28c10a5479ef813e0757db861287 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_35b6135b60c2da00ef06f69b4efc5fde = $(`<div id="html_35b6135b60c2da00ef06f69b4efc5fde" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01799<br>             <b>Location (Thana Centroid):</b> Jaldhaka, Nilphamari<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 8.42 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 12.50 [Normal]<br>             <b>HEI:</b> 2.35<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.02 mg/L (18 &mu;g/L)         </div>         </div>`)[0];
+                popup_770f28c10a5479ef813e0757db861287.setContent(html_35b6135b60c2da00ef06f69b4efc5fde);
+            
+        
+
+        circle_marker_91a89e64df9ead1325122fb9615545f7.bindPopup(popup_770f28c10a5479ef813e0757db861287)
+        ;
+
+        
+    
+    
+            circle_marker_91a89e64df9ead1325122fb9615545f7.bindTooltip(
+                `<div>
+                     S98_01799 (Nilphamari) - WQI: 8.4, HPI: 12.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e059d67005c17a7cd83edaab649b2250 = L.circleMarker(
+                [25.7558, 89.2444],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_22fab569ed1fe2c7c0e9ebcd02fe2657 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a480554c7c12c1cb76b9f581e0f2cbaf = $(`<div id="html_a480554c7c12c1cb76b9f581e0f2cbaf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01800<br>             <b>Location (Thana Centroid):</b> Rangpur Sadar, Rangpur<br>             <b>Facies:</b> Mixed-Cation-SO4<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 20.78 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 15.08 [Normal]<br>             <b>HEI:</b> 4.79<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.99 mg/L (988 &mu;g/L)         </div>         </div>`)[0];
+                popup_22fab569ed1fe2c7c0e9ebcd02fe2657.setContent(html_a480554c7c12c1cb76b9f581e0f2cbaf);
+            
+        
+
+        circle_marker_e059d67005c17a7cd83edaab649b2250.bindPopup(popup_22fab569ed1fe2c7c0e9ebcd02fe2657)
+        ;
+
+        
+    
+    
+            circle_marker_e059d67005c17a7cd83edaab649b2250.bindTooltip(
+                `<div>
+                     S98_01800 (Rangpur) - WQI: 20.8, HPI: 15.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffe3e208e50699bc99c9e8619cc818a5 = L.circleMarker(
+                [25.9181, 89.4475],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_64848af865159483577eb898b0d87aea = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8304fe5aead5b82de5695df487b760cd = $(`<div id="html_8304fe5aead5b82de5695df487b760cd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01801<br>             <b>Location (Thana Centroid):</b> Lalmonirhat Sadar, Lalmonirhat<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 44.03 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 97.94 [Normal]<br>             <b>HEI:</b> 37.70<br>             <b>As Conc:</b> 4.0 &mu;g/L<br>             <b>Fe Conc:</b> 9.07 mg/L (9070 &mu;g/L)         </div>         </div>`)[0];
+                popup_64848af865159483577eb898b0d87aea.setContent(html_8304fe5aead5b82de5695df487b760cd);
+            
+        
+
+        circle_marker_ffe3e208e50699bc99c9e8619cc818a5.bindPopup(popup_64848af865159483577eb898b0d87aea)
+        ;
+
+        
+    
+    
+            circle_marker_ffe3e208e50699bc99c9e8619cc818a5.bindTooltip(
+                `<div>
+                     S98_01801 (Lalmonirhat) - WQI: 44.0, HPI: 97.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0d39b8ce64007a7b0eaa94db1b8a8d5 = L.circleMarker(
+                [25.9792, 89.7042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_37038602323527d47b259cae67787c37 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9da6a4bd926b92962e0bc750cf5842de = $(`<div id="html_9da6a4bd926b92962e0bc750cf5842de" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01802<br>             <b>Location (Thana Centroid):</b> Nageshwari, Kurigram<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 55.24 (Good Water (50 <= WQI < 100))<br>             <b>HPI:</b> 91.75 [Normal]<br>             <b>HEI:</b> 20.36<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.18 mg/L (182 &mu;g/L)         </div>         </div>`)[0];
+                popup_37038602323527d47b259cae67787c37.setContent(html_9da6a4bd926b92962e0bc750cf5842de);
+            
+        
+
+        circle_marker_e0d39b8ce64007a7b0eaa94db1b8a8d5.bindPopup(popup_37038602323527d47b259cae67787c37)
+        ;
+
+        
+    
+    
+            circle_marker_e0d39b8ce64007a7b0eaa94db1b8a8d5.bindTooltip(
+                `<div>
+                     S98_01802 (Kurigram) - WQI: 55.2, HPI: 91.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc82a42d5afbac7db97d89a92272a66d = L.circleMarker(
+                [25.6606, 89.6253],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_b71bc1b9c657bea9d504e254bc397aa4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_adc68f871093bf896b5afc41ac9570b9 = $(`<div id="html_adc68f871093bf896b5afc41ac9570b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01803<br>             <b>Location (Thana Centroid):</b> Ulipur, Kurigram<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 15.94 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 28.02 [Normal]<br>             <b>HEI:</b> 9.71<br>             <b>As Conc:</b> 0.6 &mu;g/L<br>             <b>Fe Conc:</b> 2.13 mg/L (2130 &mu;g/L)         </div>         </div>`)[0];
+                popup_b71bc1b9c657bea9d504e254bc397aa4.setContent(html_adc68f871093bf896b5afc41ac9570b9);
+            
+        
+
+        circle_marker_bc82a42d5afbac7db97d89a92272a66d.bindPopup(popup_b71bc1b9c657bea9d504e254bc397aa4)
+        ;
+
+        
+    
+    
+            circle_marker_bc82a42d5afbac7db97d89a92272a66d.bindTooltip(
+                `<div>
+                     S98_01803 (Kurigram) - WQI: 15.9, HPI: 28.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa37f012c373cac7bf721663f2e5a294 = L.circleMarker(
+                [25.5601, 89.5168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_f6ee11560bdc2301520e1a0e8653be00 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1a368e8f33181f189bd4f2cd07df9a55 = $(`<div id="html_1a368e8f33181f189bd4f2cd07df9a55" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01804<br>             <b>Location (Thana Centroid):</b> Sundarganj, Gaibandha<br>             <b>Facies:</b> Na-Mixed-Anion<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 26.82 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 14.14 [Normal]<br>             <b>HEI:</b> 2.22<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.08 mg/L (84 &mu;g/L)         </div>         </div>`)[0];
+                popup_f6ee11560bdc2301520e1a0e8653be00.setContent(html_1a368e8f33181f189bd4f2cd07df9a55);
+            
+        
+
+        circle_marker_aa37f012c373cac7bf721663f2e5a294.bindPopup(popup_f6ee11560bdc2301520e1a0e8653be00)
+        ;
+
+        
+    
+    
+            circle_marker_aa37f012c373cac7bf721663f2e5a294.bindTooltip(
+                `<div>
+                     S98_01804 (Gaibandha) - WQI: 26.8, HPI: 14.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e582a31781d4e8c1ca3c2a0bd780f71 = L.circleMarker(
+                [25.3292, 89.5417],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_8e1a2a84051a9d7a102aeea241f0b1ee = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3f2d392d7120b739c2136b4e7297df80 = $(`<div id="html_3f2d392d7120b739c2136b4e7297df80" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01805<br>             <b>Location (Thana Centroid):</b> Gaibandha Sadar, Gaibandha<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 14.65 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 23.92 [Normal]<br>             <b>HEI:</b> 5.04<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.05 mg/L (54 &mu;g/L)         </div>         </div>`)[0];
+                popup_8e1a2a84051a9d7a102aeea241f0b1ee.setContent(html_3f2d392d7120b739c2136b4e7297df80);
+            
+        
+
+        circle_marker_1e582a31781d4e8c1ca3c2a0bd780f71.bindPopup(popup_8e1a2a84051a9d7a102aeea241f0b1ee)
+        ;
+
+        
+    
+    
+            circle_marker_1e582a31781d4e8c1ca3c2a0bd780f71.bindTooltip(
+                `<div>
+                     S98_01805 (Gaibandha) - WQI: 14.7, HPI: 23.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24a31548400af932914501c17618f38b = L.circleMarker(
+                [25.1311, 89.4002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_b99286d8f7329e36de754944bd3461be = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_dd64f38bac685644f8add3519012ec57 = $(`<div id="html_dd64f38bac685644f8add3519012ec57" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01806<br>             <b>Location (Thana Centroid):</b> Gobindaganj, Gaibandha<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 27.15 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 6.35 [Normal]<br>             <b>HEI:</b> 0.82<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.02 mg/L (16 &mu;g/L)         </div>         </div>`)[0];
+                popup_b99286d8f7329e36de754944bd3461be.setContent(html_dd64f38bac685644f8add3519012ec57);
+            
+        
+
+        circle_marker_24a31548400af932914501c17618f38b.bindPopup(popup_b99286d8f7329e36de754944bd3461be)
+        ;
+
+        
+    
+    
+            circle_marker_24a31548400af932914501c17618f38b.bindTooltip(
+                `<div>
+                     S98_01806 (Gaibandha) - WQI: 27.1, HPI: 6.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1415270ccf244fe0db3a2b135755d2ae = L.circleMarker(
+                [25.0968, 89.0225],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_8d51448b029b36354512b018c6647f0d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e5f8a7c900f56b0ff320fc1a85eb6875 = $(`<div id="html_e5f8a7c900f56b0ff320fc1a85eb6875" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01807<br>             <b>Location (Thana Centroid):</b> Jaipurhat Sadar, Jaipurhat<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 16.16 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 31.84 [Normal]<br>             <b>HEI:</b> 9.01<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.98 mg/L (976 &mu;g/L)         </div>         </div>`)[0];
+                popup_8d51448b029b36354512b018c6647f0d.setContent(html_e5f8a7c900f56b0ff320fc1a85eb6875);
+            
+        
+
+        circle_marker_1415270ccf244fe0db3a2b135755d2ae.bindPopup(popup_8d51448b029b36354512b018c6647f0d)
+        ;
+
+        
+    
+    
+            circle_marker_1415270ccf244fe0db3a2b135755d2ae.bindTooltip(
+                `<div>
+                     S98_01807 (Jaipurhat) - WQI: 16.2, HPI: 31.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9449ba986c631f6d5987d7368853a60a = L.circleMarker(
+                [24.8168, 89.0417],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_1f1583f8bfe7cbbe79287ad9de99d4fe = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c78c1245be32939e10bc177178db49b8 = $(`<div id="html_c78c1245be32939e10bc177178db49b8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01808<br>             <b>Location (Thana Centroid):</b> Adamdighi, Bogra<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 20.61 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 22.76 [Normal]<br>             <b>HEI:</b> 4.67<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.04 mg/L (40 &mu;g/L)         </div>         </div>`)[0];
+                popup_1f1583f8bfe7cbbe79287ad9de99d4fe.setContent(html_c78c1245be32939e10bc177178db49b8);
+            
+        
+
+        circle_marker_9449ba986c631f6d5987d7368853a60a.bindPopup(popup_1f1583f8bfe7cbbe79287ad9de99d4fe)
+        ;
+
+        
+    
+    
+            circle_marker_9449ba986c631f6d5987d7368853a60a.bindTooltip(
+                `<div>
+                     S98_01808 (Bogra) - WQI: 20.6, HPI: 22.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d1e362312a0add9097460b04659fc2b = L.circleMarker(
+                [24.8481, 89.373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_d30a7c686c09e9f5fdda207e479fd638 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_44c5a67ab9a47c367a7afe7e571fa636 = $(`<div id="html_44c5a67ab9a47c367a7afe7e571fa636" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01809<br>             <b>Location (Thana Centroid):</b> Bogra Sadar, Bogra<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 30.00 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 70.97 [Normal]<br>             <b>HEI:</b> 15.48<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.02 mg/L (23 &mu;g/L)         </div>         </div>`)[0];
+                popup_d30a7c686c09e9f5fdda207e479fd638.setContent(html_44c5a67ab9a47c367a7afe7e571fa636);
+            
+        
+
+        circle_marker_1d1e362312a0add9097460b04659fc2b.bindPopup(popup_d30a7c686c09e9f5fdda207e479fd638)
+        ;
+
+        
+    
+    
+            circle_marker_1d1e362312a0add9097460b04659fc2b.bindTooltip(
+                `<div>
+                     S98_01809 (Bogra) - WQI: 30.0, HPI: 71.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe735ab5d48669a5e3e83d5391c14482 = L.circleMarker(
+                [25.0501, 88.7514],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_8e7c97caaf81efa36969ec708b926fef = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f0c1a9eab7e01c7ba3a7e953223843ba = $(`<div id="html_f0c1a9eab7e01c7ba3a7e953223843ba" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01810<br>             <b>Location (Thana Centroid):</b> Patnitala, Naogaon<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 5.01 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 9.40 [Normal]<br>             <b>HEI:</b> 1.68<br>             <b>As Conc:</b> 0.5 &mu;g/L<br>             <b>Fe Conc:</b> 0.08 mg/L (80 &mu;g/L)         </div>         </div>`)[0];
+                popup_8e7c97caaf81efa36969ec708b926fef.setContent(html_f0c1a9eab7e01c7ba3a7e953223843ba);
+            
+        
+
+        circle_marker_fe735ab5d48669a5e3e83d5391c14482.bindPopup(popup_8e7c97caaf81efa36969ec708b926fef)
+        ;
+
+        
+    
+    
+            circle_marker_fe735ab5d48669a5e3e83d5391c14482.bindTooltip(
+                `<div>
+                     S98_01810 (Naogaon) - WQI: 5.0, HPI: 9.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9a13b8dc83f30195666d23374e111c0 = L.circleMarker(
+                [24.7834, 88.6668],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_28c8c66c37b588d457b83c966c750c53 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_86a3b42bb085f0d3e1becdf5b81f4355 = $(`<div id="html_86a3b42bb085f0d3e1becdf5b81f4355" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01811<br>             <b>Location (Thana Centroid):</b> Manda, Naogaon<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 10.74 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 22.84 [Normal]<br>             <b>HEI:</b> 5.20<br>             <b>As Conc:</b> 0.5 &mu;g/L<br>             <b>Fe Conc:</b> 0.35 mg/L (354 &mu;g/L)         </div>         </div>`)[0];
+                popup_28c8c66c37b588d457b83c966c750c53.setContent(html_86a3b42bb085f0d3e1becdf5b81f4355);
+            
+        
+
+        circle_marker_d9a13b8dc83f30195666d23374e111c0.bindPopup(popup_28c8c66c37b588d457b83c966c750c53)
+        ;
+
+        
+    
+    
+            circle_marker_d9a13b8dc83f30195666d23374e111c0.bindTooltip(
+                `<div>
+                     S98_01811 (Naogaon) - WQI: 10.7, HPI: 22.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0115683fcfe007f47c870305cd7da8d2 = L.circleMarker(
+                [24.7765, 88.2834],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_0bd87db0a476e063af58ca9ed6fc19ce = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7d3115a288b0b7c093c79d553c2493ef = $(`<div id="html_7d3115a288b0b7c093c79d553c2493ef" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01813<br>             <b>Location (Thana Centroid):</b> Gomastapur, Nawabganj<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 10.88 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 14.97 [Normal]<br>             <b>HEI:</b> 5.04<br>             <b>As Conc:</b> 1.0 &mu;g/L<br>             <b>Fe Conc:</b> 1.24 mg/L (1240 &mu;g/L)         </div>         </div>`)[0];
+                popup_0bd87db0a476e063af58ca9ed6fc19ce.setContent(html_7d3115a288b0b7c093c79d553c2493ef);
+            
+        
+
+        circle_marker_0115683fcfe007f47c870305cd7da8d2.bindPopup(popup_0bd87db0a476e063af58ca9ed6fc19ce)
+        ;
+
+        
+    
+    
+            circle_marker_0115683fcfe007f47c870305cd7da8d2.bindTooltip(
+                `<div>
+                     S98_01813 (Nawabganj) - WQI: 10.9, HPI: 15.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfcce1387354c0eb48452a20758adf7c = L.circleMarker(
+                [24.6851, 88.1617],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_de899079342bea9d3fdf2d336a2d529c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5bba183122bf46123f07fb7d4916e032 = $(`<div id="html_5bba183122bf46123f07fb7d4916e032" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01815<br>             <b>Location (Thana Centroid):</b> Shibganj (N), Nawabganj<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 24.94 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 33.13 [Normal]<br>             <b>HEI:</b> 6.86<br>             <b>As Conc:</b> 0.6 &mu;g/L<br>             <b>Fe Conc:</b> 0.03 mg/L (30 &mu;g/L)         </div>         </div>`)[0];
+                popup_de899079342bea9d3fdf2d336a2d529c.setContent(html_5bba183122bf46123f07fb7d4916e032);
+            
+        
+
+        circle_marker_bfcce1387354c0eb48452a20758adf7c.bindPopup(popup_de899079342bea9d3fdf2d336a2d529c)
+        ;
+
+        
+    
+    
+            circle_marker_bfcce1387354c0eb48452a20758adf7c.bindTooltip(
+                `<div>
+                     S98_01815 (Nawabganj) - WQI: 24.9, HPI: 33.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d33aa4606916dcd07e3e8c9a7e73ca00 = L.circleMarker(
+                [24.4668, 88.3302],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_743c17c20e5ceff9e2bbf6782fd723f6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c6e5a5cbb66a85d056c6dea106f67b37 = $(`<div id="html_c6e5a5cbb66a85d056c6dea106f67b37" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01817<br>             <b>Location (Thana Centroid):</b> Godagari, Rajshahi<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 6.84 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 8.53 [Normal]<br>             <b>HEI:</b> 1.70<br>             <b>As Conc:</b> 0.5 &mu;g/L<br>             <b>Fe Conc:</b> 0.17 mg/L (174 &mu;g/L)         </div>         </div>`)[0];
+                popup_743c17c20e5ceff9e2bbf6782fd723f6.setContent(html_c6e5a5cbb66a85d056c6dea106f67b37);
+            
+        
+
+        circle_marker_d33aa4606916dcd07e3e8c9a7e73ca00.bindPopup(popup_743c17c20e5ceff9e2bbf6782fd723f6)
+        ;
+
+        
+    
+    
+            circle_marker_d33aa4606916dcd07e3e8c9a7e73ca00.bindTooltip(
+                `<div>
+                     S98_01817 (Rajshahi) - WQI: 6.8, HPI: 8.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0611ad5f51ed11f117d0805f3cc3ae91 = L.circleMarker(
+                [24.3752, 88.5834],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_417d1dc348cfe9392acbe0c77d9e989e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_56b859bf2e1881cd228bb9d03ec0fb27 = $(`<div id="html_56b859bf2e1881cd228bb9d03ec0fb27" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01818<br>             <b>Location (Thana Centroid):</b> Rajpara, Rajshahi<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 58.09 (Good Water (50 <= WQI < 100))<br>             <b>HPI:</b> 120.50 <span style="color:red;font-weight:bold;">[CRITICAL POLLUTED]</span><br>             <b>HEI:</b> 25.71<br>             <b>As Conc:</b> 1.7 &mu;g/L<br>             <b>Fe Conc:</b> 0.01 mg/L (14 &mu;g/L)         </div>         </div>`)[0];
+                popup_417d1dc348cfe9392acbe0c77d9e989e.setContent(html_56b859bf2e1881cd228bb9d03ec0fb27);
+            
+        
+
+        circle_marker_0611ad5f51ed11f117d0805f3cc3ae91.bindPopup(popup_417d1dc348cfe9392acbe0c77d9e989e)
+        ;
+
+        
+    
+    
+            circle_marker_0611ad5f51ed11f117d0805f3cc3ae91.bindTooltip(
+                `<div>
+                     S98_01818 (Rajshahi) - WQI: 58.1, HPI: 120.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9dd3a660edf02eea818fc59cd1b8972 = L.circleMarker(
+                [24.2834, 88.7302],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_dfe98af11d071e1d5b2f7b1bdd93f985 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b0728c1a4ced2fa124aa2caae79e6615 = $(`<div id="html_b0728c1a4ced2fa124aa2caae79e6615" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01819<br>             <b>Location (Thana Centroid):</b> Charghat, Rajshahi<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 33.06 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 58.59 [Normal]<br>             <b>HEI:</b> 13.00<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.03 mg/L (30 &mu;g/L)         </div>         </div>`)[0];
+                popup_dfe98af11d071e1d5b2f7b1bdd93f985.setContent(html_b0728c1a4ced2fa124aa2caae79e6615);
+            
+        
+
+        circle_marker_c9dd3a660edf02eea818fc59cd1b8972.bindPopup(popup_dfe98af11d071e1d5b2f7b1bdd93f985)
+        ;
+
+        
+    
+    
+            circle_marker_c9dd3a660edf02eea818fc59cd1b8972.bindTooltip(
+                `<div>
+                     S98_01819 (Rajshahi) - WQI: 33.1, HPI: 58.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3a9dbebf0547a062c5acb942b420976 = L.circleMarker(
+                [24.4102, 88.9834],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_3ec6eb50ef3ea516fa0e1c9615149667 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aeadec9e5605b20e4364507fca88b52f = $(`<div id="html_aeadec9e5605b20e4364507fca88b52f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01820<br>             <b>Location (Thana Centroid):</b> Natore Sadar, Natore<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 37.56 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 59.30 [Normal]<br>             <b>HEI:</b> 8.42<br>             <b>As Conc:</b> 5.5 &mu;g/L<br>             <b>Fe Conc:</b> 0.03 mg/L (32 &mu;g/L)         </div>         </div>`)[0];
+                popup_3ec6eb50ef3ea516fa0e1c9615149667.setContent(html_aeadec9e5605b20e4364507fca88b52f);
+            
+        
+
+        circle_marker_f3a9dbebf0547a062c5acb942b420976.bindPopup(popup_3ec6eb50ef3ea516fa0e1c9615149667)
+        ;
+
+        
+    
+    
+            circle_marker_f3a9dbebf0547a062c5acb942b420976.bindTooltip(
+                `<div>
+                     S98_01820 (Natore) - WQI: 37.6, HPI: 59.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc4c709d02a5021e8c406c71acd86d07 = L.circleMarker(
+                [24.5002, 89.1502],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_2f0fdeaf0fdc2b73d3eb04182153ce6d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8960d172daee7ce7d8c96920728114c5 = $(`<div id="html_8960d172daee7ce7d8c96920728114c5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01821<br>             <b>Location (Thana Centroid):</b> Singra, Natore<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 26.33 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 39.51 [Normal]<br>             <b>HEI:</b> 8.70<br>             <b>As Conc:</b> 0.2 &mu;g/L<br>             <b>Fe Conc:</b> 0.04 mg/L (37 &mu;g/L)         </div>         </div>`)[0];
+                popup_2f0fdeaf0fdc2b73d3eb04182153ce6d.setContent(html_8960d172daee7ce7d8c96920728114c5);
+            
+        
+
+        circle_marker_cc4c709d02a5021e8c406c71acd86d07.bindPopup(popup_2f0fdeaf0fdc2b73d3eb04182153ce6d)
+        ;
+
+        
+    
+    
+            circle_marker_cc4c709d02a5021e8c406c71acd86d07.bindTooltip(
+                `<div>
+                     S98_01821 (Natore) - WQI: 26.3, HPI: 39.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d1b8f8f27437e29fe7fdcc6d6ff85e1 = L.circleMarker(
+                [24.1834, 88.9751],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_77f7c208b53c9565cb3ce28aa5e6b3ee = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1957651efa4c4f61ab9bf284d40cc17f = $(`<div id="html_1957651efa4c4f61ab9bf284d40cc17f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01822<br>             <b>Location (Thana Centroid):</b> Lalpur, Natore<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 19.84 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 29.22 [Normal]<br>             <b>HEI:</b> 5.27<br>             <b>As Conc:</b> 0.9 &mu;g/L<br>             <b>Fe Conc:</b> 0.04 mg/L (36 &mu;g/L)         </div>         </div>`)[0];
+                popup_77f7c208b53c9565cb3ce28aa5e6b3ee.setContent(html_1957651efa4c4f61ab9bf284d40cc17f);
+            
+        
+
+        circle_marker_4d1b8f8f27437e29fe7fdcc6d6ff85e1.bindPopup(popup_77f7c208b53c9565cb3ce28aa5e6b3ee)
+        ;
+
+        
+    
+    
+            circle_marker_4d1b8f8f27437e29fe7fdcc6d6ff85e1.bindTooltip(
+                `<div>
+                     S98_01822 (Natore) - WQI: 19.8, HPI: 29.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb389a366d824eb6dc7466ce37a3e019 = L.circleMarker(
+                [24.5334, 89.5334],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_8aeede83be684c16cde8950cefd37f57 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1e853fc9672ebd248313136770ecf2b5 = $(`<div id="html_1e853fc9672ebd248313136770ecf2b5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01823<br>             <b>Location (Thana Centroid):</b> Raiganj, Sirajganj<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 43.90 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 103.63 <span style="color:red;font-weight:bold;">[CRITICAL POLLUTED]</span><br>             <b>HEI:</b> 21.06<br>             <b>As Conc:</b> 12.3 &mu;g/L<br>             <b>Fe Conc:</b> 3.99 mg/L (3990 &mu;g/L)         </div>         </div>`)[0];
+                popup_8aeede83be684c16cde8950cefd37f57.setContent(html_1e853fc9672ebd248313136770ecf2b5);
+            
+        
+
+        circle_marker_cb389a366d824eb6dc7466ce37a3e019.bindPopup(popup_8aeede83be684c16cde8950cefd37f57)
+        ;
+
+        
+    
+    
+            circle_marker_cb389a366d824eb6dc7466ce37a3e019.bindTooltip(
+                `<div>
+                     S98_01823 (Sirajganj) - WQI: 43.9, HPI: 103.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8912514bc21c76da9904a54ff02a7f17 = L.circleMarker(
+                [24.4584, 89.7084],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_657768bbeb34aeb5d7ac3eca17f702fa = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e00d83464c89bc7d37c0566f57087387 = $(`<div id="html_e00d83464c89bc7d37c0566f57087387" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01824<br>             <b>Location (Thana Centroid):</b> Sirajganj Sadar, Sirajganj<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 45.31 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 100.91 <span style="color:red;font-weight:bold;">[CRITICAL POLLUTED]</span><br>             <b>HEI:</b> 9.23<br>             <b>As Conc:</b> 15.4 &mu;g/L<br>             <b>Fe Conc:</b> 0.40 mg/L (397 &mu;g/L)         </div>         </div>`)[0];
+                popup_657768bbeb34aeb5d7ac3eca17f702fa.setContent(html_e00d83464c89bc7d37c0566f57087387);
+            
+        
+
+        circle_marker_8912514bc21c76da9904a54ff02a7f17.bindPopup(popup_657768bbeb34aeb5d7ac3eca17f702fa)
+        ;
+
+        
+    
+    
+            circle_marker_8912514bc21c76da9904a54ff02a7f17.bindTooltip(
+                `<div>
+                     S98_01824 (Sirajganj) - WQI: 45.3, HPI: 100.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e97a291b6e15f929a6aa0091008e5558 = L.circleMarker(
+                [24.2251, 89.2918],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_be2670816b66402b6b97a56e9060dfad = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1e5c30574a15d855080f787fd792a9bd = $(`<div id="html_1e5c30574a15d855080f787fd792a9bd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01825<br>             <b>Location (Thana Centroid):</b> Chatmohar, Pabna<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 26.65 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 43.00 [Normal]<br>             <b>HEI:</b> 6.58<br>             <b>As Conc:</b> 3.5 &mu;g/L<br>             <b>Fe Conc:</b> 0.04 mg/L (44 &mu;g/L)         </div>         </div>`)[0];
+                popup_be2670816b66402b6b97a56e9060dfad.setContent(html_1e5c30574a15d855080f787fd792a9bd);
+            
+        
+
+        circle_marker_e97a291b6e15f929a6aa0091008e5558.bindPopup(popup_be2670816b66402b6b97a56e9060dfad)
+        ;
+
+        
+    
+    
+            circle_marker_e97a291b6e15f929a6aa0091008e5558.bindTooltip(
+                `<div>
+                     S98_01825 (Pabna) - WQI: 26.7, HPI: 43.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd1881375d09f3079a0b717be710a15c = L.circleMarker(
+                [24.0084, 89.2418],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_3b6d6ccdb201344f0444c1d1b3b96c64 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0c3cd39ae0f58f71647fe44260419ffb = $(`<div id="html_0c3cd39ae0f58f71647fe44260419ffb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01826<br>             <b>Location (Thana Centroid):</b> Pabna Sadar, Pabna<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 22.64 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 32.24 [Normal]<br>             <b>HEI:</b> 5.77<br>             <b>As Conc:</b> 1.9 &mu;g/L<br>             <b>Fe Conc:</b> 0.15 mg/L (151 &mu;g/L)         </div>         </div>`)[0];
+                popup_3b6d6ccdb201344f0444c1d1b3b96c64.setContent(html_0c3cd39ae0f58f71647fe44260419ffb);
+            
+        
+
+        circle_marker_fd1881375d09f3079a0b717be710a15c.bindPopup(popup_3b6d6ccdb201344f0444c1d1b3b96c64)
+        ;
+
+        
+    
+    
+            circle_marker_fd1881375d09f3079a0b717be710a15c.bindTooltip(
+                `<div>
+                     S98_01826 (Pabna) - WQI: 22.6, HPI: 32.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ff5609f65c6c45fc23a19f136276d6e = L.circleMarker(
+                [24.0125, 89.4334],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_4943130450f1ffb23e46ff7a326d7963 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a2870fb122c91e2ba95ac646d373fbca = $(`<div id="html_a2870fb122c91e2ba95ac646d373fbca" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01827<br>             <b>Location (Thana Centroid):</b> Sujanagar, Pabna<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 36.49 (Excellent Water (WQI < 50))<br>             <b>HPI:</b> 72.03 [Normal]<br>             <b>HEI:</b> 15.38<br>             <b>As Conc:</b> 1.1 &mu;g/L<br>             <b>Fe Conc:</b> 0.06 mg/L (61 &mu;g/L)         </div>         </div>`)[0];
+                popup_4943130450f1ffb23e46ff7a326d7963.setContent(html_a2870fb122c91e2ba95ac646d373fbca);
+            
+        
+
+        circle_marker_6ff5609f65c6c45fc23a19f136276d6e.bindPopup(popup_4943130450f1ffb23e46ff7a326d7963)
+        ;
+
+        
+    
+    
+            circle_marker_6ff5609f65c6c45fc23a19f136276d6e.bindTooltip(
+                `<div>
+                     S98_01827 (Pabna) - WQI: 36.5, HPI: 72.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ccc4d6542a501af33732befaec06b0a = L.circleMarker(
+                [24.0668, 89.6251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_2422b85aca62840d97b3d717936420a1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_841de8b72cd0762a1e4f6a604e9fc558 = $(`<div id="html_841de8b72cd0762a1e4f6a604e9fc558" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01828<br>             <b>Location (Thana Centroid):</b> Bera, Pabna<br>             <b>Facies:</b> Ca-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 107.42 (Poor Water (100 <= WQI < 200))<br>             <b>HPI:</b> 244.56 <span style="color:red;font-weight:bold;">[CRITICAL POLLUTED]</span><br>             <b>HEI:</b> 37.60<br>             <b>As Conc:</b> 28.7 &mu;g/L<br>             <b>Fe Conc:</b> 3.75 mg/L (3750 &mu;g/L)         </div>         </div>`)[0];
+                popup_2422b85aca62840d97b3d717936420a1.setContent(html_841de8b72cd0762a1e4f6a604e9fc558);
+            
+        
+
+        circle_marker_7ccc4d6542a501af33732befaec06b0a.bindPopup(popup_2422b85aca62840d97b3d717936420a1)
+        ;
+
+        
+    
+    
+            circle_marker_7ccc4d6542a501af33732befaec06b0a.bindTooltip(
+                `<div>
+                     S98_01828 (Pabna) - WQI: 107.4, HPI: 244.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b10671cd07ab36e8896fb2ebc73e470 = L.circleMarker(
+                [24.6668, 89.4168],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_e8ac2e5af261150c6925fa5affa22132);
+        
+    
+        var popup_7d19375af8417f0089ccd8fb6dcdefa2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_957ecf02d3dd3ae9a2004a7862d209e0 = $(`<div id="html_957ecf02d3dd3ae9a2004a7862d209e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 230px;">             <b>Sample ID:</b> S98_01834<br>             <b>Location (Thana Centroid):</b> Sherpur, Bogra<br>             <b>Facies:</b> Mixed-Cation-HCO3<br>             <hr style="margin:4px 0;">             <b>WQI:</b> 132.01 (Poor Water (100 <= WQI < 200))<br>             <b>HPI:</b> 319.33 <span style="color:red;font-weight:bold;">[CRITICAL POLLUTED]</span><br>             <b>HEI:</b> 90.90<br>             <b>As Conc:</b> 27.8 &mu;g/L<br>             <b>Fe Conc:</b> 19.60 mg/L (19600 &mu;g/L)         </div>         </div>`)[0];
+                popup_7d19375af8417f0089ccd8fb6dcdefa2.setContent(html_957ecf02d3dd3ae9a2004a7862d209e0);
+            
+        
+
+        circle_marker_3b10671cd07ab36e8896fb2ebc73e470.bindPopup(popup_7d19375af8417f0089ccd8fb6dcdefa2)
+        ;
+
+        
+    
+    
+            circle_marker_3b10671cd07ab36e8896fb2ebc73e470.bindTooltip(
+                `<div>
+                     S98_01834 (Bogra) - WQI: 132.0, HPI: 319.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

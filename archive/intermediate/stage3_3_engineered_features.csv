@@ -1,0 +1,15 @@
+feature,family,formula,unit,justification
+TDS_log,Salinity,ln(TDS_calc),ln(mg/L),Log-transformed mineralization scale
+Ratio_Ca_Mg_meq,Cation Ratio,Ca_meq / Mg_meq,meq/meq,Dolomite vs calcite dissolution indicator
+Ratio_Ca_HCO3_meq,Carbonate Ratio,Ca_meq / HCO3_meq,meq/meq,Calcite weathering indicator
+Ratio_Mg_HCO3_meq,Carbonate Ratio,Mg_meq / HCO3_meq,meq/meq,Dolomite weathering indicator
+Ratio_Na_CaMg_meq,Ion Exchange,Na_meq / (Ca_meq + Mg_meq),meq/meq,Base exchange index
+Ratio_CaMg_HCO3SO4_meq,Weathering,(Ca_meq + Mg_meq) / (HCO3_meq + SO4_meq),meq/meq,Silicate vs carbonate weathering
+Ratio_HCO3_CaMg_meq,Carbonate Ratio,HCO3_meq / (Ca_meq + Mg_meq),meq/meq,Alkalinity-hardness balance
+CAI_2,Ion Exchange,(Cl_meq - (Na_meq + K_meq)) / (SO4_meq + HCO3_meq + NO3_meq),Dimensionless,Chloro-Alkaline Index 2
+Hardness_total_proxy_meq,Hardness,Ca_meq + Mg_meq,meq/L,Total hardness equivalent proxy
+Ca_Mg_sum_mg,Hardness,Ca_num + Mg_num,mg/L,Mass sum of major divalent cations
+Fe_Mn_ratio,Redox Proxy,Fe_num / Mn_num,Dimensionless,Secondary redox mobilization indicator (no pseudo-Eh)
+Depth_x_TDS,Depth Interaction,WELL_DEPTH * TDS_calc,m * mg/L,Aquifer depth-salinity interaction
+Depth_x_pH,Depth Interaction,WELL_DEPTH * pH_proxy,m * pH units,Aquifer depth-pH proxy interaction
+Depth_x_CAI1,Depth Interaction,WELL_DEPTH * CAI_1,m * Index,Aquifer depth-ion exchange interaction

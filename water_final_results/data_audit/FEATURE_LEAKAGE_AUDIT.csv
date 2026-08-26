@@ -1,0 +1,92 @@
+variable,classification,rationale
+WELL_TYPE,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+WELL_DEPTH,A. Allowed Primary Predictor,Low-cost field measurement; independent of heavy-metal laboratory analysis.
+DISTRICT,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+THANA,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+UNION,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+MOUZA,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+GEOCODE,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+SAMPLE_ID,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ca,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Mg,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Na,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+K,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+P,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cl,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+HCO3,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+SO4,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+NH4-N,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+NO2-N,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+NO3-N,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Pb,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ni,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Zn,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+As,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cd,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cr,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cu,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Fe,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Mn,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ca_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Mg_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Na_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+K_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cl_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+HCO3_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+SO4_num,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+NO3-N_num,A. Allowed Primary Predictor,Low-cost field measurement; independent of heavy-metal laboratory analysis.
+Fe_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Mn_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+As_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Pb_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Ni_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Zn_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Cd_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Cr_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+Cu_num,B. Forbidden Target-Derived Predictor,Laboratory spectroscopy required; target or target-correlated heavy metal.
+TDS_calc,A. Allowed Primary Predictor,Low-cost field measurement; independent of heavy-metal laboratory analysis.
+Ca_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Mg_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Na_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+K_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cl_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+HCO3_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+SO4_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+NO3_meq,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cat_sum,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+An_sum,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+CBE_pct,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pct_Ca,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pct_Mg,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pct_Na_K,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pct_HCO3,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pct_Cl,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pct_SO4_NO3,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Facies,C. Hydrochemical Interpretation-Only Variable,Categorical facies classification used for qualitative regime analysis only.
+Gibbs_Cation,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Gibbs_Anion,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Gibbs_Mechanism,C. Hydrochemical Interpretation-Only Variable,Categorical facies classification used for qualitative regime analysis only.
+Ratio_Na_Cl,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ratio_Ca_Mg,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ratio_CaMg_HCO3SO4,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+CAI_1,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+CAI_2,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ion_Exchange_Process,C. Hydrochemical Interpretation-Only Variable,Categorical facies classification used for qualitative regime analysis only.
+Fe_mgL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Mn_mgL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Fe_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Mn_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+As_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Pb_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Ni_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Zn_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Cd_ugL,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+WQI,D. Outcome-Derived Variable,Mathematical index calculated directly from target metal concentrations.
+WQI_Category,D. Outcome-Derived Variable,Mathematical index calculated directly from target metal concentrations.
+HPI,D. Outcome-Derived Variable,Mathematical index calculated directly from target metal concentrations.
+HEI,D. Outcome-Derived Variable,Mathematical index calculated directly from target metal concentrations.
+HPI_Polluted,D. Outcome-Derived Variable,Mathematical index calculated directly from target metal concentrations.
+HEI_Category,D. Outcome-Derived Variable,Mathematical index calculated directly from target metal concentrations.
+Latitude,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+Longitude,E. Metadata / Spatial Identifier,"Spatial location, sample ID, or metadata."
+pH_proxy,A. Allowed Primary Predictor,Low-cost field measurement; independent of heavy-metal laboratory analysis.

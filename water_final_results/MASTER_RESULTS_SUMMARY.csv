@@ -1,0 +1,10 @@
+category,selected_model,OOF_R2_mean,OOF_RMSE_mean,OOF_MAE_mean,Spearman_mean,Evidence_Status
+Ni Screening (Dynamic Selected Model),HuberRegressor,0.224,1.7707,0.9765,0.6333,SUPPORTED
+Cd Screening (Dynamic Selected Model),LinearRegression,0.7059,0.0658,0.0465,0.6845,SUPPORTED
+Other Target (Pb_num),HuberRegressor,0.118,1.1748,0.5711,0.5117,PROMISING_BUT_UNCERTAIN
+Other Target (Fe_num),HistGradientBoosting,-0.0722,3.559,1.9179,-0.2472,NOT_SUPPORTED
+Other Target (As_num),HistGradientBoosting,-0.0716,6.7734,3.9482,-0.1856,NOT_SUPPORTED
+Other Target (Mn_num),HistGradientBoosting,-0.0457,1.1164,0.7098,-0.147,NOT_SUPPORTED
+Other Target (Zn_num),HistGradientBoosting,-0.0933,23.9825,16.598,-0.2369,NOT_SUPPORTED
+Other Target (Cr_num),Dummy_Median,-0.0443,0.3823,0.0788,0.0,NOT_SUPPORTED
+Other Target (Cu_num),ExtraTrees,0.0351,0.5912,0.2803,0.5129,PROMISING_BUT_UNCERTAIN

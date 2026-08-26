@@ -1,0 +1,5 @@
+feature,importance_mean,importance_std
+TDS_calc,0.6618,0.171
+NO3-N_num,-0.0011,0.0029
+pH_proxy,-0.0056,0.0166
+WELL_DEPTH,-0.0067,0.0085

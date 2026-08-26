@@ -1,0 +1,35 @@
+feature,category,unit,measured_or_derived,hydrochemical_meaning,possible_target_leakage,redundancy_risk,allowed_in_stage3_3
+SAMPLE_ID,F. Metadata,N/A,Metadata,Geographic or sample identifier,No,Low,No (Identifier only)
+DISTRICT,F. Metadata,N/A,Metadata,Geographic or sample identifier,No,Low,No (Identifier only)
+THANA,F. Metadata,N/A,Metadata,Geographic or sample identifier,No,Low,No (Identifier only)
+pH_proxy,B. Calculated hydrochemical variables,pH units (proxy),Calculated,Hydrochemical derivative pH_proxy,No,Low,Yes
+TDS_calc,B. Calculated hydrochemical variables,mg/L,Calculated,Hydrochemical derivative TDS_calc,No,High,Yes
+WELL_DEPTH,A. Direct measured variables,m,Direct Measured,Primary measurement of WELL_DEPTH,No,Medium,Yes
+Ca_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of Ca_num,No,High,Yes
+Mg_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of Mg_num,No,High,Yes
+Na_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of Na_num,No,Medium,Yes
+K_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of K_num,No,Medium,Yes
+Cl_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of Cl_num,No,Medium,Yes
+HCO3_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of HCO3_num,No,High,Yes
+SO4_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of SO4_num,No,Medium,Yes
+NO3-N_num,A. Direct measured variables,mg/L,Direct Measured,Primary measurement of NO3-N_num,No,Medium,Yes
+Ratio_Na_Cl,C. Ratios,Dimensionless,Calculated Ratio,Molar or mass ratio Ratio_Na_Cl,No,High,Yes
+Ratio_CaMg_HCO3SO4,C. Ratios,Dimensionless,Calculated Ratio,Molar or mass ratio Ratio_CaMg_HCO3SO4,No,Medium,Yes
+CAI_1,D. Hydrochemical indices,Dimensionless,Calculated Index,Chloro-Alkaline Index 1 (CAI_1),No,High (Correlated with Na/Cl),Yes
+Facies_Ca-HCO3,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Ca-HCO3,No,Medium,Yes
+Facies_Mixed-Cation-HCO3,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Mixed-Cation-HCO3,No,Medium,Yes
+Facies_Mixed-Cation-Mixed-Anion,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Mixed-Cation-Mixed-Anion,No,Medium,Yes
+Facies_Mixed-Cation-SO4,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Mixed-Cation-SO4,No,Medium,Yes
+Facies_Na-Cl,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Na-Cl,No,Medium,Yes
+Facies_Na-HCO3,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Na-HCO3,No,Medium,Yes
+Facies_Na-Mixed-Anion,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Facies_Na-Mixed-Anion,No,Medium,Yes
+IonEx_Direct Ion Exchange (Na matrix -> Ca solution),E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process IonEx_Direct Ion Exchange (Na matrix -> Ca solution),No,Medium,Yes
+IonEx_Reverse Ion Exchange (Ca matrix -> Na solution),E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process IonEx_Reverse Ion Exchange (Ca matrix -> Na solution),No,Medium,Yes
+Gibbs_Rock-Water Interaction Dominance,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Gibbs_Rock-Water Interaction Dominance,No,Medium,Yes
+Gibbs_Evaporation / Crystallization Dominance,E. Categorical hydrochemical classifications,Binary Dummy (0/1),Derived Classification,One-hot encoded facies or process Gibbs_Evaporation / Crystallization Dominance,No,Medium,Yes
+As_num,G. Targets,mg/L or ug/L or Index,Measured Target,Target variable to predict,Target Column,N/A,Target
+Fe_num,G. Targets,mg/L or ug/L or Index,Measured Target,Target variable to predict,Target Column,N/A,Target
+Mn_num,G. Targets,mg/L or ug/L or Index,Measured Target,Target variable to predict,Target Column,N/A,Target
+Pb_num,G. Targets,mg/L or ug/L or Index,Measured Target,Target variable to predict,Target Column,N/A,Target
+Ni_num,G. Targets,mg/L or ug/L or Index,Measured Target,Target variable to predict,Target Column,N/A,Target
+Zn_num,G. Targets,mg/L or ug/L or Index,Measured Target,Target variable to predict,Target Column,N/A,Target

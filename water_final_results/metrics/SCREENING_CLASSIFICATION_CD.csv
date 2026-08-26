@@ -1,0 +1,2 @@
+target,regulatory_threshold,N_positive,N_negative,Sensitivity,Specificity,Precision,NPV,F1_Score,Balanced_Accuracy,note
+Cd_num,3.0,0,40,,,,,,,Classification metrics defined as NaN due to zero positive/negative cases in small sample.

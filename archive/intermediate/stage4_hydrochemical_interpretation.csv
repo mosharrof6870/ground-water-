@@ -1,0 +1,16 @@
+target,feature,shap_rank,effect_direction,hydrochemical_role,interpretability,redundancy_risk,confidence,caution
+Ni_num,Ratio_Ca_Mg_meq,1,Positive (+),Dolomite vs calcite weathering balance,High,Moderate,High,Correlated ion ratio proxy
+Ni_num,NO3-N_num,2,Positive (+),Anthropogenic agricultural runoff & oxidative mobilization,High,Low,High,Proxy for land-use intensity
+Ni_num,TDS_calc,3,Positive (+),Total ionic strength & mineralization level,High,High (Correlated with EC),High,Correlated-feature attribution
+Ni_num,pH_proxy,4,Negative (-),Acidic desorption vs alkaline precipitation of nickel,High,Low,High,Sensitivity proxy measurement
+Ni_num,WELL_DEPTH,5,Negative (-),Shallow groundwater vulnerability,Moderate,Low,Moderate,Depth-dependent redox gradient
+Pb_num,TDS_log,1,Positive (+),Log-mineralization scale & ionic complexation,Moderate,High,Moderate,Exploratory model interpretation
+Pb_num,pH_proxy,2,Negative (-),Lead solubility increase under lower pH,High,Low,Moderate,Exploratory model interpretation
+Pb_num,TDS_calc,3,Positive (+),Salinity/dissolved solids interaction,Moderate,High,Moderate,Correlated with TDS_log
+Mn_num,CAI_2,1,Positive (+),Base exchange & reductive dissolution of Mn oxides,Moderate,Moderate,Moderate,Secondary signal model
+Mn_num,pH_proxy,2,Negative (-),Manganese mobility in reductive acidic conditions,High,Low,Moderate,Secondary signal model
+As_num,TDS_calc,1,Positive (+),Mineralization & reductive dissolution association,Moderate,High,Low,Weak model performance (Mean R2 < 0)
+Fe_num,Depth_x_TDS,1,Positive (+),Aquifer depth-salinity interaction in reductive zones,Moderate,High,Low,Weak model performance (Mean R2 < 0)
+HPI,CAI_2,1,Positive (+),Ion exchange influence on metal pollution index,High,Moderate,Moderate,Derived index composite
+HEI,TDS_calc,1,Positive (+),Total metal evaluation index relationship with salinity,High,High,Moderate,Derived index composite
+WQI,CAI_2,1,Positive (+),Formula reconstruction proxy behavior,High,High,High,Formula reconstruction benchmark only

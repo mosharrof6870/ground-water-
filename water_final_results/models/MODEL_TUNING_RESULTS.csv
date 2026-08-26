@@ -1,0 +1,21 @@
+target,model,n_tested_configs,best_parameters,mean_training_time_sec,total_cv_fits
+Ni_num,Dummy_Median,1,{},0.0003,25
+Ni_num,LinearRegression,1,{},0.001,25
+Ni_num,Ridge,1,"{""alpha"": 10.0}",0.1855,25
+Ni_num,Lasso,1,"{""alpha"": 0.1}",0.0357,25
+Ni_num,ElasticNet,2,"{""alpha"": 1.0, ""l1_ratio"": 0.2}",0.0652,25
+Ni_num,HuberRegressor,2,"{""alpha"": 0.0001, ""epsilon"": 1.35}",0.2405,25
+Ni_num,RandomForest,3,"{""max_depth"": 2, ""min_samples_split"": 4, ""n_estimators"": 20}",1.8861,25
+Ni_num,ExtraTrees,3,"{""max_depth"": 2, ""min_samples_split"": 2, ""n_estimators"": 20}",1.0505,25
+Ni_num,GradientBoosting,3,"{""learning_rate"": 0.05, ""max_depth"": 2, ""n_estimators"": 20}",0.4511,25
+Ni_num,HistGradientBoosting,3,"{""learning_rate"": 0.01, ""max_depth"": 2, ""max_iter"": 20}",0.2714,25
+Cd_num,Dummy_Median,1,{},0.0003,25
+Cd_num,LinearRegression,1,{},0.0016,25
+Cd_num,Ridge,1,"{""alpha"": 0.1}",0.0467,25
+Cd_num,Lasso,1,"{""alpha"": 0.01}",0.0497,25
+Cd_num,ElasticNet,2,"{""alpha"": 0.01, ""l1_ratio"": 0.2}",0.1128,25
+Cd_num,HuberRegressor,2,"{""alpha"": 0.0001, ""epsilon"": 1.1}",0.3448,25
+Cd_num,RandomForest,3,"{""max_depth"": 3, ""min_samples_split"": 2, ""n_estimators"": 20}",2.0089,25
+Cd_num,ExtraTrees,3,"{""max_depth"": 3, ""min_samples_split"": 4, ""n_estimators"": 100}",1.4567,25
+Cd_num,GradientBoosting,3,"{""learning_rate"": 0.05, ""max_depth"": 3, ""n_estimators"": 50}",0.3093,25
+Cd_num,HistGradientBoosting,3,"{""learning_rate"": 0.01, ""max_depth"": 2, ""max_iter"": 20}",0.193,25

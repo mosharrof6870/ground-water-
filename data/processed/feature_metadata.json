@@ -1,0 +1,69 @@
+{
+  "n_samples": 40,
+  "full_feature_count": 25,
+  "parsimonious_feature_count": 5,
+  "full_numeric_features": [
+    "pH_proxy",
+    "TDS_calc",
+    "WELL_DEPTH",
+    "Ca_num",
+    "Mg_num",
+    "Na_num",
+    "K_num",
+    "Cl_num",
+    "HCO3_num",
+    "SO4_num",
+    "NO3-N_num",
+    "Ratio_Na_Cl",
+    "Ratio_CaMg_HCO3SO4",
+    "CAI_1"
+  ],
+  "full_categorical_features": [
+    "Facies",
+    "Ion_Exchange_Process",
+    "Gibbs_Mechanism"
+  ],
+  "full_encoded_dummy_features": [
+    "Facies_Ca-HCO3",
+    "Facies_Mixed-Cation-HCO3",
+    "Facies_Mixed-Cation-Mixed-Anion",
+    "Facies_Mixed-Cation-SO4",
+    "Facies_Na-Cl",
+    "Facies_Na-HCO3",
+    "Facies_Na-Mixed-Anion",
+    "IonEx_Direct Ion Exchange (Na matrix -> Ca solution)",
+    "IonEx_Reverse Ion Exchange (Ca matrix -> Na solution)",
+    "Gibbs_Rock-Water Interaction Dominance",
+    "Gibbs_Evaporation / Crystallization Dominance"
+  ],
+  "constant_columns_removed": [
+    "Gibbs_Precipitation Dominance",
+    "IonEx_Equilibrium / Complex Exchange"
+  ],
+  "parsimonious_candidate_features": [
+    "TDS_calc",
+    "WELL_DEPTH",
+    "CAI_1",
+    "NO3-N_num",
+    "pH_proxy"
+  ],
+  "track1_targets": [
+    "As_num",
+    "Fe_num",
+    "Mn_num",
+    "Pb_num",
+    "Ni_num",
+    "Zn_num"
+  ],
+  "track2_targets": [
+    "HPI",
+    "HEI",
+    "WQI",
+    "Cd"
+  ],
+  "ph_proxy_status": "NOT VERIFIED \u2014 SCIENTIFIC BASIS REQUIRED (Retained as Sensitivity Feature)",
+  "sample_feature_ratio_claim": "Lower-dimensional and more parsimonious than full feature set, but still subject to small-sample uncertainty",
+  "wqi_deterministic_reconstruction_flag": true,
+  "zero_leakage_pipeline_enforced": true,
+  "scaling_applied": false
+}

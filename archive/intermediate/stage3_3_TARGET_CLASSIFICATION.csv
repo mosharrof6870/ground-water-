@@ -1,0 +1,11 @@
+target,track,classification,frozen_model,frozen_config,mean_R2,median_R2,Spearman_rho,positive_fold_pct,justification
+As_num,Track 1 (Heavy Metals),C. WEAK / UNCERTAIN,SVR_RBF,M2_Core_Salinity,-0.3635,-0.1821,0.197,16.0,"C. WEAK / UNCERTAIN: Mean R2=-0.3635, Median R2=-0.1821, Spearman=0.1970, 16.0% positive outer test folds."
+Fe_num,Track 1 (Heavy Metals),C. WEAK / UNCERTAIN,SVR_RBF,M5_Core_DepthInteractions,-0.5169,-0.1786,0.2209,28.0,"C. WEAK / UNCERTAIN: Mean R2=-0.5169, Median R2=-0.1786, Spearman=0.2209, 28.0% positive outer test folds."
+Mn_num,Track 1 (Heavy Metals),C. WEAK / UNCERTAIN,Lasso,M4_Core_IonExchange,-0.2894,-0.0845,0.4496,24.0,"C. WEAK / UNCERTAIN: Mean R2=-0.2894, Median R2=-0.0845, Spearman=0.4496, 24.0% positive outer test folds."
+Pb_num,Track 1 (Heavy Metals),B. SECONDARY / LIMITED SIGNAL,SVR_RBF,M2_Core_Salinity,-0.36,0.1028,0.3457,60.0,"B. SECONDARY / LIMITED SIGNAL: Mean R2=-0.3600, Median R2=0.1028, Spearman=0.3457, 60.0% positive outer test folds."
+Ni_num,Track 1 (Heavy Metals),A. PRIMARY PREDICTIVE CANDIDATE,SVR_RBF,M3_Core_IonRatios,0.1281,0.1825,0.5248,76.0,"A. PRIMARY PREDICTIVE CANDIDATE: Mean R2=0.1281, Median R2=0.1825, Spearman=0.5248, 76.0% positive outer test folds."
+Zn_num,Track 1 (Heavy Metals),D. NO DEMONSTRATED PREDICTIVE SIGNAL,Lasso,M1_Core,-0.6877,-0.1325,-0.1162,0.0,"D. NO DEMONSTRATED PREDICTIVE SIGNAL: Mean R2=-0.6877, Median R2=-0.1325, Spearman=-0.1162, 0.0% positive outer test folds."
+HPI,Track 2 (Risk Indices & Cd),C. WEAK / UNCERTAIN,Lasso,M4_Core_IonExchange,-0.1039,-0.0531,0.4295,28.0,"C. WEAK / UNCERTAIN: Mean R2=-0.1039, Median R2=-0.0531, Spearman=0.4295, 28.0% positive outer test folds."
+HEI,Track 2 (Risk Indices & Cd),B. SECONDARY / LIMITED SIGNAL,Lasso,M1_Core,-0.2678,-0.0981,0.459,32.0,"B. SECONDARY / LIMITED SIGNAL: Mean R2=-0.2678, Median R2=-0.0981, Spearman=0.4590, 32.0% positive outer test folds."
+WQI,Track 2 (Risk Indices & Cd),C. WEAK / UNCERTAIN,Lasso,M4_Core_IonExchange,-0.1587,-0.0913,0.2686,32.0,"C. WEAK / UNCERTAIN: Mean R2=-0.1587, Median R2=-0.0913, Spearman=0.2686, 32.0% positive outer test folds."
+Cd,Track 2 (Risk Indices & Cd),C. WEAK / UNCERTAIN,SVR_RBF,M4_Core_IonExchange,-0.255,-0.1309,0.2762,20.0,"C. WEAK / UNCERTAIN: Mean R2=-0.2550, Median R2=-0.1309, Spearman=0.2762, 20.0% positive outer test folds."

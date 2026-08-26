@@ -1,0 +1,97 @@
+variable,source_file,available,sample_count,missing_count,unit,scientific_relevance,already_used,eligible_for_stage5,reason
+WELL_TYPE,phase2_risk_indices_results.csv,True,38,2,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+WELL_DEPTH,phase2_risk_indices_results.csv,True,39,1,N/A,Core baseline predictor from Stage 3.3,True,True,Already included in Stage 3.3
+DISTRICT,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+THANA,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+UNION,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+MOUZA,phase2_risk_indices_results.csv,True,39,1,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+GEOCODE,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+SAMPLE_ID,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ca,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Mg,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Na,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+K,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+P,phase2_risk_indices_results.csv,True,40,0,N/A,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+Cl,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+HCO3,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+SO4,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+NH4-N,phase2_risk_indices_results.csv,True,40,0,N/A,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+NO2-N,phase2_risk_indices_results.csv,True,40,0,N/A,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+NO3-N,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Pb,phase2_risk_indices_results.csv,True,40,0,ug/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ni,phase2_risk_indices_results.csv,True,40,0,ug/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Zn,phase2_risk_indices_results.csv,True,35,5,ug/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+As,phase2_risk_indices_results.csv,True,40,0,ug/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Cd,phase2_risk_indices_results.csv,True,40,0,ug/L,Target variable,False,False,Target variable for prediction
+Cr,phase2_risk_indices_results.csv,True,40,0,N/A,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+Cu,phase2_risk_indices_results.csv,True,40,0,N/A,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+Fe,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Mn,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ca_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+Mg_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+Na_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+K_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+Cl_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+HCO3_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+SO4_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Measured hydrochemical element,False,True,Eligible candidate predictor for Stage 5.2
+NO3-N_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Core baseline predictor from Stage 3.3,True,True,Already included in Stage 3.3
+Fe_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Target variable,False,False,Target variable for prediction
+Mn_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Target variable,False,False,Target variable for prediction
+As_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Target variable,False,False,Target variable for prediction
+Pb_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Target variable,False,False,Target variable for prediction
+Ni_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Target variable,False,False,Target variable for prediction
+Zn_num,phase2_risk_indices_results.csv,True,35,5,mg/L,Target variable,False,False,Target variable for prediction
+Cd_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Cr_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Cu_num,phase2_risk_indices_results.csv,True,40,0,mg/L,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+TDS_calc,phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor from Stage 3.3,True,True,Already included in Stage 3.3
+Ca_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Mg_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Na_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+K_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Cl_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+HCO3_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+SO4_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+NO3_meq,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Cat_sum,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+An_sum,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+CBE_pct,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+pct_Ca,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+pct_Mg,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+pct_Na_K,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+pct_HCO3,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+pct_Cl,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+pct_SO4_NO3,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Facies,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Gibbs_Cation,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Gibbs_Anion,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Gibbs_Mechanism,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ratio_Na_Cl,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ratio_Ca_Mg,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ratio_CaMg_HCO3SO4,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+CAI_1,phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor from Stage 3.3,True,True,Already included in Stage 3.3
+CAI_2,phase2_risk_indices_results.csv,True,40,0,N/A,Core baseline predictor from Stage 3.3,True,True,Already included in Stage 3.3
+Ion_Exchange_Process,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Fe_mgL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Mn_mgL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Fe_ugL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Mn_ugL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+As_ugL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Pb_ugL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Ni_ugL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Zn_ugL,phase2_risk_indices_results.csv,True,35,5,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Cd_ugL,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+WQI,phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,False,False,Target variable for prediction
+WQI_Category,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+HPI,phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,False,False,Target variable for prediction
+HEI,phase2_risk_indices_results.csv,True,40,0,N/A,Target variable,False,False,Target variable for prediction
+HPI_Polluted,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+HEI_Category,phase2_risk_indices_results.csv,True,40,0,N/A,Administrative metadata / derived hydrochemical index,False,False,Metadata or secondary index
+Latitude,phase2_risk_indices_results.csv,True,40,0,N/A,Thana administrative centroid coordinates,False,False,Thana centroid level resolution only; insufficient for sample spatial ML
+Longitude,phase2_risk_indices_results.csv,True,40,0,N/A,Thana administrative centroid coordinates,False,False,Thana centroid level resolution only; insufficient for sample spatial ML
+DO,NOT_AVAILABLE,False,0,40,N/A,Dissolved Oxygen,False,False,Not measured in raw dataset; fabrication forbidden
+ORP_Eh,NOT_AVAILABLE,False,0,40,N/A,Oxidation-Reduction Potential (Eh),False,False,Not measured in raw dataset; fabrication forbidden
+DOC_TOC,NOT_AVAILABLE,False,0,40,N/A,Dissolved/Total Organic Carbon,False,False,Not measured in raw dataset; fabrication forbidden
+Temperature,NOT_AVAILABLE,False,0,40,N/A,Groundwater Temperature,False,False,Not measured in raw dataset; fabrication forbidden
+Aquifer_Lithology_Borelog,NOT_AVAILABLE,False,0,40,N/A,Subsurface Lithology Borelog Data,False,False,Not measured in raw dataset; fabrication forbidden
+Distance_to_River,NOT_AVAILABLE,False,0,40,N/A,GIS Distance to Surface River Network,False,False,Not measured in raw dataset; fabrication forbidden
