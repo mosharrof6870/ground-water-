@@ -1,7 +1,6 @@
 """
-Model Loader Service.
-Responsible for loading saved scikit-learn models and conformal artifacts once at startup.
-Never silently substitutes missing models or fabricates fallback predictions.
+Model Loader — Singleton pattern.
+Loads models once at startup. Records ALL errors (model + conformal).
 """
 import os
 import joblib
@@ -10,62 +9,58 @@ from config import MODEL_CONFIG
 
 
 class ModelLoader:
-    _models = {}
-    _conformal_data = {}
-    _loaded = False
-    _load_errors = {}
+    _models        = {}
+    _conformal     = {}
+    _errors        = {}
+    _loaded        = False
 
     @classmethod
-    def load_all_models(cls):
-        """Loads Ni and Cd models and conformal artifacts into memory once."""
+    def load_all(cls):
         if cls._loaded:
-            return cls._models, cls._conformal_data, cls._load_errors
+            return cls._models, cls._conformal, cls._errors
 
-        cls._models = {}
-        cls._conformal_data = {}
-        cls._load_errors = {}
+        cls._models = {}; cls._conformal = {}; cls._errors = {}
 
         for key, cfg in MODEL_CONFIG.items():
-            model_path = cfg["model_path"]
-            conformal_path = cfg["conformal_path"]
-
-            # 1. Load trained model object
-            if not os.path.exists(model_path):
-                cls._load_errors[key] = f"{cfg['name']} model file not found at '{model_path}'."
+            # — Model —
+            if not os.path.exists(cfg["model_path"]):
+                cls._errors[key] = f"{cfg['name']} model file missing: {cfg['model_path']}"
                 continue
-            
             try:
-                model_obj = joblib.load(model_path)
-                cls._models[key] = model_obj
+                cls._models[key] = joblib.load(cfg["model_path"])
             except Exception as e:
-                cls._load_errors[key] = f"{cfg['name']} model could not be loaded: {str(e)}"
+                cls._errors[key] = f"{cfg['name']} model load error: {e}"
                 continue
 
-            # 2. Load conformal calibration dataset (if available)
-            if os.path.exists(conformal_path):
+            # — Conformal CSV —
+            if os.path.exists(cfg["conformal_path"]):
                 try:
-                    cdf = pd.read_csv(conformal_path)
-                    cls._conformal_data[key] = cdf
+                    cls._conformal[key] = pd.read_csv(cfg["conformal_path"])
                 except Exception as e:
-                    cls._conformal_data[key] = None
+                    cls._conformal[key] = None
+                    cls._errors[f"{key}_conformal"] = f"{cfg['name']} conformal CSV error: {e}"
             else:
-                cls._conformal_data[key] = None
+                cls._conformal[key] = None
+                cls._errors[f"{key}_conformal"] = f"{cfg['name']} conformal CSV not found."
 
         cls._loaded = True
-        return cls._models, cls._conformal_data, cls._load_errors
+        return cls._models, cls._conformal, cls._errors
 
     @classmethod
-    def get_model(cls, metal_key):
-        """Returns loaded model object or raises FileNotFoundError."""
-        cls.load_all_models()
-        if metal_key in cls._load_errors:
-            raise FileNotFoundError(cls._load_errors[metal_key])
-        if metal_key not in cls._models:
-            raise FileNotFoundError(f"Model for '{metal_key}' is not available.")
-        return cls._models[metal_key]
+    def get_model(cls, key):
+        cls.load_all()
+        if key in cls._errors:
+            raise FileNotFoundError(cls._errors[key])
+        if key not in cls._models:
+            raise FileNotFoundError(f"Model '{key}' not available.")
+        return cls._models[key]
 
     @classmethod
-    def get_conformal_data(cls, metal_key):
-        """Returns conformal calibration dataset or None."""
-        cls.load_all_models()
-        return cls._conformal_data.get(metal_key, None)
+    def get_conformal(cls, key):
+        cls.load_all()
+        return cls._conformal.get(key)
+
+    @classmethod
+    def get_all_errors(cls):
+        cls.load_all()
+        return cls._errors

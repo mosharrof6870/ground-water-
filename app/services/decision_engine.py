@@ -1,101 +1,76 @@
 """
-Regulatory Decision Engine.
-Evaluates model point prediction + uncertainty bounds against research threshold configuration.
-Incorporates 3-State Domain State (IN_DOMAIN vs OUT_OF_DOMAIN) into screening recommendations.
-Enforces strict rule: NEVER use the word "SAFE".
+Decision Engine — evaluates point prediction + conformal interval vs threshold.
+State machine: BELOW_THRESHOLD | UNCERTAIN | POTENTIAL_EXCEEDANCE | CONFIDENCE_UNAVAILABLE | OUT_OF_DOMAIN
+RULE: NEVER use the word 'safe'.
 """
 from config import THRESHOLDS, MODEL_CONFIG
 
 
 class DecisionEngine:
+
     @staticmethod
-    def evaluate_metal_screening(metal_key, point_prediction, uncertainty_result, domain_state="IN_DOMAIN"):
-        """
-        Evaluates screening decision for a single heavy metal target.
-        """
-        metal_symbol = MODEL_CONFIG[metal_key]["symbol"]
-        threshold = THRESHOLDS[metal_symbol]
-        confidence_label = MODEL_CONFIG[metal_key].get("confidence_level", "SCREENING CONFIDENCE")
-        distance = point_prediction - threshold
+    def evaluate(metal_key: str, point_pred: float, uncertainty: dict, domain_state: str = "IN_DOMAIN") -> dict:
+        symbol     = MODEL_CONFIG[metal_key]["symbol"]
+        threshold  = THRESHOLDS[symbol]
+        conf_label = MODEL_CONFIG[metal_key].get("confidence_level", "SCREENING CONFIDENCE")
+        distance   = point_pred - threshold
 
-        # RULE 1: IF MODEL DOMAIN IS OUTSIDE (OUT_OF_DOMAIN)
+        base = {"threshold": threshold, "distance_from_threshold": round(distance, 4)}
+
+        # CASE 0: Out-of-domain
         if domain_state == "OUT_OF_DOMAIN":
-            return {
-                "status_code": "OUT_OF_DOMAIN",
-                "title": "OUT-OF-DOMAIN — LABORATORY CONFIRMATION REQUIRED",
-                "description": (
-                    "This input is outside the range represented in the training data. "
-                    "The model prediction is extrapolative and should not be used as a stand-alone screening decision. "
-                    "Laboratory confirmation is recommended."
-                ),
-                "recommended_action": "Laboratory confirmation is required due to out-of-domain input.",
-                "threshold": threshold,
-                "distance_from_threshold": round(distance, 4),
-                "confidence_label": "OUTSIDE VALIDATED MODEL DOMAIN"
+            return {**base,
+                "status_code":       "OUT_OF_DOMAIN",
+                "title":             "OUT-OF-DOMAIN — LABORATORY CONFIRMATION REQUIRED",
+                "description":       ("Input is outside the validated training range. "
+                                      "Model prediction is extrapolative and must not be used as standalone screening."),
+                "recommended_action":"Laboratory confirmation required (out-of-domain input).",
+                "confidence_label":  "OUTSIDE VALIDATED MODEL DOMAIN",
             }
 
-        # RULE 2: IF CONFORMAL INTERVAL IS UNAVAILABLE
-        if not uncertainty_result or not uncertainty_result.get("available", False):
-            return {
-                "status_code": "CONFIDENCE_UNAVAILABLE",
-                "title": "SCREENING CONFIDENCE UNAVAILABLE — LABORATORY CONFIRMATION RECOMMENDED",
-                "description": (
-                    f"90% conformal interval unavailable for {metal_symbol}. "
-                    f"Point prediction is {point_prediction:.2f} µg/L (Threshold: {threshold} µg/L). "
-                    "Laboratory confirmation is recommended."
-                ),
-                "recommended_action": "Laboratory confirmation recommended.",
-                "threshold": threshold,
-                "distance_from_threshold": round(distance, 4),
-                "confidence_label": "CONFORMAL INTERVAL UNAVAILABLE"
+        # CASE 1: Conformal interval unavailable
+        if not uncertainty or not uncertainty.get("available", False):
+            return {**base,
+                "status_code":       "CONFIDENCE_UNAVAILABLE",
+                "title":             "SCREENING CONFIDENCE UNAVAILABLE — LABORATORY CONFIRMATION RECOMMENDED",
+                "description":       (f"90% conformal interval unavailable for {symbol}. "
+                                      f"Point prediction: {point_pred:.2f} µg/L (threshold: {threshold} µg/L)."),
+                "recommended_action":"Laboratory confirmation recommended.",
+                "confidence_label":  "CONFORMAL INTERVAL UNAVAILABLE",
             }
 
-        lower_b = uncertainty_result["lower_bound"]
-        upper_b = uncertainty_result["upper_bound"]
+        lower = uncertainty["lower_bound"]
+        upper = uncertainty["upper_bound"]
 
-        # RULE 3: IN-DOMAIN DECISION LOGIC BASED ON CONFORMAL INTERVAL OVERLAP
-        # CASE 1: Upper interval strictly below threshold
-        if upper_b < threshold:
-            return {
-                "status_code": "BELOW_THRESHOLD",
-                "title": "PRELIMINARY SCREENING: BELOW THRESHOLD",
-                "description": (
-                    f"The 90% conformal upper prediction bound ({upper_b:.2f} µg/L) is strictly below "
-                    f"the configured screening threshold ({threshold} µg/L)."
-                ),
-                "recommended_action": "Preliminary model-based screening pass. Routine monitoring advised.",
-                "threshold": threshold,
-                "distance_from_threshold": round(distance, 4),
-                "confidence_label": confidence_label
+        # CASE 2: Entire interval BELOW threshold
+        if upper < threshold:
+            return {**base,
+                "status_code":       "BELOW_THRESHOLD",
+                "title":             "PRELIMINARY SCREENING: BELOW THRESHOLD",
+                "description":       (f"90% conformal upper bound ({upper:.2f} µg/L) is strictly below "
+                                      f"the screening threshold ({threshold} µg/L)."),
+                "recommended_action":"Preliminary screening pass. Routine monitoring advised.",
+                "confidence_label":  conf_label,
             }
 
-        # CASE 3: Lower interval strictly above threshold
-        elif lower_b > threshold:
-            return {
-                "status_code": "POTENTIAL_EXCEEDANCE",
-                "title": "POTENTIAL EXCEEDANCE — LABORATORY CONFIRMATION REQUIRED",
-                "description": (
-                    f"The 90% conformal lower prediction bound ({lower_b:.2f} µg/L) exceeds "
-                    f"the configured screening threshold ({threshold} µg/L). Potential contamination detected."
-                ),
-                "recommended_action": "High-priority laboratory confirmation is required.",
-                "threshold": threshold,
-                "distance_from_threshold": round(distance, 4),
-                "confidence_label": confidence_label
+        # CASE 3: Entire interval ABOVE threshold
+        if lower > threshold:
+            return {**base,
+                "status_code":       "POTENTIAL_EXCEEDANCE",
+                "title":             "POTENTIAL EXCEEDANCE — LABORATORY CONFIRMATION REQUIRED",
+                "description":       (f"90% conformal lower bound ({lower:.2f} µg/L) exceeds "
+                                      f"screening threshold ({threshold} µg/L). Potential contamination detected."),
+                "recommended_action":"High-priority laboratory confirmation required.",
+                "confidence_label":  conf_label,
             }
 
-        # CASE 2: Interval straddles threshold (lower_b <= threshold <= upper_b)
-        else:
-            return {
-                "status_code": "UNCERTAIN",
-                "title": "UNCERTAIN — LABORATORY CONFIRMATION RECOMMENDED",
-                "description": (
-                    f"The 90% conformal prediction interval [{lower_b:.2f} – {upper_b:.2f} µg/L] "
-                    f"straddles the screening threshold ({threshold} µg/L). Point prediction ({point_prediction:.2f} µg/L) "
-                    "cannot rule out potential threshold exceedance."
-                ),
-                "recommended_action": "Laboratory confirmation is recommended.",
-                "threshold": threshold,
-                "distance_from_threshold": round(distance, 4),
-                "confidence_label": confidence_label
-            }
+        # CASE 4: Interval STRADDLES threshold
+        return {**base,
+            "status_code":       "UNCERTAIN",
+            "title":             "UNCERTAIN — LABORATORY CONFIRMATION RECOMMENDED",
+            "description":       (f"90% conformal interval [{lower:.2f} – {upper:.2f} µg/L] straddles "
+                                  f"the screening threshold ({threshold} µg/L). "
+                                  f"Point prediction ({point_pred:.2f} µg/L) cannot rule out exceedance."),
+            "recommended_action":"Laboratory confirmation is recommended.",
+            "confidence_label":  conf_label,
+        }

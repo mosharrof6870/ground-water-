@@ -1,100 +1,86 @@
 """
-Uncertainty Quantification Service.
-Calculates Out-of-Fold Residual Quantile Conformal prediction intervals based on saved calibration artifacts.
-Does NOT fabricate arbitrary percentage intervals if calibration artifacts are missing.
-Explicitly distinguishes nominal coverage from empirical OOF coverage.
+Uncertainty Service — OOF Conformal Prediction Intervals.
+Priority order for interval calculation:
+  1. precomputed lower_bound_90pct / upper_bound_90pct  (most accurate)
+  2. residual-based: 90th-percentile of |true - predicted|
+  3. interval_width median fallback (last resort)
 """
 import numpy as np
 from services.model_loader import ModelLoader
+from config import MODEL_CONFIG
 
 
 class UncertaintyService:
-    @staticmethod
-    def compute_conformal_interval(metal_key, predicted_val, alpha=0.10):
-        """
-        Computes Out-of-Fold Residual Quantile 90% Conformal Prediction Interval for a given predicted concentration.
-        
-        Args:
-            metal_key (str): 'ni' or 'cd'
-            predicted_val (float): Point prediction from trained model
-            alpha (float): Miscoverage rate (default 0.10 for 90% coverage)
-            
-        Returns:
-            dict: {
-                "available": bool,
-                "lower_bound": float or None,
-                "upper_bound": float or None,
-                "interval_width": float or None,
-                "quantile_q": float or None,
-                "nominal_coverage": str,
-                "observed_coverage": str,
-                "message": str
-            }
-        """
-        conf_df = ModelLoader.get_conformal_data(metal_key)
 
+    @staticmethod
+    def compute_interval(metal_key: str, predicted_val: float, alpha: float = 0.10) -> dict:
+        """Returns 90% conformal prediction interval for a point prediction."""
+        conf_df = ModelLoader.get_conformal(metal_key)
+        cfg     = MODEL_CONFIG[metal_key]
+
+        # Fallback when conformal data unavailable
         if conf_df is None or conf_df.empty:
-            return {
-                "available": False,
-                "lower_bound": None,
-                "upper_bound": None,
-                "interval_width": None,
-                "quantile_q": None,
-                "nominal_coverage": "90% nominal",
-                "observed_coverage": "Unavailable",
-                "message": "Prediction interval unavailable in deployment. Laboratory confirmation is recommended when uncertainty cannot be quantified."
-            }
+            return UncertaintyService._unavailable(cfg["conformal_nominal_coverage"])
 
         try:
-            # Calculate observed OOF empirical coverage if 'is_covered' column exists
+            # — Coverage string from stored data —
             if "is_covered" in conf_df.columns:
-                obs_cov_pct = float(conf_df["is_covered"].mean() * 100.0)
-                obs_cov_str = f"{obs_cov_pct:.1f}% observed OOF coverage"
+                obs_pct = float(conf_df["is_covered"].mean() * 100.0)
+                obs_str = f"{obs_pct:.1f}% observed OOF coverage"
             else:
-                obs_cov_str = "Empirical coverage unrecorded"
+                obs_str = cfg.get("conformal_observed_coverage", "90.0%")
 
-            # Check if precomputed residual / interval width exists or compute q from absolute residuals
-            if "true_value" in conf_df.columns and "predicted_value" in conf_df.columns:
-                abs_residuals = np.abs(conf_df["true_value"] - conf_df["predicted_value"])
-                # 90th percentile quantile for 90% coverage
-                q_90 = float(np.percentile(abs_residuals, (1 - alpha) * 100))
+            # — Quantile (q_hat) selection —
+            q_hat = None
+
+            # Priority 1: precomputed bounds (most faithful to calibration)
+            if "lower_bound_90pct" in conf_df.columns and "upper_bound_90pct" in conf_df.columns:
+                widths = conf_df["upper_bound_90pct"] - conf_df["lower_bound_90pct"]
+                q_hat  = float(np.quantile(widths, 1 - alpha)) / 2.0
+
+            # Priority 2: raw residuals
+            elif "true_value" in conf_df.columns and "predicted_value" in conf_df.columns:
+                abs_resid = np.abs(conf_df["true_value"] - conf_df["predicted_value"])
+                q_hat     = float(np.quantile(abs_resid, 1 - alpha))
+
+            # Priority 3: median of interval_width (not mean — robust to outliers)
             elif "interval_width" in conf_df.columns:
-                # Use half of average interval width
-                q_90 = float(np.mean(conf_df["interval_width"])) / 2.0
-            else:
-                return {
-                    "available": False,
-                    "lower_bound": None,
-                    "upper_bound": None,
-                    "interval_width": None,
-                    "quantile_q": None,
-                    "nominal_coverage": "90% nominal",
-                    "observed_coverage": obs_cov_str,
-                    "message": "Prediction interval unavailable in deployment."
-                }
+                q_hat = float(np.median(conf_df["interval_width"])) / 2.0
 
-            lower_b = max(0.0, float(predicted_val - q_90))
-            upper_b = max(0.0, float(predicted_val + q_90))
-            width = float(upper_b - lower_b)
+            if q_hat is None:
+                return UncertaintyService._unavailable(cfg["conformal_nominal_coverage"])
+
+            lower = max(0.0, float(predicted_val - q_hat))
+            upper = max(0.0, float(predicted_val + q_hat))
 
             return {
-                "available": True,
-                "lower_bound": round(lower_b, 4),
-                "upper_bound": round(upper_b, 4),
-                "interval_width": round(width, 4),
-                "quantile_q": round(q_90, 4),
-                "nominal_coverage": "90% nominal conformal interval",
-                "observed_coverage": obs_cov_str,
-                "message": f"90% nominal conformal interval ({obs_cov_str})"
+                "available":          True,
+                "lower_bound":        round(lower, 4),
+                "upper_bound":        round(upper, 4),
+                "interval_width":     round(upper - lower, 4),
+                "quantile_q":         round(q_hat, 4),
+                "nominal_coverage":   cfg["conformal_nominal_coverage"],
+                "observed_coverage":  obs_str,
+                "message":            f"90% conformal interval ({obs_str})",
             }
         except Exception as e:
-            return {
-                "available": False,
-                "lower_bound": None,
-                "upper_bound": None,
-                "interval_width": None,
-                "quantile_q": None,
-                "nominal_coverage": "90% nominal",
-                "observed_coverage": "Error",
-                "message": f"Conformal calculation error: {str(e)}"
-            }
+            return UncertaintyService._unavailable(
+                cfg.get("conformal_nominal_coverage", "90%"),
+                error=str(e)
+            )
+
+    @staticmethod
+    def _unavailable(nominal: str = "90%", error: str = "") -> dict:
+        msg = "Conformal interval unavailable — laboratory confirmation recommended."
+        if error:
+            msg += f" (Error: {error})"
+        return {
+            "available":         False,
+            "lower_bound":       None,
+            "upper_bound":       None,
+            "interval_width":    None,
+            "quantile_q":        None,
+            "nominal_coverage":  nominal,
+            "observed_coverage": "Unavailable",
+            "message":           msg,
+        }

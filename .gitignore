@@ -34,3 +34,6 @@ wheels/
 # OS files
 .DS_Store
 Thumbs.db
+app_backup_*
+groundwater_pipeline/
+__pycache__/
