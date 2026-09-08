@@ -1,17 +1,13 @@
 """
 Spatial Service — Geospatial Intelligence for North Bengal Groundwater.
-Provides:
-  - Station metadata for 40 North Bengal reference wells
-  - Nearest-neighbor proximity & Inverse Distance Weighting (IDW) interpolation
-  - Interactive Plotly map with risk color-coding
+Light-themed interactive GIS layer for 40 North Bengal monitoring well stations.
 """
 
 import json
 import os
 import math
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional
 import pandas as pd
-import numpy as np
 import plotly.graph_objects as go
 
 APP_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +27,7 @@ def get_all_stations() -> List[Dict]:
 
 def haversine_distance_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """Calculate the great circle distance between two points on the earth in km."""
-    R = 6371.0  # Earth radius in kilometers
+    R = 6371.0
     dlat = math.radians(lat2 - lat1)
     dlon = math.radians(lon2 - lon1)
     a = (math.sin(dlat / 2) ** 2 +
@@ -68,7 +64,6 @@ def interpolate_spatial_risk(lat: float, lon: float, power: float = 2.0) -> Dict
     if not nearest:
         return {"interpolated_mhi": 0.35, "confidence": "LOW", "nearest_distance_km": 0.0}
 
-    # Check for exact match
     if nearest[0]["distance_km"] < 0.1:
         return {
             "interpolated_mhi": nearest[0]["mhi_score"],
@@ -105,35 +100,37 @@ def build_plotly_spatial_map(user_lat: Optional[float] = None,
                              user_lon: Optional[float] = None,
                              user_risk_label: Optional[str] = None) -> go.Figure:
     """
-    Build an interactive Mapbox/Geo scatter plot of North Bengal well stations.
+    Build a clean light-themed OpenStreetMap scatter plot for North Bengal.
     """
     stations = get_all_stations()
     df_st = pd.DataFrame(stations)
 
     color_map = {
-        "LOW_RISK": "#10b981",       # Green
-        "MODERATE_RISK": "#f59e0b",  # Amber/Orange
-        "ELEVATED_RISK": "#ef4444",  # Red
+        "LOW_RISK": "#059669",       # Rich Emerald Green
+        "MODERATE_RISK": "#d97706",  # Clean Amber/Orange
+        "ELEVATED_RISK": "#dc2626",  # Clear Crimson Red
     }
 
     fig = go.Figure()
 
     # Add reference monitoring stations grouped by risk category
-    for cat in ["LOW_RISK", "MODERATE_RISK", "ELEVATED_RISK"]:
+    for cat, display_name in [
+        ("LOW_RISK", "🟢 নিরাপদ টিউবওয়েল (Safe Baseline)"),
+        ("MODERATE_RISK", "🟡 মাঝারি সতর্কতা (Moderate Risk)"),
+        ("ELEVATED_RISK", "🔴 উচ্চ দূষণ ঝুঁকি (High Risk)")
+    ]:
         sub = df_st[df_st["risk_category"] == cat]
         if sub.empty:
             continue
-        
-        display_name = cat.replace("_", " ").title()
+
         hover_texts = [
-            f"<b>Station:</b> {r['sample_id']}<br>"
-            f"<b>Location:</b> {r['thana']}, {r['district']}<br>"
-            f"<b>Well Depth:</b> {r['depth_m']} m<br>"
+            f"<b>স্টেশন:</b> {r['thana']}, {r['district']}<br>"
+            f"<b>গভীরতা:</b> {r['depth_m']} মিটার<br>"
             f"<b>pH:</b> {r['ph']} | <b>TDS:</b> {r['tds_mg_l']} mg/L<br>"
-            f"<b>Cd:</b> {r['cd_ug_l']} µg/L | <b>Ni:</b> {r['ni_ug_l']} µg/L<br>"
-            f"<b>As:</b> {r['as_ug_l']} µg/L | <b>Pb:</b> {r['pb_ug_l']} µg/L<br>"
-            f"<b>Multi-Metal Hazard Index:</b> {r['mhi_score']}<br>"
-            f"<b>Risk Status:</b> {display_name}"
+            f"<b>ক্যাডমিয়াম (Cd):</b> {r['cd_ug_l']} µg/L<br>"
+            f"<b>আর্সেনিক (As):</b> {r['as_ug_l']} µg/L | <b>সীসা (Pb):</b> {r['pb_ug_l']} µg/L<br>"
+            f"<b>হ্যাজার্ড স্কোর:</b> {r['mhi_score']}<br>"
+            f"<b>স্ট্যাটাস:</b> {display_name}"
             for _, r in sub.iterrows()
         ]
 
@@ -142,43 +139,42 @@ def build_plotly_spatial_map(user_lat: Optional[float] = None,
             lon=sub["lon"],
             mode="markers",
             marker=dict(
-                size=12,
+                size=13,
                 color=color_map.get(cat, "#64748b"),
-                opacity=0.85
+                opacity=0.9
             ),
-            name=f"Monitoring Well ({display_name})",
+            name=display_name,
             text=hover_texts,
             hoverinfo="text"
         ))
 
     # Add user current sample location if provided
     if user_lat is not None and user_lon is not None:
-        user_color = color_map.get(user_risk_label, "#3b82f6")
+        user_color = color_map.get(user_risk_label, "#0284c7")
         fig.add_trace(go.Scattermapbox(
             lat=[user_lat],
             lon=[user_lon],
             mode="markers+text",
             marker=dict(
-                size=20,
+                size=22,
                 color=user_color,
                 symbol="circle"
             ),
-            name="📍 Current Well Location",
-            text=["📍 Your Well"],
+            name="📍 আপনার বর্তমান টিউবওয়েল",
+            text=["📍 আপনার টিউবওয়েল"],
             textposition="top right",
-            hovertext=f"<b>Current Sample Location</b><br>Lat: {user_lat:.4f}, Lon: {user_lon:.4f}<br>Predicted Class: {user_risk_label}",
+            hovertext=f"<b>আপনার নির্বাচিত টিউবওয়েল</b><br>অক্ষাংশ: {user_lat:.4f}, দ্রাঘিমাংশ: {user_lon:.4f}<br>স্ট্যাটাস: {user_risk_label}",
             hoverinfo="text"
         ))
 
-    # Center map on North Bengal
-    center_lat = user_lat if user_lat is not None else 25.3
+    center_lat = user_lat if user_lat is not None else 25.2
     center_lon = user_lon if user_lon is not None else 88.9
 
     fig.update_layout(
         mapbox=dict(
             style="open-street-map",
             center=dict(lat=center_lat, lon=center_lon),
-            zoom=7.5
+            zoom=7.3
         ),
         margin=dict(l=0, r=0, t=10, b=0),
         height=480,
@@ -188,11 +184,13 @@ def build_plotly_spatial_map(user_lat: Optional[float] = None,
             y=1.02,
             xanchor="center",
             x=0.5,
-            bgcolor="rgba(15, 23, 42, 0.8)",
-            font=dict(size=11, color="#f8fafc")
+            bgcolor="rgba(255, 255, 255, 0.95)",
+            bordercolor="#e2e8f0",
+            borderwidth=1,
+            font=dict(size=12, color="#0f172a", family="Inter, sans-serif")
         ),
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)"
+        paper_bgcolor="#ffffff",
+        plot_bgcolor="#ffffff"
     )
 
     return fig
