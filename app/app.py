@@ -475,19 +475,23 @@ if analyze_clicked:
             })
         st.dataframe(pd.DataFrame(near_table), hide_index=True)
 
-        # ── Audit Report Download ─────────────────────────────────────────────
+        # ── Audit Report Download (PDF) ───────────────────────────────────────
         st.markdown("---")
-        from components.report_generator import generate_html_report
-        html_content = generate_html_report(
+        from components.report_generator import generate_pdf_report
+        pdf_bytes = generate_pdf_report(
             res["input_parameters"],
             res["results"],
-            res["overall_recommendation"]
+            res["overall_recommendation"],
+            risk_res=risk_res,
+            spatial_res=spatial_interp,
+            domain_state=res["domain_state"],
         )
+        safe_name = st.session_state["thana_select"].split(" ")[0].replace("/", "_")
         st.download_button(
-            label="📥 DOWNLOAD VERIFIED WATER QUALITY AUDIT REPORT (HTML)",
-            data=html_content.encode("utf-8"),
-            file_name="Groundwater_AI_Screening_Report.html",
-            mime="text/html"
+            label="📥 DOWNLOAD OFFICIAL WATER QUALITY AUDIT REPORT (PDF)",
+            data=pdf_bytes,
+            file_name=f"Groundwater_AI_Screening_Report_{safe_name}.pdf",
+            mime="application/pdf"
         )
 
 # ── Footer & Regulatory Disclaimer ───────────────────────────────────────────
