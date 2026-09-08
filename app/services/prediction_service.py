@@ -1,6 +1,7 @@
 """
 Prediction Service — orchestrates the full inference pipeline.
 Each metal gets its own DataFrame built from its own feature_order.
+Supports automatic inverse transformation (e.g., log1p -> expm1).
 """
 import numpy as np
 import pandas as pd
@@ -17,10 +18,6 @@ class PredictionService:
     def predict(ph: float, tds: float, no3: float, depth: float) -> dict:
         """
         Full inference pipeline for one groundwater sample.
-
-        Returns dict with keys:
-          success, domain_state, errors, ood_warnings,
-          input_parameters, results, overall_recommendation
         """
         # ── Layer A + B validation ─────────────────────────────────────────────
         is_valid, domain_state, errors, ood_warnings, validated = \
@@ -37,7 +34,6 @@ class PredictionService:
                 "overall_recommendation": "Prediction cancelled — invalid input parameters.",
             }
 
-        # Lookup table: validated_dict key → model feature name
         FEAT_LOOKUP = {
             "pH":        "pH_proxy",
             "TDS":       "TDS_calc",
@@ -50,15 +46,13 @@ class PredictionService:
 
         for metal_key in ["ni", "cd"]:
             cfg          = MODEL_CONFIG[metal_key]
-            feature_order= cfg["feature_order"]   # ← each model's own order
+            feature_order= cfg["feature_order"]
 
-            # Build DataFrame matching THIS model's feature contract
             feat_values = [validated[{v: k for k, v in FEAT_LOOKUP.items()}[f]] for f in feature_order]
             input_df    = pd.DataFrame([feat_values], columns=feature_order)
 
-            # Load model
             try:
-                model = ModelLoader.get_model(metal_key)
+                model_artifact = ModelLoader.get_model(metal_key)
             except FileNotFoundError as e:
                 return {
                     "success": False, "domain_state": domain_state,
@@ -67,10 +61,24 @@ class PredictionService:
                     "overall_recommendation": f"Model not available for {cfg['name']}.",
                 }
 
-            # Inference
+            # Handle new format (dict with transform) vs old format (just pipeline)
+            if isinstance(model_artifact, dict):
+                pipeline = model_artifact["pipeline"]
+                transform = model_artifact.get("transform", "raw")
+            else:
+                pipeline = model_artifact
+                transform = "raw"
+
             try:
-                raw_pred = model.predict(input_df.values)[0]
-                pred_val = float(np.maximum(0.0, raw_pred))   # non-negative physical constraint
+                raw_pred = pipeline.predict(input_df.values)[0]
+                
+                # Inverse transform
+                if transform == "log1p":
+                    pred_val = float(np.expm1(raw_pred))
+                else:
+                    pred_val = float(raw_pred)
+                    
+                pred_val = float(np.maximum(0.0, pred_val))
             except Exception as e:
                 return {
                     "success": False, "domain_state": domain_state,
@@ -80,10 +88,7 @@ class PredictionService:
                     "overall_recommendation": f"Inference failed for {cfg['name']}.",
                 }
 
-            # Uncertainty quantification
             uncertainty = UncertaintyService.compute_interval(metal_key, pred_val)
-
-            # Decision
             decision = DecisionEngine.evaluate(metal_key, pred_val, uncertainty, domain_state)
             status_codes.append(decision["status_code"])
 
@@ -94,7 +99,6 @@ class PredictionService:
                 "decision":    decision,
             }
 
-        # ── Overall recommendation ─────────────────────────────────────────────
         if domain_state == "OUT_OF_DOMAIN" or "OUT_OF_DOMAIN" in status_codes:
             overall = ("At least one input is outside the validated model domain. "
                        "The prediction should not be used as a standalone screening decision. "
