@@ -1,6 +1,7 @@
 """
 Spatial Service — Geospatial Intelligence for North Bengal Groundwater.
-Provides robust interactive mapping via Folium & Plotly for 40 North Bengal stations.
+Provides robust interactive mapping via Folium for 40 North Bengal stations.
+Defensive against environment differences with graceful fallback.
 """
 
 import json
@@ -8,7 +9,13 @@ import os
 import math
 from typing import List, Dict, Optional
 import pandas as pd
-import folium
+
+try:
+    import folium
+    FOLIUM_AVAILABLE = True
+except ImportError:
+    folium = None
+    FOLIUM_AVAILABLE = False
 
 APP_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REF_PATH = os.path.join(APP_DIR, "models", "03_northbengal_spatial_reference.json")
@@ -100,11 +107,18 @@ def build_folium_spatial_map(user_lat: Optional[float] = None,
                              user_lon: Optional[float] = None,
                              user_risk_label: Optional[str] = None) -> str:
     """
-    Build a zero-crash, highly resilient interactive Folium HTML map for North Bengal.
-    Uses CartoDB positron clean light tiles.
+    Build a zero-crash interactive Folium HTML map for North Bengal.
+    Gracefully falls back if folium is still installing.
     """
+    if not FOLIUM_AVAILABLE or folium is None:
+        return """
+        <div style="padding:24px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;text-align:center;color:#64748b;font-family:Inter,sans-serif;">
+            <h4 style="margin:0;color:#0f172a;">🗺️ Geospatial Groundwater Surveillance Map</h4>
+            <p style="margin:8px 0 0 0;font-size:13px;">Map module is loading dependencies on the server. Please refresh in a moment.</p>
+        </div>
+        """
+
     stations = get_all_stations()
-    
     center_lat = user_lat if user_lat is not None else 25.3
     center_lon = user_lon if user_lon is not None else 88.9
 
